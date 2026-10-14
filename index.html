@@ -1,0 +1,996 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, noai, noimageai"><title>监控结果 · Twitter 事件扫描</title><style>
+body { font: 14px/1.5 -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; margin: 16px; color: #222; background: #fff; }
+nav { margin-bottom: 16px; } nav a { margin-left: 16px; }
+h2 { margin-top: 28px; font-size: 18px; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 8px; }
+th, td { border: 1px solid #ddd; padding: 4px 6px; text-align: left; vertical-align: top; }
+th { background: #f5f5f5; white-space: nowrap; }
+.tweet { white-space: pre-wrap; word-break: break-word; min-width: 240px; }
+pre { background: #f5f5f5; padding: 8px; overflow-x: auto; font-size: 12px; white-space: pre-wrap; }
+label { display: block; margin: 10px 0; }
+label.inline { display: inline-block; margin-right: 16px; }
+textarea, input:not([type=checkbox]) { display: block; width: 100%; max-width: 640px; box-sizing: border-box; font: inherit; }
+textarea { font-family: ui-monospace, Menlo, monospace; }
+form { margin-bottom: 12px; }
+code { word-break: break-all; }
+.ok { color: #067d17; } .error, .risk { color: #b00020; }
+.nowrap { white-space: nowrap; }
+</style></head><body><nav><b>Twitter 事件扫描</b></nav><p>更新于 11-28 20:08（UTC+0800），每 30 分钟左右更新一次。</p><h2>运行状态</h2><table><tr><td><b>状态</b></td><td><span class="error">有异常，详情见本机页面</span></td></tr><tr><td><b>近 24 小时</b></td><td>新抓到 0 条推文，其中判为风险 0 条</td></tr></table><h2>最近几轮</h2><table><tr><th>时间</th><th>抓到</th><th>新增</th><th>重复</th></tr><tr><td>11-28 20:01</td><td>0</td><td>0</td><td>0</td></tr><tr><td>11-28 19:24</td><td>0</td><td>0</td><td>0</td></tr><tr><td>11-28 18:49</td><td>0</td><td>0</td><td>0</td></tr><tr><td>11-28 18:12</td><td>0</td><td>0</td><td>0</td></tr><tr><td>11-28 17:33</td><td>0</td><td>0</td><td>0</td></tr></table><h2>风险推文（最近 100 条）</h2><table><tr><th>发布时间</th><th>等级</th><th>类型</th><th>作者</th><th>判定理由</th><th>推文</th><th>告警</th><th></th></tr><tr><td><span class="nowrap">11-21 11:28</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@llama<br>7,602 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>某64亿美元级别黑客事件资金洗白,2.34亿USDT经SunSwap换成TRX,并经Tron钱包分散684.6M TRX,涉及TRON生态。</td><td><div class="tweet">I can&#x27;t chart this day by day: no one has published a split by wallet group and destination, and I couldn&#x27;t rebuild one from on-chain data.
+
+What trackers report (UTC, external estimates I haven&#x27;t verified on-chain; DefiLlama doesn&#x27;t track individual hack wallets):
+
+- Oct 29: $6.43B taken, $2.85B frozen or seized. About $786M of stablecoins swapped before the freezes: 434M $USDT to ETH on DEXs, 19,762 ETH borrowed on Aave, 234M USDT to TRX on SunSwap. 18,270 stolen BTC went to 19 addresses and hasn&#x27;t moved.
+- Oct 30 - Nov 1: Tron wallets spread 684.6M TRX across about 7,700 addresses. At least…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/llama/status/2123981738065998178" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 11:23</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@nxinshng11<br>1,639 粉丝</span></td><td><b>事件：OKX 钱包 TRX 报价异常显示为27U</b><br>用户称OKX钱包中TRX价格异常显示为27U、涨幅8800%,可能是报价异常或预言机/数据问题。</td><td><div class="tweet">OKX钱包是不是出Bug了 TRX怎么市价成27U了涨幅达到百分之8800
+
+@star_okx https://t.co/OPUbUq7BJ2</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/nxinshng11/status/2123980584502657036" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 11:07</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@EthanChen213<br>171 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>称Ledger硬件钱包遭物理篡改窃取助记词,数百钱包被盗约8700万美元,涉及Tron链资产。</td><td><div class="tweet">Ledger confirms tampered wallets in Berlin and is probing 2 suspected devices in Dubai—same physical mod as SE Asia, built to steal seed phrases at setup. Hundreds of wallets hit; ~$87M stolen across Ethereum, Tron &amp; Bitcoin. $BTC $ETH</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/EthanChen213/status/2123976446842745016" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 11:06</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@EthanChen213<br>170 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>推文称Ledger确认存在被篡改的硬件钱包，设备初始化时会窃取助记词，Ethereum、Tron、Bitcoin上数百个钱包被盗约8700万美元，涉及TRON地址。</td><td><div class="tweet">Ledger 确认柏林出现被篡改硬件钱包，迪拜两台疑似设备也在查。同一批篡改、同一种物理改装，目标是在初始化时窃走助记词。链上已追踪数百个受害钱包，Ethereum、Tron、Bitcoin 上被盗约 87 million。$BTC $ETH 硬件钱包的风险就集中在“初始化”这一刻。</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/EthanChen213/status/2123976317452656936" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 11:04</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">代码漏洞</span></td><td><span class="nowrap">@CatGodSandHive<br>1,690 粉丝</span></td><td><b>事件：有人称用AI代理测试USDD代码库安全检查绕过</b><br>推文提到发现“可能的USDD vault绕过”问题，并要用测试去验证。信息含糊，像是举例，但涉及USDD合约漏洞，值得看一眼。</td><td><div class="tweet">@heisblesse I&#x27;m building a local cheat sheet that gives agents a hypothesis‑driven path: they spot a possible USDD vault bypass, verify the code matches, run a bounded test, and capture evidence as a regression check. https://t.co/FfxdBPxqHt</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/CatGodSandHive/status/2123975764148191565" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 10:39</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">后门/恶意代码</span></td><td><span class="nowrap">@EthanChen213<br>170 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>称Ledger已确认柏林有被篡改的硬件钱包会窃取助记词，约8700万美元从包括Tron在内的多条链上的钱包被盗。</td><td><div class="tweet">⚠️ Ledger confirms tampered hardware wallets in Berlin, probe expands to Dubai. Same batch as SE Asia incident: devices steal mnemonic seeds during init. On-chain probes trace hundreds of hit wallets with ~$87M drained across Ethereum, Tron, $BTC. $ETH</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/EthanChen213/status/2123969575549292582" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 10:39</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">后门/恶意代码</span></td><td><span class="nowrap">@EthanChen213<br>170 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>称Ledger硬件钱包遭出厂级篡改，会在初始化时窃取助记词，链上追踪显示Tron等链上的数百个钱包被盗约8700万美元。</td><td><div class="tweet">警惕！Ledger 硬件钱包出现“出厂级”篡改。柏林、迪拜已现被物理改装设备，与东南亚属同一批，会在初始化时偷助记词。链上调查追踪到数百个受害钱包，在 Ethereum、Tron、Bitcoin 上被盗约 87 million。$BTC $ETH</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/EthanChen213/status/2123969444275982639" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 10:32</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@0xCryptoUni<br>39,433 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文提到币安近期被盗，Tether 冻结了部分被盗资产，说明被盗资金里可能有 USDT（可能在 TRON 上），值得核实。</td><td><div class="tweet">请教一个问题
+
+前一段时间币安被盗，泰达，circle，arb都帮忙冻结了部分被盗的资产
+
+请问，这些资产最后会还给币安吗？</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/0xCryptoUni/status/2123967639596966391" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 09:24</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@somaxbt<br>5,155 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称攻击者正将从以太坊、XRP、Tron、Solana 等链盗取的资金经 THORChain 等跨链桥转入比特币并通过 CoinJoin 混币，涉及 TRON 链上被盗资产，需追踪相关 TRON 地址。</td><td><div class="tweet">The attackers are bridging stolen funds from Ethereum, XRP, Tron, and Solana into Bitcoin, mostly through THORChain, with smaller amounts via Chainflip, Relay, and Symbiosis. So far, 5,406 BTC has arrived on the Bitcoin side.
+
+From there, 1,482 BTC has already gone into CoinJoin. Almost all of it went through one coordinator, kruw (coinjoin[.]kruw[.]io), which ran 231 of the 233 rounds the attacker joined. It&#x27;s also speeding up: 214 BTC had been mixed by 16 Nov, and 1,482 BTC by 20 Nov.</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/somaxbt/status/2123950714053624157" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 09:14</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@digitdash<br>761 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>有人在迪拜授权经销商处购买的两台Ledger硬件钱包疑似被植入恶意硬件，其中一台被盗约50.7万USDT（USDT多在TRON上），共计损失约60.4万美元。</td><td><div class="tweet">Two Ledgers bought new at Virgin Megastore Dubai, an authorized reseller.
+$604K drained: ~1,300 SOL from one, 507K USDT from the other.
+One implant confirmed. The other is at a forensic lab.
+Ledger is checking Berlin cases too.
+Where you buy the wallet is part of the security.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/digitdash/status/2123948050381148293" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 08:16</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@rst_cloud<br>935 粉丝</span></td><td><b>事件：BBC、Zoom等网站第三方JS遭投毒替换加密地址并导向DarkSword</b><br>Optimizely供应链攻击注入的track.js恶意脚本具备加密钱包劫持能力，威胁情报IOC中列出了TRON钱包地址，可能针对TRON用户替换收款地址。</td><td><div class="tweet">#threatreport #LowCompleteness
+Deep technical payload analysis of Optimizely supply chain attack | 19-11-2026
+Source: https://t.co/6lyj6hx0zz
+Key details below ↓
+
+💀Threats:
+Supply_chain_technique, Coruna_tool, Darksword_tool, 
+🎯Victims: Information technology
+
+📚TTPs:
+⚔️Tactics: 1
+🛠️Technics: 0
+
+🤖LLM extracted TTPs:`
+T1056, T1059.007, T1082, T1189, T1203, T1657
+
+🧨IOCs:
+ - File: 2
+ - Url: 9
+ - Domain: 6
+ - Hash: 11
+ - Coin: 8
+
+💽Software: Optimizely
+
+📲Wallets: tron
+
+🪙Crypto: bitcoin, solana, litecoin, dogecoin
+
+🔢Algorithms: sha256
+
+💻Platforms: arm
+
+#threatreport:
+The Optimizely incident involved …</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/rst_cloud/status/2123933417930637454" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 07:23</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@joke_henry<br>9,988 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>CryptoBilis硬件钱包供应链攻击导致1486名用户约9535万美元被盗，Tether已冻结1000万美元USDT，赃款可能涉及TRON上的USDT，需核查。</td><td><div class="tweet">11月21日 · 5874万进了混币器，Tether只冻住1000万
+
+Arkham今天更新：CryptoBilis硬件钱包供应链攻击的赃款，累计25,017枚ETH（约5874万美元）已经流进Tornado Cash。Tether冻结的只有1000万美元。
+
+总损失约9535万美元，1486个用户。攻击者在Ledger设备里植入硬件，助记词一生成就被捕获，通过移动网络发走。
+
+冻结令追着稳定币跑，黑客把ETH倒进混币器。比例是1比5.8。
+
+冻结的1000万，和已经洗掉的5874万，你觉得最后能追回来的，是零头还是大头？💸</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/joke_henry/status/2123920149304787128" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 07:03</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@zhuanbidao<br>19,446 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>CryptoBilis Ledger盗币案赃款正在转入Tornado Cash洗钱，Tether冻结了1000万美元，说明被盗资金中有USDT（该案大部分资金位于TRON链上）。</td><td><div class="tweet">Arkham 监测
+攻击者大量往混币器转入 ETH 🔥
+
+就是之前轰动的 
+CryptoBilis Ledger 被盗案。
+
+追踪数据显示。
+
+已经有超二点五万枚 ETH。
+
+被打进 Tornado Cash。
+
+折算大约五千八百多万美元。
+
+另外还有一千万美元，
+被 Tether 直接冻结。
+
+这场盗窃发生在十月初。
+
+一共波及一千四百多个钱包地址。
+
+总损失接近九千五百多万美元。
+
+除冻结那笔资金。
+
+剩下大部分赃款，
+早就转出原始地址。
+
+混币通道一开。
+
+想要追踪找回资产，难度会大很多。
+
+#CryptoBilis #链上洗钱 #Ledger</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/zhuanbidao/status/2123915105004122539" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 06:44</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Boyka_Ju<br>508 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>CryptoBilis Ledger盗币事件被盗9535万美元，其中7207万美元在TRON链上，Tether已冻结1000万美元，涉及TRON链上资产流向。</td><td><div class="tweet">🚨 Dòng tiền bất thường vừa được Arkham phát hiện
+
+Hai cập nhật mới từ Arkham:
+
+1️⃣ Số tiền bị đánh cắp Vào: 95,35 triệu USD - 72,07 triệu USD trên Tron - 213,43 BTC (17,57 triệu USD) - 3,68 triệu USD trên Ethereum - 2,03 triệu USD trên BNB và Polygon 80,60 triệu USD đến sau 51 phút vào ngày 9 tháng 10, thêm 14,14 triệu USD vào lúc 15:00 UTC, 0,61 triệu USD vào ngày 7-8 tháng 10.
+
+2️⃣ Báo cáo: Rút tiền sổ cái 95,35 triệu USD Công cụ rút tiền sổ cái CryptoBilis đã xâm phạm một đại lý bán lẻ Ledger chính thức để đánh cắp 95,35 triệu USD từ 1.486 địa chỉ người dùng Ledger được báo cáo vào ngày 7-9…
+
+引用 @arkham: Report: $95.35M Ledger Drain
+
+The CryptoBilis Ledger Drainer compromised an official Ledger reseller to steal $95.35M from 1,486 reported Ledger user addresses on 7-9 October.
+
+Six weeks on, $10M of it is frozen by Tether. The rest has left its addresses, including 25,017.31 ETH ($58.74M) sent to Tornado Cash.</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Boyka_Ju/status/2123910400051691635" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 06:37</span></td><td><span class="nowrap">严重</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@arkham<br>1,476,427 粉丝<br>认证机构</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>Arkham 披露 Ledger 用户遭盗取约 9535 万美元，其中 7207 万美元位于 TRON 链上，属于正在发生的大规模盗币事件，需追踪 TRON 上的资金流向。</td><td><div class="tweet">Stolen Funds In: $95.35M
+
+- $72.07M on Tron
+- 213.43 BTC ($17.57M)
+- $3.68M on Ethereum
+- $2.03M on BNB and Polygon
+
+$80.60M arrived in 51 minutes on 9 October, $14.14M more by 15:00 UTC, $0.61M on 7-8 October.
+
+https://t.co/SpC227QNkk
+
+引用 @arkham: Ledger Drainer $80M Theft - Now on Arkham
+
+Over $80M has reportedly been taken from Ledger users this week, across Bitcoin, Ethereum and Tron. Ledger is investigating. The cause is not confirmed.
+
+Track the drainer on Arkham: https://t.co/en3hAtmoOH</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/arkham/status/2123908555522916503" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 04:49</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@NikaVargaAI<br>15 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>推文称Ledger确认柏林有被篡改的硬件钱包，迪拜另有两起报告在调查中，用户被盗约50.7万USDT和1300 SOL。被盗USDT可能涉及TRON链上资产，需要核查。</td><td><div class="tweet">Ledger confirmed a few tampered wallets in Berlin, and it&#x27;s investigating two reports in Dubai. Owners reported about 1,300 SOL and 507,000 USDT stolen, from devices they bought at authorized shops. I still self-custody. I just inspect the hardware now. #Ledger #crypto https://t.co/XtorLfV8SX</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/NikaVargaAI/status/2123881476722741628" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 01:42</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@sprunky_eth<br>7,031 粉丝</span></td><td><b>事件：Trust Wallet 浏览器扩展 v2.68 被黑致约2520个钱包被盗</b><br>有人追踪Trust Wallet被盗事件的资金去向，称其中一部分通过TRON链兑现出逃，可能牵涉TRON上的洗钱路径。</td><td><div class="tweet">🔍 Trust Wallet v2.68 follow-up: we re-audited the Dec 2025 hack &amp; Nov 2026 trail.
+
+@TrustWallet counted 2,520 wallets; @BeosinAlert traced the Dec exit.
+
+The infamous gas bot isn&#x27;t the sweeper — we broke open the Umbra exit, found 202.91 ETH, a TRON cashout &amp; a Binance gas trail.</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/sprunky_eth/status/2123834345714503789" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 01:32</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@TheBeastzilla<br>6,493 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>迪拜两名 Ledger 用户称在 Virgin Megastore 购买的密封设备被植入额外电路板，其中一人被盗50.7万 USDT。</td><td><div class="tweet">Two Ledger owners in Dubai say they got drained after buying sealed devices at Virgin Megastore.
+
+One lost ~1,300 SOL, the other 507,000 USDT. Researchers found an extra board and antenna inside one.
+
+Where do you buy yours?
+A) Direct from the maker
+B) Sealed is sealed https://t.co/CJPZALazAm</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/TheBeastzilla/status/2123831780377813266" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 01:32</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@ChainGlance<br>120 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安遭黑客盗取63亿美元，Tether 已冻结超过15.6亿被盗 USDT。被盗资产包含 USDT，可能涉及 TRON 上的 USDT，需要关注资金流向。</td><td><div class="tweet">The $6.3B Binance hack exposed crypto’s most uncomfortable tradeoff:
+
+Money nobody can freeze, or money someone can protect.
+
+The biggest theft of all time proved you only get to have one.
+
+Crypto spent years arguing that freezable stablecoins go against everything the space stands for.
+
+Then the $6.3B Binance hack happened.
+
+Within hours, Tether froze over $1.56B of stolen USDT, and Circle froze more. With other partners, about $2.85B is now frozen or intercepted, close to half the haul.
+
+And they can do it to any address.
+
+This week, the switch was pointed at a hacker. Next time, it could be…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/ChainGlance/status/2123831740267737432" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 01:30</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@fuhuahuai<br>274 粉丝</span></td><td><b>事件：Aster 用户代理密钥越权被转走33 BTC和456万USDT</b><br>用户称其在 Aster 的账户被代理密钥签名的7笔转账划走456万 USDT，并指控平台存在漏洞。涉及 USDT 被盗，需要核实链上去向。</td><td><div class="tweet">@Aster_DEX @Leonard_Aster 11 月 17 日我说过，7 笔请求的原件欢迎独立验签。现在验算做完了，方法和数据全部公开，任何人都能复算。
+
+你们一直说&quot;私钥泄露&quot;。我的主钱包私钥从头到尾没有被用过，这一点你们 CEO 书面确认过。被用的是你们网页自动生成的代理钥匙，你们书面写明它&quot;不支持提现&quot;，你们的文档写明转给其他用户属于提现级、要主钱包签名，请求参数里既没有扣款账户，也没有主钱包签名，后台凭什么直接划扣主账户 456 万 USDT？。按你们自己的规则，这把钥匙就算在别人手里，也转不走我的钱。
+
+可钱还是转走了。验算结果三条：
+
+1. 7 个签名算出来的签名人，全部是代理钥匙 0x647E，没有一笔是我的主钱包。
+2. 被签名的内容只有 7 项：主网、币种（USDT）、金额、来源类型（现货）、去向类型（现货）、收款人、编号。没有&quot;从谁的账户扣钱&quot;这一项。
+3. 请求参数里&quot;操作人&quot;填的是 0x647E，&quot;收款人&quot;也是 0x647E。我的地址在 7 笔请求参数里一次都没有出现。
+
+打个比方。有人走到银行柜台，递上一张单子：
+操作人：张三
+收款人：张三
+签字：张三
+柜员核对签字，确实是张三本人签的，办了。
+可张三的账户是不到两分钟前刚开的，里面一分钱没有。
+最后钱是从我的账户里出的：456 万 USDT。
+单子上没有我的名字，没有我的签字。这张单子就是 Ast…
+
+引用 @fuhuahuai: ASTER 史诗级漏洞，无钱包私钥授权，私自转移用户 456 万美金资产。我一笔没签，钱包私钥也没丢，7 笔转账 Aster 的系统照样放行。每一条证据都在文章里，我要求 Aster 按原资产赔回！#Aster https://t.co/H4ozTB3Jiu</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/fuhuahuai/status/2123831432086753513" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 01:00</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CultFinance_<br>16,599 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安遭遇约63.4亿美元的创纪录黑客攻击，Tether已冻结超过15亿美元被盗USDT，其中可能涉及TRON上的USDT及相关地址，需要核查。</td><td><div class="tweet">🚨 Binance wins $6,500,000,000 worldwide freezing order over its record hack
+
+- The Abu Dhabi Global Market Courts granted the order against the unidentified attackers behind the October 29 hack
+- Binance&#x27;s lead lawyer at Gibson Dunn called it &quot;one of, if not the, largest publicly known freezing orders ever made&quot;
+- The order covers roughly 26,000 wallet addresses and can be served onchain
+- About $6.34b in assets were taken in the hack, the biggest crypto theft on record
+- Around $2.85b has been frozen or intercepted so far, including over $1.5b in USDT frozen by Tether and about $1.1b in USDC …</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/CultFinance_/status/2123823696452211004" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-21 00:28</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">代码漏洞</span></td><td><span class="nowrap">@IronRedSandHive<br>2,163 粉丝</span></td><td><b>事件：有人称用AI代理测试USDD代码库安全检查绕过</b><br>有人称正在用AI代理推测USDD代码库安全检查的绕过方法并进行测试，涉及USDD潜在漏洞，信号较弱但值得关注。</td><td><div class="tweet">@heisblesse I&#x27;m building a local investigation flow that lets an AI agent hypothesize a safety‑check bypass, run a bounded test against your USDD repo, and capture the evidence, https://t.co/1wJGY84rTs</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/IronRedSandHive/status/2123815797076422808" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 22:55</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@BjectO1<br>8 粉丝</span></td><td><b>事件：X 账号推广 WhatsApp 钓鱼、盗U及短信群发服务</b><br>有人在推广钓鱼、“盗u”和短信群发服务，看起来针对USDT持有者，信号较弱，值得看一眼。</td><td><div class="tweet">@HackGHT 钓ws 盗u 短信群发。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/BjectO1/status/2123792273624424800" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 22:53</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@rst_cloud<br>935 粉丝</span></td><td><b>事件：BBC、Zoom等网站第三方JS遭投毒替换加密地址并导向DarkSword</b><br>威胁报告称攻击者利用Optimizely漏洞，向450多个网站注入恶意JS，可替换加密钱包地址并劫持剪贴板。受影响钱包类型列出了tron，可能有TRON用户的转账被改到攻击者地址。</td><td><div class="tweet">#threatreport #MediumCompleteness
+Attackers Exploit Optimizely Flaw To Inject Malicious JavaScript | 19-11-2026
+Source: https://t.co/bU3oLaSfux
+Key details below ↓
+
+💀Threats:
+Supply_chain_technique, Clipboard_hijacking_technique, Coruna_tool, Darksword_tool, 
+🎯Victims: Software
+
+🏭Industry: Retail, E-commerce, Transport, Financial, Telco, Aerospace
+
+📚TTPs:
+⚔️Tactics: 2
+🛠️Technics: 0
+
+🤖LLM extracted TTPs:`
+T1027, T1027.009, T1041, T1056, T1056.001, T1056.003, T1059.007, T1071.001, T1082, T1105, ...
+
+🧨IOCs:
+ - File: 16
+ - Domain: 5
+ - Url: 9
+ - Coin: 8
+ - Hash: 1
+
+💽Software: iPadOS, WebRTC
+
+📲Wall…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/rst_cloud/status/2123791881687495153" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 22:21</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@LuzRa1114<br>57 粉丝</span></td><td><b>事件：BSC 用户钱包被添加 EIP-7702 恶意委托致资产可被自动转走</b><br>用户称其BSC地址被添加EIP-7702恶意委托，可自动转走资产且余额无法转出，该地址平时用于转USDT（U），存在资产被盗风险。</td><td><div class="tweet">@yaoguaibnb 我每次都在你的评论区下边发bsc地址，前几天发现我的钱包地址被加了一个EIP-7702 委托协议  可以自动转走我钱包里的bnb，并且钱包里的余额无法转到其他钱包里。不知道是怎么实现的，这个bsc地址只在评论区发过，平常都是自己转u用 https://t.co/5AZxenl7pP</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/LuzRa1114/status/2123783674235895950" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 21:35</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@ling65697_z<br>1,373 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安被盗案黑客持续转移资金洗钱,相关钱包超一万个,被盗资产包含USDT,可能涉及TRON上的USDT,需关注资金流向。</td><td><div class="tweet">币安黑客又转走了一批钱，约3.46亿美元。转账记录里，好几笔都是1.2万枚ETH，每笔约2100万美元。
+
+Lookonchain发现，这次转出的ETH共有197,460枚，从同一个钱包分批转给了多个不同的钱包。昨天它也发现过一批，137,602枚ETH，约2.48亿美元。翻回昨天的记录，多笔同样是1.2万枚。两天用的钱包不同，转账的数额却反复出现。
+
+如今，Arkham追踪的币安被盗案相关钱包已超过一万个，里面的资产包括比特币、ETH、USDT和USDC。Lookonchain最新贴出的两张图里，昨天是约2.48亿美元，今天又是约3.46亿美元，一笔笔转账还在继续。
+
+引用 @lookonchain: The Binance hacker just moved another 197,460 $ETH ($346.2M) for laundering.
+https://t.co/jKWvcOSJCB
+https://t.co/1ywHxiV5be https://t.co/3u5lLPrfe8</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/ling65697_z/status/2123772234368205079" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 21:29</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@AverinKai<br>22,404 粉丝</span></td><td><b>事件：BTTC 跨链桥关闭后出现仿冒桥钓鱼网站</b><br>推文称BTTC跨链桥已停止充值和提现，官方桥页面提醒用户警惕冒充桥服务的钓鱼网站，存在针对BTTC用户的钓鱼风险。</td><td><div class="tweet">在我看来，2026 年 BitTorrent 生态最大的风险并不在协议本身。
+
+而在那些已经关停的服务，以及大家以为还在运行的东西上。
+
+经历了一整年的产品下线和一次安全通告，下面是我在动手之前一定会过一遍的清单。
+
+用户脚下发生了哪些变化：
+
+➜ BTTC 跨链桥 6 月 13 日停止充值，6 月 18 日停止提现，官方桥页面现在专门提醒用户警惕冒充桥服务的网站
+
+➜ BTFS 旧版产品、API 和后端服务已在 7 月 25 日至 8 月 9 日期间分阶段下线
+
+➜ 9 月 23 日，µTorrent 发布通告，称部分旧版 Classic 用户因网络攻击出现崩溃，并请所有人升级到最新版
+
+我在链上盯着的几件事：
+
+➜ 在 TRONSCAN 上，TRON 链前 10 大 BTT 地址持有约 88% 的 TRC-20 供应量
+
+➜ 其中带标签的交易所钱包约占 39%，这些钱包里汇集的是大量用户的资产，并不等于 10 个持有人
+
+➜ 第一轮回购公布了数量、估值和哈希，但没有按来源拆分收入
+
+我给自己定的规矩：
+
+➜ 客户端只从 https://t.co/WNZbWoyEmD 或 https://t.co/m9oLWPpnfi 下载和更新
+
+➜ 任何声称提供 BTTC 跨链桥的链接，一律当作钓鱼处理
+
+➜ 回购看的是每一轮是否持续兑现，2027 年 1 月的更新是下一个检验点
+
+非投资建…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/AverinKai/status/2123770611994370116" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 20:53</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@PUU60K1V<br>6,389 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>据报道,有人在 Ledger 硬件钱包出售前将其拆开改装,用于窃取助记词。迪拜一名用户的 Ledger Stax 被一次转走约50.7万 USDT,ZachXBT 估算本轮总损失超过1.05亿美元(Ledger 未确认)。</td><td><div class="tweet">在迪拜正规商场买的全新Ledger硬件钱包被人动了手脚，两位用户合计被盗约60万美元
+
+Ledger 11月18日更新：被改装的设备不只出现在东南亚，柏林也确认了几台，迪拜还有两台在查。
+
+迪拜两起都来自授权零售商Virgin Megastore。一位用户10月买的全新Ledger Stax，11月15日约50.7万枚 $USDT 被一次转走，助记词只在设备上生成过。另一位的Ledger Flex丢了约1300枚 $SOL，拆开发现多了一块带天线的小电路板。
+
+Ledger说，这些设备都是被人在出售前拆开改装，初始化时偷记助记词；芯片和系统没有漏洞，官网买的设备暂无确认案例。ZachXBT估算这一轮损失已超1.05亿美元，Ledger未确认。
+
+建议：第三方渠道买的设备，尤其东南亚、柏林和迪拜的，先别创建或恢复钱包，联系官方客服。硬件钱包尽量官网买；助记词可能泄露的，尽快转到新钱包。
+
+#Ledger #硬件钱包 #USDT 不构成投资建议</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/PUU60K1V/status/2123761537252778077" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 20:23</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@AverinKai<br>22,412 粉丝</span></td><td><b>事件：BTTC 跨链桥关闭后出现仿冒桥钓鱼网站</b><br>推文提到BTTC跨链桥已关闭,官方警告有网站冒充提供BTTC Bridge服务(钓鱼);另提到μTorrent旧版因网络攻击崩溃。属于旧事回顾,信号较弱,值得看一眼。</td><td><div class="tweet">The biggest BitTorrent risks I see in 2026 are not in the protocol.
+
+They sit in what got switched off, and in what people assume is still running.
+
+After a year of retirements and one security notice, this is the checklist I run before touching anything in the ecosystem.
+
+What changed under users&#x27; feet:
+
+➜ BTTC Bridge deposits closed on June 13 and withdrawals ended on June 18, and the official bridge page now warns about sites claiming to offer it
+
+➜ BTFS legacy products, APIs and backend services were decommissioned between July 25 and August 9
+
+➜ On September 23, µTorrent said some users o…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/AverinKai/status/2123754040936771681" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 20:02</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@sanyi_eth_<br>269,324 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>推文称被植入硬件的Ledger冷钱包在11月14-16日清空16个钱包，损失约168万U（USDT），USDT多在TRON上，需核实是否涉及TRON地址。</td><td><div class="tweet">这周最让我发毛的不是哪个协议被黑，是 Ledger
+
+攻击者买正品，往壳里塞一块小板子，再流回经销商渠道当新机卖。你抄助记词的时候，板子跟着读屏，用自带 eSIM 走 LTE 发出去
+不走电脑，也不走 Wi-Fi，官方的正品检测还查不出来。11月14到16号又清空了 16 个钱包，大概 168wu
+
+@GCSA_COM 这期写得挺清楚。说白了，冷钱包还是只能在官网买，转账前拿 Secure Wallet 扫一下地址
+真中招了，他们家的 Crypto Recovery 是追回来了才收费，至少不会被二次割
+
+冷钱包如果也不放心，干脆直接把家里的旧苹果断网，拿来做冷钱包也可以
+
+引用 @GCSA_COM: 🚨GCSA Insight | 9 Cybersecurity Incidents, 4 Critical Risk Areas
+From DeFi exploits and compromised hardware wallets to financial data breaches, actively exploited vulnerabilities, and blockchain-based malware infrastructure.
+
+Our latest GCSA Insight examines 9 security incidents and threat intelligence reports across four key areas:
+
+Digital Assets &amp; Web3 Security
+• Reental RNT Lend: ~$955K in stablecoin losses
+• Ledger: Hardware implants targeting wallet seed phrases
+• GTA VI: Fake pre-orders, wallet drainers &amp; malicious tokens
+
+Data Breaches &amp; Third-Party Risks
+• SBC Medical: ~1.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/sanyi_eth_/status/2123748786119778670" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 19:30</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@SergioTheNomad<br>1,070 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称调查人员追踪到约2亿美元被盗TRX正通过洗钱路径兑换，并提及TRON与Tether、Chainalysis的特别工作组，需核实涉及TRON的被盗资金来源。</td><td><div class="tweet">Investigadores han rastreado unos 200 millones de dólares en TRX robado siendo cambiado a través de rutas de lavado.
+
+El dato importante no es la cifra. Es que se pudo rastrear.
+
+Cuando un flujo de 200 millones se mueve por una red pública y queda mapeado, la pregunta deja de ser si la blockchain es anónima. No lo es. La pregunta es cuánto tarda el rastro en convertirse en una incautación.
+
+Y ahí está la asimetría que llevamos semanas viendo. El DOJ obtuvo autorización para incautar más de 1.200 millones del hackeo a Binance, pero solo la parte que seguía congelada. Lo que se fragmentó y se ca…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/SergioTheNomad/status/2123740641226358824" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 19:22</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@rst_cloud<br>935 粉丝</span></td><td><b>事件：BBC、Zoom等网站第三方JS遭投毒替换加密地址并导向DarkSword</b><br>威胁报告称OPTIMJACK通过被篡改的第三方脚本投放iPhone漏洞利用链，窃取钱包keystore并用剪贴板劫持替换加密货币地址，受影响钱包里列出了tron。</td><td><div class="tweet">#threatreport #MediumCompleteness
+OPTIMJACK: the iPhone exploit on BBC and Zoom is for rent | 19-11-2026
+Source: https://t.co/jg4KmBCKXS
+Key details below ↓
+
+🧑‍💻Actors/Campaigns:
+Optimjack
+Linkforge
+
+💀Threats:
+Branchhop_tool, Coruna_tool, Darksword_tool, Ghostwave_tool, Clickfix_technique, Doorway, 
+🎯Victims: Media, Software, Digital marketing, Cryptocurrency, Iphone users, Windows users
+
+🤖LLM extracted TTPs:`
+T1005, T1020, T1027.010, T1056.003, T1059.001, T1059.007, T1071.001, T1082, T1105, T1115, ...
+
+🧨IOCs:
+ - Url: 5
+ - File: 11
+ - Domain: 140
+ - IP: 23
+ - Hash: 18
+ - Coin: 11
+
+💽Software: Z…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/rst_cloud/status/2123738775226302854" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 18:44</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@Hypewangyolo<br>3,398 粉丝</span></td><td><b>事件：TG 假KYC代办商家以低价 Claude 账号骗取125U</b><br>用户称在TG上被自称KYC代办商家以低价Claude账号为由骗走125U(USDT),属针对USDT用户的诈骗个案。</td><td><div class="tweet">妈的，TG 能删掉别人手机上的消息，这简直就是诈骗天堂。
+
+接下来的经验对所有现在或未来想要做会员代充的人都有警示作用
+
+骗我的是一个自称在东南亚、能帮人过 KYC 的商家。
+一开始就是正常合作，我找他过了几单 KYC，做下来了，我也就觉得这人挺靠谱的。
+
+合作了几单之后，他突然跟我说，他这里有特别便宜的 Claude Ultra 和 Max 账号。Ultra 多少呢？250U。
+
+他还跟我说，哎，你可以先付一半，我们追求长期合作嘛，先给你货，剩下的你再结。
+
+我当时也没多想，就想着合作了那么久的 KYC 了
+
+先试一个，打了 125U 过去。
+
+结果钱一到，他立刻就把我们俩的聊天记录删了
+
+后来我在别的群里看到他，还在发一模一样的话，换个群接着骗。
+
+那么这个问题有没有解决方案呢？
+
+钱包双签担保
+
+新建一个钱包地址，设成必须两个人都签名，钱才能转出去。把钱打进这个地址，钱就锁在里面。对方发货、验货后没问题，两个人一起签名把钱放给他；也就是说只有两个人都认可这笔交易这笔交易才能发生。
+
+这个办法最大的用处其实是试人。你一提多签，真做生意的人一般是愿意商量的，骗子会找各种理由推掉。对方一推，你心里总归就有点数了。
+
+最后最重要的就是别贪，希望大家走得远，而不是走得快❗️像我这种贪狗，嗯，活该被骗😭</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Hypewangyolo/status/2123729111491420446" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 18:32</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@benji_usdt<br>73 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安遭遇63亿美元盗窃，阿布扎比法院已下令冻结相关代币，并带有#USDT标签。被盗资产可能涉及USDT（含TRON链上的USDT），建议核查是否有资金经TRON转移。</td><td><div class="tweet">🚨 COURT FREEZES BINANCE HACK FUNDS
+
+An Abu Dhabi court ordered 18 firms to keep tokens frozen after Binance&#x27;s $6.3B theft.
+
+💬 Will Binance recover the stolen funds?
+
+❤️ Like • 🔁 Repost • Follow for P2P insights
+#Binance #USDT
+
+Source: https://t.co/a33ULhHIkx https://t.co/7uOaZLWf00</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/benji_usdt/status/2123726048965665042" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 17:55</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@moonlock_lab<br>1,866 粉丝</span></td><td><b>事件：Moonlock Lab 披露窃密恶意软件劫持剪贴板替换TRON等地址</b><br>Moonlock Lab披露一款窃密恶意软件，内置剪贴板劫持模块，可识别TRON等地址并替换为C2下发的攻击者地址，可能导致TRON用户转账被劫持。</td><td><div class="tweet">6/ Other theft targets: ~/.ssh, ~/.aws/credentials, ~/.config/gcloud/credentials.db, .npmrc, .git. Strings also reference Exodus, 1Password, Bitwarden and Discord.
+
+Clipper: clipboard monitor + regexes for BTC, ETH, SOL, TON, TRON, XMR, XRP, DOGE, LTC, ADA. Replacement addresses come from the C2 (/clipaddrs), so the operator can rotate them without touching the binary.</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/moonlock_lab/status/2123716739967881480" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 17:00</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Maoxianja<br>37 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安10月被盗事件规模约65亿美元,法院下达全球冻结令,Tether冻结约15.6亿USDT,被盗资产涉及USDT,可能涉及TRON链上地址,需核实。</td><td><div class="tweet">币安这张冻结令下来了！
+阿布扎比法院批了全球冻结令，上限大约65亿刀，就是10月那次被盗的规模，拦住黑客继续挪资产。第三方已冻住大约28.5亿刀！
+币安说用户损失已用自有资金和储备垫上。Tether也冻了大约15.6亿USDT，但不在这张令里，另走补发沟通。
+冻结不是终点，钱要真回到账上，还得再走一段。</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Maoxianja/status/2123703028410687648" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 16:45</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@analyticsinme<br>12,526 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安约65亿美元被盗事件后续，被盗资产中超过15.6亿美元USDT被Tether冻结，可能涉及TRON上的USDT流转，值得跟进。</td><td><div class="tweet">𝐁𝐢𝐧𝐚𝐧𝐜𝐞 𝐒𝐞𝐜𝐮𝐫𝐞𝐬 𝐔𝐒𝐃 𝟔.𝟓 𝐁𝐢𝐥𝐥𝐢𝐨𝐧 𝐅𝐫𝐞𝐞𝐳𝐢𝐧𝐠 𝐎𝐫𝐝𝐞𝐫 𝐅𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐌𝐚𝐣𝐨𝐫 𝐂𝐫𝐲𝐩𝐭𝐨 𝐓𝐡𝐞𝐟𝐭 
+
+Binance secures a USD 6.5 billion global freezing order after one of crypto&#x27;s largest thefts!
+Binance has secured a major legal victory as Abu Dhabi Global Market Courts issued an injunction targeting USD 6.5 billion in cryptocurrency stolen during the October 29 cyberattack. ⚖️ 
+
+Approximately USD 2.85 billion in stolen assets has already been frozen or intercepted, while Tether separately restricted more than USD 1.56 billion in USDT. US authorities have also obtained authorization to seize or restrain over USD 1.2…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/analyticsinme/status/2123699118908568044" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 16:41</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@OfficialApeXdex<br>152,598 粉丝<br>认证机构</span></td><td><b>事件：Aster 用户代理密钥越权被转走33 BTC和456万USDT</b><br>ApeX提到某永续DEX用户称agent key被盗，44分钟内约456万USDT被转走，但没有说明是哪条链，也没提到TRON，建议简单核实是否涉及TRON上的USDT。</td><td><div class="tweet">Two perpetual DEXs lost funds this month.
+
+No seed phrase was compromised. No smart contract was breached. In one case the account holder says no transaction was ever signed.
+
+The money left anyway. What actually failed:
+
+The contract audit would have come back clean.
+
+Not the wallet. Not the chain. Not the contracts.
+
+A single trading key.
+
+On some platforms one credential can read your account, place orders and move funds between accounts. Steal that and you never need the wallet.
+
+In the larger case about $10.4m USDC left in one withdrawal, and researchers put the total nearer $15.5m across…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/OfficialApeXdex/status/2123698222959153488" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 15:38</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@GleyceTalita<br>60 粉丝</span></td><td><b>事件：近一个月大量个人钱包USDT被盗（泛泛而谈）</b><br>推文称过去一个月有数百个个人钱包的USDT被盗(钓鱼、iOS漏洞、助记词数字化存储等),信息笼统但涉及USDT被盗,值得一看。</td><td><div class="tweet">In the past month we’ve seen both a $6B+ exchange hack and hundreds of personal wallets drained of USDT — often through phishing, iOS exploits, or simply storing seed phrases digitally.
+
+The real lesson isn’t “crypto is unsafe.”
+It’s that self-custody only works when we treat our keys like the only bank vault we have.
+Never screenshot your seed.
+Never keep it on any device.
+Never click first and verify later.
+
+Your USDT is only as safe as your habits.
+Stay sharp out there.
+#WalletSecurity #USDT #CryptoSafety</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/GleyceTalita/status/2123682309186470241" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 15:00</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@NicolaBlackwo12<br>35,112 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>报道在迪拜和柏林购买的Ledger硬件钱包疑遭物理篡改，16个钱包被盗约168万美元，损失涉及TRON链地址。</td><td><div class="tweet">16 wallets drained, $1.68M gone
+
+Bitquery traced the losses across Bitcoin, Solana and TRON after owners reported problems with Ledger devices purchased in Dubai and Berlin
+
+What worries me is that a hardware wallet can appear legitimate while its recovery phrase may already be exposed through physical tampering
+
+Would you still trust a hardware wallet bought from a third-party retailer?</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/NicolaBlackwo12/status/2123672700078239997" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 14:27</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Domingo_gou<br>31,857 粉丝</span></td><td><b>事件：Aster 用户代理密钥越权被转走33 BTC和456万USDT</b><br>推文称一名Aster用户授权出去的代理密钥在44分钟内转走33枚BTC和456万USDT，权限超出了页面显示的范围。Aster官方已成立调查组。推文未说明USDT所在的链，按规则涉及USDT的被盗报告都需要核查。</td><td><div class="tweet">44分钟，33枚BTC，7笔转账，456万USDT。
+
+这是上周一位Aster用户的遭遇，动手的是一把授权出去的代理密钥，主钱包私钥没有泄露。
+
+他说这次密钥权限超出了设置时页面显示的范围，Aster官方已成立调查组，关注官方公布最终结果。
+
+@primus_labs 也有个场景，讲的正是这一类问题，钱交给机器去动之后，怎么证明它每一步都照规矩做了。
+
+1、44分钟里，最缺一份说得清的记录
+
+这周BTC跌到61300附近，七月初以来最低，一天里6亿多美元的合约被清算。
+
+行情越急，人越愿意把下单交给程序、机器人和AI。
+
+11月7日CCXT做过一个测试，9个模型各拿100美元，用真实盘口模拟交易一小时，20轮有成交的里面16轮亏钱，扣费前合计赚1.66美元，手续费付了68.64美元。
+
+机器会犯错，这一点谁都能接受。
+
+难受的是出事之后，日志往往握在可能出错的那一方手里，用户只看得到结果，看不到过程。
+
+2、把每一步做成能交出去的收据
+
+Primus的思路是Agent干活的关键步骤，调大模型、查预言机、拉行情、调Web2服务，几乎都是一次走TLS加密通道的API请求。
+
+zkTLS能为这一次请求生成证明，证明请求确实发出、服务器确实返回了这个结果，同时把会话数据和私密凭证藏住。
+
+证明里只留关键参数，接口地址、相关请求字段、关键返回值。
+
+这些证明交给验证合约或链下验证服务，按规则…
+
+引用 @primus_labs: Most privacy solutions only address part of the problem.
+
+They either hide everything or reveal everything.
+
+Neither is enough when real capital and real decisions are involved.
+
+What&#x27;s missing is the ability to prove facts without exposing the underlying data, and to compute on sensitive information without decrypting it.
+
+That&#x27;s the gap Primus is building to address.
+
+Not more secrecy.
+Not more transparency.
+
+But a way to keep sensitive data private while making it usable and verifiable.
+
+Primus is building that cure.</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Domingo_gou/status/2123664616383504499" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 14:07</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">后门/恶意代码</span></td><td><span class="nowrap">@hellboeth<br>180 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>推文称经授权经销商售出的Ledger硬件钱包被篡改，加装了记录助记词的硬件，东南亚买家在ETH、TRON和BTC上损失约8700万美元，柏林、迪拜也发现了被篡改的设备，涉及TRON资产被盗。</td><td><div class="tweet">modified ledgers are showing up in real stores now
+
+berlin confirmed this week. dubai being checked, two devices bought at a virgin megastore. it started in southeast asia, where buyers from an authorized reseller lost around $87m across eth, tron and btc (early estimate)
+
+the chip and firmware weren&#x27;t hacked. someone opened the devices before they reached buyers and added hardware that records your seed phrase the first time you set it up. passphrase too
+
+so a hardware wallet is only as safe as the box it came in
+if you bought a ledger in berlin this year, or from any reseller:
+•move funds to…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/hellboeth/status/2123659453874553266" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 13:06</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Crypt0Pineapple<br>54 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文引用阿布扎比法庭文件,称币安被盗约63亿美元,涉及11条链,其中USDT约25亿美元,可能有部分在TRON上,需要跟踪资金流向和冻结情况。</td><td><div class="tweet">🍍 #菠萝追赃｜法庭清单：币安被盗192种币、11条链
+阿布扎比法庭文件显示，被盗约63亿美元分属192种加密货币、11条链；稳定币至少34.6亿美元、占55%，其中USDT 25亿美元、USDC 8.26亿美元，BTC 14.2亿美元。65亿美元全球冻结令12月1日续期听证，超5万美元资产须11月30日前宣誓披露。🍍</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Crypt0Pineapple/status/2123644119226728715" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 12:50</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">后门/恶意代码</span></td><td><span class="nowrap">@MariaOnchainDev<br>18,473 粉丝</span></td><td><b>事件：疑似仿冒 TRON wallet-cli 的 npm 包 @tron-walletcli/wallet-cli</b><br>推文推广通过 npm 安装 @tron-walletcli/wallet-cli@4.14.0，这个包名不是 tronprotocol 官方 wallet-cli 的常见发布渠道，可能是仿冒包，需要核实它是否由官方发布。</td><td><div class="tweet">让 𝗔𝗜 替你花钱之前，先问一个问题：签名到底发生在谁的电脑上？
+
+在 @AINFTcom 推出的 𝗕𝗮𝗻𝗸 𝗼𝗳 𝗔𝗜 里，答案很明确：你自己的设备。
+
+钱包层叫 𝗪𝗮𝗹𝗹𝗲𝘁 𝗖𝗟𝗜，安装命令是 npm install -g @tron-walletcli/wallet-cli@4.14.0
+
+文档里关于它的两句话，我建议每个人都记下来：
+➜ &quot;your private key never leaves your device&quot;
+➜ &quot;Never send a private key, mnemonic, or master password to an AI.&quot;
+
+换句话说，Agent 可以发起操作，但钥匙始终在你手里。
+
+再加上 𝘅𝟰𝟬𝟮 付款 &quot;always confirming with you before spending&quot;，就形成了两道闸：签名在本地，花钱要确认。
+
+Agent Wallet 在 𝟮𝟬𝟮𝟲 年 𝟵 月更新到 𝟯.𝟬.𝟬，𝗦𝗞𝗜𝗟𝗟𝗦 𝟯.𝟬.𝟬 之后支付和充值也统一走 Wallet CLI。
+
+有了这两道闸，日常小事就可以放心交出去：
+➜ 𝗖𝗵𝗲𝗰𝗸 𝗺𝘆 𝗮𝘀𝘀𝗲𝘁𝘀：最适合的第一条指令，先确认钱包连通
+➜ 𝗚𝗮𝘀𝗙𝗿𝗲𝗲 𝘁𝗿𝗮𝗻𝘀𝗳𝗲𝗿：转稳定币不用先囤 TRX 当手续费
+➜ 𝗦𝘁𝗮𝗸𝗲 𝗧𝗥𝗫：一句话发起质押，签名前先看清摘要
+
+GasFr…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/MariaOnchainDev/status/2123640118875402265" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 12:39</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@cryptowithgopal<br>14,475 粉丝</span></td><td><b>事件：Gonka AI 以太坊跨链桥签名密钥被替换遭盗约110万美元</b><br>Gonka跨链桥遭攻击，提现储备中约88.4万USDT被盗，并被增发2200万无背书WGNK；未说明所在链，可能涉及TRON上的USDT，建议核查。</td><td><div class="tweet">🌉🚨 Another bridge exploit. An attacker drained 884,151 USDT and 648 USDC from Gonka&#x27;s withdrawal reserves and minted 22M WGNK that Blockaid calls unbacked, putting GNK redemptions at risk. Bridges remain crypto&#x27;s weakest link.
+
+#Bridge #Exploit #DeFi</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cryptowithgopal/status/2123637207458013625" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 12:25</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@try_roe_ai<br>121 粉丝</span></td><td><b>事件：不明来源被盗资金经新钱包分层后换成USDT跨链至TRON洗钱</b><br>推文称有资金经混币器提取后快速拆分、汇合,再兑换并跨链至TRON,疑似洗钱,但未说明具体事件。</td><td><div class="tweet">The money split quickly after the mixer withdrawals, and branches rejoined before a swap and bridge to Tron. That rapid layering points to money laundering.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/try_roe_ai/status/2123633751976554997" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 11:51</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@vijay26827522<br>10 粉丝</span></td><td><b>事件：TRON 假USDT代币伪装交易所热钱包转账诈骗</b><br>推文警告TRON上有人用名称和图标几乎相同的假USDT代币，从交易所热钱包地址转出来骗取信任，属于针对TRON USDT用户的诈骗。</td><td><div class="tweet">Beware of fake USDT!
+
+Scammers use almost identical names &amp; icons, then send from exchange hot wallets to fake trust.
+
+Always verify the contract address first when receiving any unfamiliar USDT.
+
+#CryptoScam #USDT #TRON https://t.co/a9jzqwXJee</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/vijay26827522/status/2123625334453244145" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 11:25</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@try_roe_ai<br>120 粉丝</span></td><td><b>事件：不明来源被盗资金经新钱包分层后换成USDT跨链至TRON洗钱</b><br>推文描述一笔资金从混币器提出后经多个新钱包分层，再兑换并跨链到TRON，被认定为洗钱。涉及TRON链上的可疑资金流，但没有给出具体事件和地址，值得看一眼。</td><td><div class="tweet">The money quickly split through fresh wallets after the mixer withdrawal, then came back together. The swap and bridge to Tron followed that layering, supporting the money laundering finding.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/try_roe_ai/status/2123618653950058761" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 11:19</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@GleyceTalita<br>61 粉丝</span></td><td><b>事件：TRON 场外交易以“钱包未激活/能量不足”骗取激活费</b><br>推文提醒有人在场外交易 TRON 链 USDT 时冒称“钱包未激活或能量不足”，骗买家另付激活费或能量费，这是专门针对 TRON 用户的诈骗。推文只介绍了这种骗法，没有提到具体受害案例。</td><td><div class="tweet">Beware of the “Wallet not activated / no energy, USDT can’t arrive” scam!
+
+When buying USDT privately, the seller sends a transfer screenshot claiming the funds have arrived, then says your wallet isn’t activated or lacks energy, tricking you into paying an “activation fee” or “energy fee.”
+
+Truth:
+• Receiving USDT on TRON does NOT require energy (energy is only for sending)
+• Account activation status does not affect receiving USDT
+• Screenshots can be easily faked — only on-chain records count
+
+What to do: Check on tronscan using your address or the TxID. Verify status, recipient address, am…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/GleyceTalita/status/2123617292302889389" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 09:16</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@ieddysun<br>7,162 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>早报提到Binance被盗资产63亿美元中含25亿美元USDT，黑客地址仍在转移资金，可能涉及TRON上的USDT，需核查。</td><td><div class="tweet">【Web3 中文早报】11.20
+
+① BTC 跌至约 $61,800，创 7 月以来新低（后续）
+据 CoinDesk，BTC 美东周四午后跌至约 $61,800，有望连跌第七周，为 2022 年以来最长；ETH 约 $1,750，恐惧贪婪指数 10。周三现货 BTC ETF 净流出 $3.065 亿（IBIT -$1.487 亿），ETH ETF 净流出 $3,980 万。
+
+② 朝鲜黑客被曝借道 Sky 兑换稳定币，PSM 一天流出超 $15 亿
+据 CoinDesk 援引 Inca Digital，约 $5.18 亿可疑资金经 Sky（原 MakerDAO）的 PSM 兑换，其中 $1.019 亿直接关联朝鲜。报道后 PSM 被提走超 $15 亿 USDC，USDS 市值降超 30% 至约 $32 亿，价格维持在 $0.9997；Sky 称被标记交易占 PSM 总交易量不到 0.06%。
+
+③ 美国成立 Threat Disruption Center 追查诈骗资金
+由 Homeland Security Task Force 宣布，30 多个联邦机构和 440 多个州与地方机构参与。TRM Labs 的 Ardence 平台为主要调查工具，相关联邦合同金额 $9,466 万。
+
+④ 参议院听证 SEC 委员提名人
+Kristin Johnson 称代币化“创新豁免”应走正…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/ieddysun/status/2123586353866883582" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 09:03</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@tokenpostkr<br>6,048 粉丝</span></td><td><b>事件：OFAC 制裁澳大利亚摩托帮 Comancheros 并列入其头目 TRON 地址</b><br>TokenPost提到美国财政部制裁TRON地址,可能涉及TRON链上的非法资金活动,值得关注具体被制裁的地址。</td><td><div class="tweet">[새로 올라온 영상] 11월 20일 아침
+
+어젯밤 9시 이후 토큰포스트 유튜브에 올라온 영상입니다.
+
+✔ [토포 카드뉴스] 바이낸스, 해커 자산 65억달러 동결 명령 확보_20… (1분)
+
+✔ 11월 20일 출근길 팟캐스트 — 미 재무부 트론 주소 제재, 온체인 … (16분)
+
+✔ 미국장이 쉬는 주말에도, 평일의 65.7%가 거래됐다 📊 | 로빈후드… (19초)
+
+🔗</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/tokenpostkr/status/2123582858837295259" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 08:26</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@maobidao<br>549 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>日报提及10月约65亿美元被盗案，Tether已冻结超15.6亿美元USDT，涉及被盗USDT，可关注其中是否有资金流经TRON。</td><td><div class="tweet">猫笔刀加密日报 · 2026.11.20 周五
+
+一、今日一句话总结
+
+15 亿美元一天之内从 Sky 的兑换池里被抽走，CoinDesk 说 USDS 市值跟着少了三成五，链上价格却连一美分都没松，1 美元的锚还死死钉在原地。
+
+二、市场温度计
+
+恐惧贪婪从七天前的 13 一路磨到 10，今天回到 12，可 61 个 USDT 交易对里只有 17 个上涨、43 个下跌，宽度还是塌的。
+
+我给今天的温度是零下，指数是暖了一点，底下的钱还是凉的，你们别被那个两位数骗了，这种反弹是抽一口气，抽完多半还得往下走，除非费率跟着翻正。
+
+三、今日核心行情
+
+BTC 24 小时跌 1.55%，收在 62,008 美元，7 天跌掉 13.19%，一天就在原地磨，多空都不想动。
+
+ETH 跌 1.00% 到 1,757.85，对 BTC 的汇率还微涨，可它跌得比 BNB、SOL、XRP 都狠，主流里就数它和 BTC 最惨。
+
+合约这边 BTC 持仓 96,986 枚、名义 60.1 亿美元，一小时名义值多了 0.52%，费率年化 2.2%，吃单买卖比 1.23，这点仓位撑不起大行情。
+
+那 0.52% 是价格算出来的，不是谁半夜偷偷加了仓，币一枚没多，别拿名义值当买入信号。
+
+四、今日最重要的消息
+
+1、Sky 的兑换池被抽干，导火索是 CoinDesk 19 号那篇调查。一个大户把 USDS 全…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/maobidao/status/2123573686586466433" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 08:19</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@rst_cloud<br>934 粉丝</span></td><td><b>事件：BBC、Zoom等网站第三方JS遭投毒替换加密地址并导向DarkSword</b><br>威胁报告称供应链投毒脚本在多个大型网站上替换剪贴板中的加密地址，目标包括Tron钱包，且攻击者已将Tron上的收益归集转走，需排查相关攻击者地址。</td><td><div class="tweet">#threatreport #HighCompleteness
+MCH and Caishen: supply chain poisoning pushes iOS exploits | 18-11-2026
+Source: https://t.co/mEV8UxBxJM
+Key details below ↓
+
+🧑‍💻Actors/Campaigns:
+Optimjack
+
+💀Threats:
+Supply_chain_technique, Caishen_tool, Coruna_tool, Darksword_tool, Blackseo_technique, Disttrack, Wannacry, 
+🎯Victims: Media, Information technology, Food delivery, Real estate, Cryptocurrency users, Website visitors
+
+🌐Geo: Los angeles, London
+
+📚TTPs:
+⚔️Tactics: 1
+🛠️Technics: 0
+
+🤖LLM extracted TTPs:`
+T1041, T1056, T1059.007, T1071.001, T1082, T1105, T1113, T1115, T1119, T1189, ...
+
+🧨IOCs:
+ - Domai…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/rst_cloud/status/2123571956674896305" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 08:07</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@wublockchain12<br>182,347 粉丝<br>认证机构</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安10月29日遭攻击后，黑客两天内通过跨链桥和兑换平台转移了约1.94亿美元的TRON链资产，这起洗钱事件直接涉及TRON生态，需要追踪。</td><td><div class="tweet">吴说获悉，NEAR Protocol 发文介绍跨链安全系统 SHIELD，称其在 9 月 Bitget 被盗事件后拦截了超过 5,000 万美元的相关洗钱资金流，拦截率达 99.7%。10 月 29 日币安遭攻击后，黑客在两天内通过跨链桥及兑换平台转移约 1.94 亿美元的 TRON 链资产，其中约 17.1 万美元流经 NEAR Intents。截至 11 月 3 日，SHIELD 已拦截约 96% 进入 NEAR Intents 的币安被盗资金相关交易。NEAR 表示，SHIELD 仅作用于 NEAR Intents，不影响底层网络的无许可运行，也无需用户进行 KYC。系统通过链上资金历史及反洗钱情报筛查交易，在执行前拦截高风险资金，并可根据风险级别延迟交易或暂停特定功能，而非整个协议。NEAR 计划向钱包、跨链桥和交易所等开放该安全系统。https://t.co/HTvPIX5wn5</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/wublockchain12/status/2123568867402478076" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 07:33</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Arisk_io<br>432 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>Arisk称柏林和迪拜的Flex硬件钱包用户疑因设备被篡改而被盗，被盗资金流向中都有同一个TRON地址转出的USDT，与TRON生态直接相关。</td><td><div class="tweet">Thanks for the update.
+
+We previously traced two USDT transfers from the same TRON address. One fed into the flow of funds stolen from the Flex user in Berlin, and the other into the flow of funds stolen from the Flex user in Dubai. The teardown photos shared by the Dubai Flex user also show an extra circuit board and antenna inside the device.
+
+You’ve verified reports of tampered devices in Berlin and are still investigating the reports in Dubai. We appreciate the team’s continued work on this.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Arisk_io/status/2123560366382936351" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 06:43</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@fairgambling<br>8,834 粉丝<br>认证机构</span></td><td><b>事件：ONCHAIN Technologies 旗下九家加密赌场共享资金池遭盗约526万美元</b><br>九家加密赌场共享的资金池遭攻击，被盗约526万美元，其中一笔164,181 USDC正被转向TRON链，可能经由TRON转移或洗钱，需追踪相关地址。</td><td><div class="tweet">Nine crypto casinos went dark after an attacker took $5.26M from the bankroll they all shared and the wallets that funded it.
+
+The sites looked independent. On-chain, several of them were paying winners from the same wallets, all under one Anjouan license held by ONCHAIN Technologies Ltd. Ten domains are listed under that license, and nine were offline or under maintenance on November 19.
+
+The shared setup was hiding in plain sight. LuckyCoin posted the bankroll address on BitcoinTalk in May as proof of its &quot;$3M Bankroll&quot;, and Betmode showed player payouts from the same address on X just six d…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/fairgambling/status/2123547712583090273" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 06:03</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@cryptodore<br>147 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安有192种加密资产在11个网络上被盗，其中包括USDT，可能涉及TRON上的USDT。</td><td><div class="tweet">🚀 Anthropic’s Nasdaq pop (+34%) screams AI capital rotation—again.  
+🏦 Take-Two’s tokenized shares ripped, volume flying on game hype.  
+🕵️ And Binance: 192 crypto assets drained across 11 networks—$USDT, BTC, $USDC. #Bitcoin #AItokens #IPO https://t.co/yq9DUnBzeJ</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cryptodore/status/2123537653337370933" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 06:01</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Rubycryptoz<br>15,388 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安发生安全事件后暂停了多种资产的提现，其中包括TRON网络上的SUN，目前正在分阶段恢复，事件尚未结束。</td><td><div class="tweet">𝗕𝗥𝗘𝗔𝗞𝗜𝗡𝗚: 𝗕𝗶𝗻𝗮𝗻𝗰𝗲 𝗥𝗲𝘀𝘂𝗺𝗲𝘀 𝗦𝗨𝗡 𝗪𝗶𝘁𝗵𝗱𝗿𝗮𝘄𝗮𝗹𝘀 𝗼𝗻 𝗧𝗥𝗢𝗡
+
+𝗡𝗼𝘃 𝟲, 𝟮𝟬𝟮𝟲 — 𝗵𝗲𝗿𝗲 𝗶𝘀 𝘁𝗵𝗲 𝘀𝗵𝗼𝗿𝘁 𝘃𝗲𝗿𝘀𝗶𝗼𝗻, 𝘁𝗵𝗲𝗻 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀.
+
+Binance has brought back withdrawals of SUN on the TRON network, in phases, after running security checks. The key line from the reports: 𝗱𝗲𝗽𝗼𝘀𝗶𝘁𝘀 𝗿𝗲𝗺𝗮𝗶𝗻𝗲𝗱 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝘁𝗵𝗲 𝘄𝗵𝗼𝗹𝗲 𝘁𝗶𝗺𝗲, and withdrawal processing can take longer while the checks continue.
+
+𝗪𝗵𝗮𝘁 𝗵𝗮𝗽𝗽𝗲𝗻𝗲𝗱
+Following a security incident at the exchange, withdrawals for a range of assets were paused and then reopened step by step. SUN on TRON was included in the phased return. The source for this is a TokenPost report summarize…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Rubycryptoz/status/2123537094794723777" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 06:00</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@Fight_Chain<br>181 粉丝</span></td><td><b>事件：SEC 起诉8家实体以虚假投资顾问和仿冒交易平台诈骗3700万美元</b><br>SEC起诉8家实体以虚假投资顾问和仿冒交易平台诈骗逾3700万美元，受害者被诱导将USDT等转入指定地址，可能涉及TRON上的USDT，值得关注。</td><td><div class="tweet">SEC 11月19日在科罗拉多联邦法院起诉8家实体，指其以虚假投资顾问和加密交易平台为幌子，从逾1,500名美国投资者处骗走超过3,700万美元。
+
+骗局从2024年8月持续到2026年5月，分四组“顾问+平台”轮换，每组运作数月后关站失联。受害者经社交媒体广告进入WhatsApp群聊，先被引导交易美股，再被劝把ETH、USDT或USDC转入自托管钱包后打到指定地址；仿冒App显示虚构余额，提现还要按“利润”比例另付加密费用，不从者遭威胁。
+
+SEC称被告伪造SEC证书，借SEC、FINRA、FinCEN的真实备案取信投资者，三份相关备案已被撤下。SEC寻求永久禁令、追缴非法所得和民事罚款，并感谢香港、新加坡、中国内地及瑞士监管机构协助。
+
+来源：SEC https://t.co/rzeEjkm2nP</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Fight_Chain/status/2123536987659419676" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 05:50</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@pilyears<br>31,212 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安被朝鲜关联黑客组织盗取63亿美元，其中USDT占25亿美元为最大部分，可能涉及波场上的USDT，并将公布2.6万个持有被盗资产的钱包地址，需关注TRON链上的资金流向。</td><td><div class="tweet">🔴 THE HACK - 192 TOKENS, 11 NETWORKS, $6.3B GONE
+
+Court documents show the Binance attackers took 192 cryptocurrencies across 11 networks
+
+USDT was the largest share at $2.50B, followed by Bitcoin at $1.42B
+
+The FBI attributes the attack to TraderTraitor, a North Korea-linked group
+
+A live list of 26,000 wallets holding stolen assets will be published to the market
+
+The court revisits the case on December 1
+
+📰 Source: https://t.co/4NSAHBWYta
+
+At $6.3B, October&#x27;s Binance breach is the largest single theft crypto has ever seen — bigger than Bybit&#x27;s $1.5B
+
+⚠️ Not financial advice. DYOR.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/pilyears/status/2123534279649157180" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 04:31</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@StickyDev420<br>27 粉丝</span></td><td><b>事件：Gonka AI 以太坊跨链桥签名密钥被替换遭盗约110万美元</b><br>Gonka WGNK跨链桥被攻击，约88.4万USDT被盗（以太坊上，资金已归还），涉及USDT，与TRON关联较弱，供参考。</td><td><div class="tweet">🚨 UPDATE: Gonka WGNK Bridge Exploit
+
+Per Gonka: bridge key, contract and WGNK are compromised.
+
+💰 Drained: ~884K USDT; 22M WGNK minted. Funds returned
+🔎 Status: Bridge off; network unaffected
+
+⚠️ Don&#x27;t use WGNK or the bridge.
+
+https://t.co/si9ZqKmJnN
+#CryptoSecurity
+
+引用 @gmorgachev: WGNK bridge incident: statement on the first 24 hours
+
+On 18 November 2026 a security incident occurred involving the Gonka&lt;&gt;Ethereum bridge. Thanks to the swift response of Gonka&#x27;s core contributors, the MillCreek R&amp;D team and our analytics partners, the mechanics of the exploit were reconstructed quickly and precisely, and every transaction was traced. Faced with the certainty of being identified, the attacker chose to return the stolen funds within the time window that was offered.
+
+The funds are back with the community.
+
+Most importantly, Gonka’s network consensus was not affe</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/StickyDev420/status/2123514587722961315" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 04:09</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@ilHwa10<br>18 粉丝</span></td><td><b>事件：向 Bitfinex 充值的大额钱包遭地址投毒攻击（未致损失）</b><br>一个收款主要来自波场跨链USDT的大额钱包遭地址投毒攻击，12个相似地址发起538笔假USDT转账，推文称未造成损失。</td><td><div class="tweet">One wallet has paid the same Bitfinex deposit address since June 2025. Nov 14-20: $70.8M USDT, mostly bridged from Tron.
+
+Poisoners noticed: 538 fake &quot;USDT&quot; transfers tied to 12 lookalikes.
+
+Real: 0xf28E798B…00c2
+Fake: 0xf28eBAA2…00C2
+
+None fooled it. Check the middle. https://t.co/IykWE0yJZo</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/ilHwa10/status/2123508999949815903" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 03:53</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@OmegaClickOffi1<br>4,034 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安热钱包被朝鲜TraderTraitor盗走约63亿美元，Chainalysis指出洗钱过程中大量地址先收到恰好1 TRX，说明涉及波场地址。</td><td><div class="tweet">6,3 miliardi di dollari spariti in circa 20 minuti. Il più grande furto di criptovalute mai registrato.
+
+E la porta d&#x27;ingresso non è stata una falla tecnica: è stato un colloquio di lavoro.
+
+Per l&#x27;FBI dietro c&#x27;è TraderTraitor, l&#x27;unità nordcoreana legata a Lazarus. Ecco cosa è documentato.
+
+I NUMERI DEL COLPO
+Il 29 ottobre 2026 dai portafogli &quot;caldi&quot; di Binance, quelli collegati a internet che pagano i prelievi dei clienti, escono circa 6,3 miliardi su 10 reti diverse. Binance parla di 6,34 miliardi, TRM Labs di 6,36, Chainalysis di circa 6,4. Circa 4 volte il colpo a Bybit del febbraio 2025 (1…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/OmegaClickOffi1/status/2123504931181134114" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 03:47</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@Fight_Chain<br>182 粉丝</span></td><td><b>事件：OFAC 制裁澳大利亚摩托帮 Comancheros 并列入其头目 TRON 地址</b><br>OFAC将Comancheros帮派头目名下的TRON地址TVwLtgUXyDhmcSoQ9x2z9QSua41f8mDFvU列入SDN制裁名单,Chainalysis称其与哈马斯相关钱包共用中介钱包群组,建议关注该地址在TRON生态内的资金往来。</td><td><div class="tweet">美国财政部OFAC 11月19日制裁澳大利亚摩托帮Comancheros及其四名高层和一名关联人，并将头目名下一个Tron地址列入SDN名单。
+
+被点名的包括头目Alexandre Varela Villar、世界主席Allan John Norman Meehan、新西兰分会主席Pasilika Naufahu、其兄弟Vetekina Naufahu，以及为帮派提供加密通信工具的关联人Marco Francis Coffen。
+
+美方称该帮派协助南美可卡因以数百公斤级流入美国、澳大利亚和欧洲，并涉及暗杀、军火贩运和洗钱；OFAC同日还制裁意大利&#x27;Ndrangheta，并发出允许相关交易逐步清盘的通用许可。
+
+OFAC列出的地址为TVwLtgUXyDhmcSoQ9x2z9QSua41f8mDFvU。Chainalysis称，该地址与一个哈马斯相关钱包使用同一中介钱包群组；OFAC未披露其余额或涉案金额。
+
+来源：OFAC https://t.co/K6d7DOQlZE
+来源：The Defiant https://t.co/Pyitx6c7yC</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Fight_Chain/status/2123503569764515990" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 02:25</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@Daocvv<br>33 粉丝</span></td><td><b>事件：X 账号出售商城/授权/相册盗助记词盗U源码</b><br>有人公开出售盗U源码（商城盗U、授权盗U、相册盗助记词），针对USDT持有者的诈骗工具。</td><td><div class="tweet">出售盗u源码，商城盗u  授权盗u  相册盗助忆词盗u✈️@daocvv</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Daocvv/status/2123482702670409923" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 02:22</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@BCHMinty<br>295 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安于10月29日遭攻击，Tether冻结超15亿美元被盗USDT，涉及USDT被盗资金，需关注是否涉及TRON链地址。</td><td><div class="tweet">Binance won a $6.5B worldwide freezing order from an Abu Dhabi court on November 18. It covers about 26,000 wallet addresses. The $6.5B is the order&#x27;s scope. Binance hasn&#x27;t said how much has come back.
+
+Most of what has been frozen so far sits with stablecoin issuers. Tether says it froze more than $1.5B USDT within 30 minutes of the October 29 attack. Circle froze about $1.1B USDC.
+
+The stolen bitcoin is the part no issuer can reach. Binance says 18,270 BTC were taken. Bitcoin has no issuer, so a freeze only works if the coins land at an exchange or service that blocks them.
+
+BCH sits where B…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/BCHMinty/status/2123482057133441313" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-20 00:37</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@ElvieEvon67457<br>5,672 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安约63亿美元被盗事件追赃进展，Tether已冻结其中部分被盗资产，涉及USDT，可能波及TRON链上USDT；同时提示有借机冒充补偿通道的钓鱼风险。</td><td><div class="tweet">币安 @binance 10 月 29 日被盗那 63 亿美元，追赃有了新进展：阿布扎比 ADGM 法院批了 65 亿美元的全球冻结令，冻结的是这批被盗资产。
+
+最有意思的是送达方式：法院文件可以直接通过区块链送达，也就是把法律通知发到黑客的钱包地址上。币安还会维护一份 2.6 万个涉案钱包地址的“实时清单”，交易所和发行方照着清单冻结、返还，地址一变清单就更新。
+
+几个数先说清楚，免得被标题带偏：
+• 冻结令的 65 亿是法律上限，不是已经追回的数，追回多少币安还没公布；
+• 被盗约 63 亿，是加密史上最大的一起，超过今年 2 月 Bybit 的 15 亿，FBI 归因于朝鲜黑客组织 TraderTraitor；
+• 事发后约 28.5 亿已被冻结，其中 Tether 和 Circle 在事发后不久就冻了 27 亿；
+• 美国检方已获授权，可扣押或限制其中 12 亿美元的冻结资金；
+• 币安说 63 亿客户资产已由公司全额兜底，用户零损失。
+
+我自己也在用币安钱包，提币恢复上周官方更新说 87 条网络已经恢复了。这几天借着这新闻冒出来的“补偿通道”“提币加速”私聊和链接肯定会多，记住币安不会私聊让你点链接领补偿，提币状态只认官网公告。</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/ElvieEvon67457/status/2123455741038411941" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 23:35</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@AnChainAI<br>6,327 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>AnChain.AI称某重大被盗事件涉及11条链、192种代币,至少34.6亿美元为稳定币并呼吁冻结,很可能涉及TRON上的USDT,需核查。</td><td><div class="tweet">@TMGM_Peter 时间线很清楚。补充法院文件里的数据：被盗资产横跨 11 条链、192 种代币，至少 34.6 亿美元是稳定币。能冻的先冻，换成 BTC/ETH 的部分就只能靠链上追踪和出口拦截了。https://t.co/ESZxK0dboT</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/AnChainAI/status/2123440016613605730" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 23:27</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@waiwainiu2002<br>4,687 粉丝</span></td><td><b>事件：未具名项目方跑路致用户损失300U</b><br>用户称某项目方跑路(官推清空、官网404),损失300U,疑似USDT相关rug骗局,项目未具名。</td><td><div class="tweet">项目方上周还在群里喊长期主义，今天官推清空，TG全员禁言，官网直接404。
+我三百U的仓位，连个跑路公告都没等到。
+这算rug还是算提前下班 😂 兄弟们被跑路过几回 https://t.co/sF0Gt1Zsmo</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/waiwainiu2002/status/2123438081055637792" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 23:11</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@yytttt_1982<br>5,717 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安被盗案中Tether已主动冻结15亿美元被盗USDT，赃款里有USDT，可能涉及TRON上的USDT，值得核查相关地址。</td><td><div class="tweet">币安被盗案有了法院进展：阿布扎比法院下了65亿美元的全球冻结令，Circle和特朗普家族的World Liberty等18家公司被要求继续按住被盗代币。
+
+已经冻住28.5亿，Tether没被点名，自己先冻了15亿。去中心化的钱，最后靠一张法院传票和几家中心化公司按住。</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/yytttt_1982/status/2123433867835277324" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 22:52</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@guzibiji<br>8,750 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安被盗资产横跨11条链，其中USDT约25亿美元，占了大头，大部分可能在TRON上，需要跟踪资金流向和冻结情况。</td><td><div class="tweet">法院传票
+
+直接发到钱包地址上
+
+币安这次拿到的
+
+全球冻结令
+
+就是这么玩的
+
+阿布扎比法院出的
+
+65 亿美元冻结令
+
+26000 个地址在名单上
+
+黑客偷走的币
+
+现在有完整清单了
+
+192 种币
+
+横跨 11 条链
+
+USDT 占了大头
+
+25 亿美元
+
+比特币 14.2 亿美元
+
+USDC 8.26 亿美元
+
+三样加起来
+
+占了被盗总数的 76%
+
+冻结令归冻结令
+
+能追回来多少
+
+币安自己也没说</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/guzibiji/status/2123429163776516184" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 22:51</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@crypto1ven<br>409 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安被盗约63.4亿美元，Tether已冻结约15亿美元的USDT，被盗资金里可能有TRON上的USDT，值得关注。</td><td><div class="tweet">币安称拿到大约 65 亿美元冻结令，但这不是已经追回了 65 亿。被盗的以太坊还在换成比特币，官方经销店里的冷钱包也被卷入植入调查。BTC 大约在 6.4 万附近。
+
+英文区同一天也在看盘面。11 月 18 日美盘，金价跌破大约 3745 美元，银价跌破大约 45 美元。19 日美盘早段，现货金价大约 3709 美元，盘中低到大约 3693；银价大约 45.16 美元，仍在 45 上方。美联储公布了 10 月会议纪要，几乎所有与会者都认为，按他们的基准情景，后续大概还需要加息，才能把通胀及时拉回 2%。不少人把人工智能相关投入看成重要的通胀风险。那次会议把利率维持在 3.75% 到 4%，10 票对 2 票，反对的两位主张当场加 25 个基点。塞勒发了一句：卖方耗尽会比塞勒耗尽来得更早。这些只当背景。
+
+再说回冻结令。币安称，大约 65 亿美元只是禁令覆盖额，不是已经追回。被盗大约 63.4 亿，此前大约 28.5 亿已被冻或拦截。代理律所的律师说，这是已知公开冻结令里最大的之一。币安方面称，已识别大约 2.6 万个钱包地址，名单会随资金转移更新，也可以通过链上送达。客户那边已经补上，损失由平台自己扛，追赃还在继续。
+
+路透看到的文件还写到，大约 18 家已冻相关资产的公司被要求维持冻结，不得出借、兑换或混币，里面点到了 Circle 和 World Liberty Financi…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/crypto1ven/status/2123428975254901031" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 22:30</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@Aquibreza_18<br>3 粉丝</span></td><td><b>事件：X 用户称遭某账号诈骗5 TRX</b><br>用户称被某账号诈骗了5 TRX，属于单个用户的小额TRX诈骗报告，信号较弱。</td><td><div class="tweet">@official_shoday @Folapondis @rahman_jago_ @yhemolee_ @sulaaaaa Don&#x27;t talk with him he is scammer he steal my 5 TRX</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Aquibreza_18/status/2123423691455521064" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 22:07</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@gandreou007<br>29,387 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安被攻击后，攻击者两天内把约1.94亿美元的TRON资产跨链转移，说明被盗资金经过TRON，需要追踪资金流向。</td><td><div class="tweet">🛡️ $NEAR INTENTS BLOCKED ABOUT 96% OF BINANCE EXPLOIT-LINKED FLOWS THAT REACHED IT
+
+After the Binance exploit, the attackers moved roughly $194M of TRON across chains within two days.
+
+Only $171K of that went through NEAR Intents.
+
+The reason is SHIELD, NEAR&#x27;s layered defense that acts on the specific flow at risk.
+
+After the Bitget hack in September, it blocked 99.7% of attempted laundering flows, over $50M.
+
+It screens flows through NEAR Intents only, so the base protocol stays permissionless.
+
+No one can pause the chain, and anyone can still hold, transfer or deploy.
+
+Wallets, bridges, exch…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/gandreou007/status/2123417819702280598" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 22:01</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@mydongo<br>7,250 粉丝</span></td><td><b>事件：BBC、Zoom等网站第三方JS遭投毒替换加密地址并导向DarkSword</b><br>据称黑客11月16日通过Optimizely向包括Ledger官网在内的178个网站注入恶意代码，会替换页面和剪贴板中的钱包地址，受影响的地址类型明确包括TRON。</td><td><div class="tweet">连 Ledger 官网都中招了。
+
+11 月 16 日，黑客通过 A/B 测试工具 Optimizely，把恶意代码塞进了 178 家机构的网站：Zoom、BBC、CNN、汇丰、IKEA、Ledger……
+
+不是钓鱼网站，是你天天开的真官网。
+
+这段代码干了三件事：
+① 换地址：页面上、表单里、甚至剪贴板里的钱包地址，只要旁边有 wallet、deposit、send 这类词，就被换成黑客的。BTC、ETH 及 EVM 链、TRON、SOL、TON 都在列
+② 盗卡：结账页输入的卡号、有效期、CVV
+③ 攻击旧版 iPhone：对老系统加载漏洞利用工具
+
+最阴的是第①条：你以为“复制粘贴”最安全，其实复制的那一刻就已经是黑客的地址了。安全公司统计，黑客钱包 9 小时内就收到约 7,040 美元。
+
+普通人该做的 4 件事：
+• 11/16 当天转过币的，翻出记录，对一下收款地址是不是你想转的那个
+• 以后转账，在硬件钱包屏幕上核对地址，不要只看复制来的文字；开头、结尾和中间都看几位
+• 大额先转一笔小额测试；交易所提币用白名单地址
+• iPhone/iPad 升到 iOS 18.7.3 或 26.3 以上；当天在这些网站刷过卡的，盯一下账单
+
+说到底：官网 ≠ 安全。你能信的只有自己硬件钱包上那一串地址。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/mydongo/status/2123416296096215425" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 21:21</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@herbcase7<br>1,434 粉丝</span></td><td><b>事件：GTA6 虚假预购/空投钓鱼页面伪造 TronLink 连接盗币</b><br>Blockaid报告称GTA6虚假预购和空投钓鱼页面伪造钱包连接窗口，其中包含TronLink标识，部分页面还改用基于TronLink连接流程的盗币工具包，针对TronLink用户。</td><td><div class="tweet">GTA6 출시를 노린 가짜 사전 예약과 에어드랍, 블록에이드 보고서로 본 지갑 탈취 수법
+
+GTA6가 한국 시간 11월 19일 0시에 정식 출시됐는데 출시 약 3시간30분 뒤인 새벽 3시30분쯤 블록체인 보안업체 블록에이드가 GTA6 출시 열기를 노린 크립토 사기 보고서를 공개했다. 가짜 사전 예약 페이지와 에어드랍 페이지가 결제 대신 지갑 연결을 요구하고 그 연결 단계에서 자산을 빼 가는 구조다.
+
+블록에이드는 10년 넘게 기다린 게임이라는 점을 사기꾼들이 몰린 이유로 꼽았다. 게임을 사려다 지갑을 연결하는 순간 털리는 수법이라서 크립토 지갑을 쓰는 게이머라면 한 번 정리해 둘 만하다.
+
+사기는 어떻게 진행될까?
+
+블록에이드가 설명하는 흐름은 단순한데 소셜미디어 게시물이 GTA6 코인이나 이미 시작된 에어드랍, 크립토로 GTA6를 미리 살 수 있는 사전 판매를 알린다. 링크를 누르면 바이스 시티 그림으로 꾸민 페이지가 나오고 자격 확인이나 사전 예약 버튼을 누르면 지갑 연결 창이 뜬다. 탈취는 이 지갑 연결 단계에서 일어난다.
+
+블록에이드의 소셜 데이터 수집 기준으로 최근 4개월 동안 116개 계정이 GTA 테마 미끼 게시물 451건을 올렸고 이 게시물들이…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/herbcase7/status/2123406321202626645" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 21:16</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@rst_cloud<br>934 粉丝</span></td><td><b>事件：BBC、Zoom等网站第三方JS遭投毒替换加密地址并导向DarkSword</b><br>威胁报告称Optimizely等第三方脚本遭投毒,植入加密货币地址替换剪贴板木马,受影响钱包类型包括tron,可能篡改TRON收款地址导致资金损失。</td><td><div class="tweet">#threatreport #HighCompleteness
+Emerging Threat: Optimizely and Three Other Providers Poisoned in iOS Exploit and Skimming Campaign | 16-11-2026
+Source: https://t.co/sjXy3EG1u7
+Key details below ↓
+
+🧑‍💻Actors/Campaigns:
+Optimjack
+
+💀Threats:
+Coruna_tool, Darksword_tool, Clickfix_technique, 
+🎯Victims: News media, Software, Telecommunications, Insurance, Retail, Travel
+
+🏭Industry: Media, Retail, Telco, Financial
+
+🌐Geo: Singapore, Italian
+
+📚TTPs:
+⚔️Tactics: 1
+🛠️Technics: 0
+
+🤖LLM extracted TTPs:`
+T1027, T1041, T1056.003, T1059.007, T1071.001, T1105, T1113, T1115, T1119, T1189, ...
+
+🧨IOCs:
+ - Domain:…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/rst_cloud/status/2123405140279407094" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 21:15</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@YueGuang_CN<br>1,245 粉丝</span></td><td><b>事件：用户自述曾被骗转出约六千元人民币USDT</b><br>用户自述曾被诈骗转出约六千多人民币的USDT,可能涉及TRON链上USDT,但属于过往事件且细节不足。</td><td><div class="tweet">讲个笑话
+
+我曾经被诈骗，转出去的USDT合计有六千多人民币
+
+贪念真是害人不浅
+
+越是想要，越要踏踏实实走好每一步
+
+你们有没有被骗过啊？😭</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/YueGuang_CN/status/2123404924822474857" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 21:06</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Lucky_m_X<br>3,509 粉丝</span></td><td><b>事件：TRON 地址投毒三年致约8900万美元USDT被盗（统计）</b><br>推文引用 FreezeCheck 报告，称三年内约8900万美元 TRON 上的 USDT 因地址投毒（相似地址）被盗，属于涉及 TRON 用户的盗币统计，建议核查。</td><td><div class="tweet">🚨 TETHER ($USDT) MARKET UPDATE | Nov 19 🚨
+
+While $USDT holds a tight ~$0.999–$1.00 peg with a ~$175.0B market cap (-4.3% over 30 days), a major clash over stablecoin reserves just broke out today:
+
+Key headlines &amp; on-chain data:
+🔸 S&amp;P Global Ratings kept $USDT at its lowest stability score (5 / &quot;weak&quot;), flagging higher-risk reserves rising to 28% ($19B in gold &amp; $4.2B in equities) despite an ~$8B excess reserve cushion
+🔸 Tether fired back today, invoking &quot;The Big Short&quot; to slam legacy rating agencies&#x27; outdated frameworks
+🔸 Tether &amp; Further Asset Management invested ~$10M in Singapore&#x27;s MetaCom…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Lucky_m_X/status/2123402504348062204" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 21:01</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@ThreatCockpit<br>13,962 粉丝</span></td><td><b>事件：恶意软件滥用 Bitcoin、TRON、Solana 区块链作为C2指令基础设施</b><br>Cisco Talos报告恶意软件利用TRON等区块链作为死信箱存放C2控制数据，TRON链被滥用于恶意软件基础设施。</td><td><div class="tweet">Malware operators are putting control data beyond the server.
+
+Cisco Talos describes blockchain dead drops across Bitcoin, EVM, TRON and Solana.
+
+Detection must include blockchain lookups, not just domains and IPs.
+
+Get the brief → https://t.co/OnOVkjddsN
+
+#Cybersecurity https://t.co/db0pmcjqCx</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/ThreatCockpit/status/2123401280374587472" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:59</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@szjcapital<br>16,548 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>Ledger硬件钱包被植入窃取助记词的间谍模块，链上调查显示约8700万美元从以太坊、TRON和比特币上的数百个钱包被盗，Tether已冻结1000万美元USDT。</td><td><div class="tweet">The Ledger spy implant never touched Ledger&#x27;s secure chip. It read the screen.
+
+Ledger&#x27;s own finding (CoinDesk, Oct 13): a tiny implant inside the enclosure waited for the setup screen to show the 24-word recovery phrase, decoded the words on its own microcontroller, and sent them out over LTE through an eSIM. It didn&#x27;t modify the secure element or the operating system, and it didn&#x27;t alter transactions or signatures. Ledger says there&#x27;s no flaw in its chip or OS. That&#x27;s true. It also doesn&#x27;t matter.
+
+Here&#x27;s why. Ledger&#x27;s Genuine Check can&#x27;t see an implant if the original secure element is inta…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/szjcapital/status/2123400651900125351" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:41</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Arisk_io<br>425 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>链上追踪显示柏林用户被盗的USDT在TRON地址间归集，之后经Relay兑换，与迪拜被盗案及CryptoBilis案存在关联，涉及数万USDT。</td><td><div class="tweet">Link between the Berlin and Dubai fund flows | TRON
+Address that sent 67,632 USDT and later sent 34,286 USDT
+TWCpt3ySWgvQZN3B8rh6hH1TQf46HWaWX9
+
+Consolidation address that received the USDT stolen from the Berlin user
+TP7Ftwa5mwjsMHuf4BjVniC6GsQhQvyDga
+
+Address that combined the 34,286 USDT it received with another USDT transfer and initiated a swap via Relay
+TDTaTgAT9r3Rry7FQEC7FCsF7nFG9JAL5D
+
+Dubai fund flow | Ethereum
+First address to receive the ETH from the swap of SOL stolen from the Dubai user
+0x62956F22CEC2E2726A1Ff7211047BC26f1B40631
+
+Address that received both the November 14 swap pr…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Arisk_io/status/2123396349039403182" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:26</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@panExorcist<br>12,791 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安钱包被盗约63亿美元，被盗资产中包括USDT，Tether已冻结约15亿美元，部分USDT可能在TRON链上，值得核查是否涉及TRON地址。</td><td><div class="tweet">币安被盗63亿美元这件事，昨天有了一个很有意思的进展。
+
+阿布扎比国际金融中心法院给币安批了一张65亿美元的全球冻结令，代理律所说这可能是公开已知规模最大的冻结令。更特别的是执行方式：可以直接通过链上送达，附带一份持续更新的钱包名单，目前约2.6万个地址，赃款走到哪，名单就跟到哪。
+
+先回顾一下：10月29日币安钱包被盗约63亿美元，FBI认定是朝鲜黑客组织TraderTraitor所为，手法是假面试加被攻破的内部AI工具，拿到了工程师的钱包权限。目前约28.5亿美元已被冻结或拦截，币安称损失由自己承担，用户没有买单。
+
+这件事我看到三层意思：
+
+1.稳定币发行方才是真正的闸门
+冻结令点名了18家机构，包括Circle和World Liberty Financial，要求继续冻结，不得出借、兑换或混同。Tether没被点名，但此前已冻结约15亿美元，币安在和它单独谈返还。偷到USDT、USDC，等于偷到一笔随时可能被锁住的钱，所以黑客才会急着换成ETH。
+
+2.交易所拼的不只是技术，还有司法靠山
+ADGM是币安的全球总部所在地，当地FSRA是它的主监管。出了事，有一个愿意快速出令、而且令状能被各家机构认可的法院，比多加一层多签更管用。以后选交易所，注册地和监管层级值得多看一眼。
+
+3.链上送达是一个新先例
+以前追赃靠一封封律师函，现在法院文书能直接打进钱包。对合规协议和发行方来说，…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/panExorcist/status/2123392465168379917" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Arisk_io<br>425 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>同一个 TRON 地址 TAzdU...XCSYQ 为多起 Ledger 篡改设备盗币案的地址提供 TRX 手续费，还牵涉一笔68万 USDT 的盗币转账。</td><td><div class="tweet">On November 16, TWCpt…WaWX9 received a small amount of TRX before sending out the 34,286 USDT.
+
+Two days earlier, TL78g…p8rn2 and TDfk9…9zPKm had each received a TRX transfer. Seconds later, each sent a USDT transfer to the same receiving address in the Dubai case.
+
+On TRON, TRX can be used to pay transaction fees. All three small TRX transfers came from TAzdU…XCSYQ.
+
+In October, Ledger devices sold by Malaysian reseller CryptoBilis were reported to have been tampered with, and some buyers reported that their assets had been stolen. The same address also initiated a 680,964 USDT transfer in th…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Arisk_io/status/2123390859551052064" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Arisk_io<br>425 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>一批来自 TRON 的 USDT 被换成约352 ETH，其中约50.8万 USDT 与迪拜一名 Ledger Stax 用户被盗的时间和金额吻合，最终流入 Tornado Cash。</td><td><div class="tweet">On November 14, the SOL stolen from the Dubai Flex user was swapped for about 50.78 ETH via Relay. That same day, a batch of USDT from TRON was also swapped for about 352.53 ETH via Relay. The ETH from both routes went first to 0x629…40631, then to 0xeC0…1c0e5.
+
+One transfer in the TRON batch, for 507,671.929313 USDT, matched the timing and amount of the loss publicly reported by a Ledger Stax user in Dubai.
+
+On November 16, 0xeC0…1c0e5 received another 12.37 ETH or so from a swap of 0.3498 BTC via Chainflip. The address then sent 415.681 ETH to 0x1e9…EE2Bd.
+
+About two hours later, 0xeC0…1c0e5…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Arisk_io/status/2123390856283730399" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Arisk_io<br>425 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>Ledger 硬件植入案中，被盗 USDT 进入 TRON 地址 TP7Ft...vyDga，汇总约46万 USDT 后换成 ETH，再转入 Tornado Cash。</td><td><div class="tweet">Around the time the 11,000 USDT stolen from the Berlin user arrived, TP7Ft…vyDga received three other USDT transfers totaling about 463,100 USDT. One was the 67,632 USDT transfer from TWCpt…WaWX9 that day.
+
+The funds from all four transfers were then swapped for about 258.3435 ETH via Relay and deBridge. Whether the other three transfers involved additional theft victims remains unconfirmed.
+
+The ETH was combined with other incoming funds, and some of the combined funds went to Arbitrum and Base. About 9.988 ETH returned from Arbitrum to the original Ethereum address via Relay and was sent out…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Arisk_io/status/2123390851296772399" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Arisk_io<br>425 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>被篡改的 Ledger Flex 硬件钱包导致用户资产被盗，被盗的 USDT 经 TRON 地址转移后跨链换成 ETH。</td><td><div class="tweet">🔎 Two #Ledger Flex users, one in Berlin and one in Dubai, reported that their crypto had been stolen. We traced two USDT transfers from the same TRON address and found that they fed into separate fund flows linked to the two thefts.
+
+On November 14, TP7Ft…vyDga received both the 11,000 USDT stolen from the Berlin user and 67,632 USDT from TWCpt…WaWX9.
+
+Two days later, TWCpt…WaWX9 sent 34,286 USDT to TDTaT…JAL5D. Those funds were combined with another USDT transfer to the same address and converted to ETH in a cross-chain swap via Relay. The ETH passed through another address before reaching 0x…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Arisk_io/status/2123390846607241492" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:16</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@rst_cloud<br>934 粉丝</span></td><td><b>事件：BBC、Zoom等网站第三方JS遭投毒替换加密地址并导向DarkSword</b><br>Optimizely 供应链投毒注入恶意JS，会替换加密钱包地址，威胁情报里列出的钱包包含 tron，已证实有加密货币被盗。</td><td><div class="tweet">#threatreport #HighCompleteness
+World&#x27;s Largest Brands Infected With Malware Via Optimizely | 16-11-2026
+Source: https://t.co/Aqa5IGUzUO
+Key details below ↓
+
+🧑‍💻Actors/Campaigns:
+Magecart
+
+💀Threats:
+Darksword_tool, Coruna_tool, 
+🎯Victims: Technology, Media and entertainment, Retail, Banking, Credit reporting, Air transportation, Cryptocurrency
+
+🏭Industry: Healthcare, Energy, Ics, Aerospace, Entertainment, Telco, Logistic, Media, Education, Financial, Retail, Biotechnology, Foodtech, Transport
+
+🌐Geo: Philippines, Vietnam, Taiwan, Indonesia, Egypt, Turkish, Hong kong, Mexico, Deutschland, Austra…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/rst_cloud/status/2123389981490044956" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:02</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@0Xpandar<br>2,788 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>推文称迪拜授权店售出的Ledger Stax硬件钱包疑遭篡改,用户被转走50.7万USDT,可能涉及TRON上的USDT,尚未拆机确认。</td><td><div class="tweet">授权店买的硬件钱包，壳里也能被加一块板、一根天线。
+
+迪拜一家授权零售店售出的 Ledger Flex，被独立调查者确认内部加装了电路板和天线。机主称损失 1300 枚 SOL。
+
+同一连锁还有人报告，自己的 Stax 被转走 50.7 万 USDT。但这台尚未拆机，不能写成也已确认植入。
+
+Ledger 官方表示，芯片和系统未发现问题，官网直购尚无确认案例，迪拜这两台仍在调查。具体在哪个环节被动了手脚，还没有最终结论。
+
+这件事最该记住的：私钥不上网，不代表设备到手之前没人碰过。授权店的招牌，也不能替每台设备担保。
+
+买硬件钱包，优先官网。已有设备若出现异常，别自己拆来验，先找官方客服。任何人索要助记词，都别给。</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/0Xpandar/status/2123386431578263855" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 20:00</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Coin_Scoop<br>2,257 粉丝</span></td><td><b>事件：BBC、Zoom等网站第三方JS遭投毒替换加密地址并导向DarkSword</b><br>据报道 Optimizely 遭入侵，攻击者向客户脚本注入恶意代码，波及至少178个网站，会把 TRON 等链的钱包地址替换成攻击者地址，TRON 用户转账可能被劫持。</td><td><div class="tweet">November 18, 2026 - Top 5 Crypto News on CoinScoop
+
+1. South Korea to Allow 3,500 Firms to Invest in Bitcoin
+South Korea&#x27;s Financial Services Commission is set to release guidelines next week that would permit approximately 3,500 listed companies and professional investment firms to invest in Bitcoin and other cryptocurrencies, according to a News1 report.
+$BTC #fsc #listedcompanies #guidelines #investment
+https://t.co/Kpsw6spqL1
+
+2. U.S. Judge Acquits MIT Brothers in $25 Million MEV Fraud Case
+A federal judge has acquitted Anton and James Peraire-Bueno, ruling that their 2023 trade against Et…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Coin_Scoop/status/2123385819868098641" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 19:47</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@ScarlettWeb3<br>29,036 粉丝</span></td><td><b>事件：用户剪贴板遭劫持单笔丢失5000万USDT（信息模糊）</b><br>推文提到有人因剪贴板劫持丢失5000万USDT（USDT多在TRON上），信息模糊且为推广帖，值得一看。</td><td><div class="tweet">前几天 Lighter 刚被盗了 1550 万美元，就因为一个签名库的实现问题，从发起攻击到资金进入隐私币，整个过程链上全程可追踪，但钱找不回来了 😱 
+
+我一直觉得安全是这个行业最被低估的赛道。大家盯着 DeFi 收益和 Meme 涨跌赚三瓜两枣，每年链上因为安全问题损失的资金却是天文数字。大结果全让黑客拿了，给将军做燃料。
+
+有人在币安转账的时候被&quot;地址投毒&quot;骗了 10 万人民币。还有更离谱的，有人因为剪贴板被劫持，复制的地址粘贴出来已经被换了，一笔丢了 5000 万 USDT
+
+其实不是什么高级黑客攻击，就是每天都在做的&quot;复制粘贴&quot;动作出了问题。。
+
+最近刷到 GCSA（全球网络安全联盟）发了一条生态介绍，才发现他们居然做了快 40 个安全产品，而且有好几个就是专门解决这类问题——比如他们有一个安全钱包，核心功能是转账之前自动扫描目标地址的风险等级。你粘贴完地址点确认之前，它会先帮你查一遍这个地址有没有被标记过、有没有关联过诈骗交易。
+
+他们的链上资金追踪工具也不错。多链资金图谱 + 风险评分，能把一笔被骗的钱在链上的流转路径可视化出来。他们生态里的中科链源，曾协助国内公安追回过超百亿元的涉虚拟货币资金。上过新闻。
+
+他们的 AI 安全能力 GCSA Agent 在 UC Berkeley 的 CyberGym 基准测试里拿到了 91.3%，能自主发现 Windows 系统漏…
+
+引用 @GCSA_COM: In-Depth Overview: GCSA Global Cybersecurity Alliance
+
+The Global Cybersecurity Alliance (GCSA) brings together governments, enterprises, individual users, and cybersecurity experts with a network-wide perspective, focusing on emerging threats in AI, Web3, and beyond.
+
+We advance cross-border collaborative defense standards and practical security frameworks to safeguard trust and security across the digital world.
+
+GCSA has developed dozens of in-house cybersecurity products for enterprises and individuals, covering tooling, network-wide threat intelligence, asset mapping, AI auditi</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/ScarlettWeb3/status/2123382543193866730" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 19:39</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@twitslaynews<br>0 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称法庭文件披露币安被盗63亿美元，涉及11个网络的192种代币，其中USDT约25亿美元，可能涉及TRON上的USDT，需要核实。</td><td><div class="tweet">BREAKING: Court docs just revealed the full Binance haul — 192 tokens stolen across 11 networks. USDT alone was $2.5B, Bitcoin $1.42B, USDC $826M. Stablecoins made up 55% of the $6.3B theft. Even $34.9M in PEPE. #Binance #Crypto https://t.co/ghVNTd1OEF</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/twitslaynews/status/2123380669569192069" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 19:10</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@BigIdiotxx2<br>65 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安被盗约33亿美元，黑客卷走192种币、横跨11条链，并提到被盗稳定币可冻结，可能涉及TRON上的USDT，需核实是否波及TRON链资产。</td><td><div class="tweet">币安被盗的钱里，
+稳定币还能冻结，
+约33亿美元的BTC、ETH、XRP，谁也冻不了。
+
+去中心化：
+保护你的钱，
+也保护拿走你钱的人。
+
+黑客拿走192种币，跨11条链。
+这才叫分散投资。
+
+（不构成投资建议）</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/BigIdiotxx2/status/2123373442879860999" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 18:56</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@kkxk379007<br>116 粉丝</span></td><td><b>事件：X 账号推广 iOS“无感授权”盗U工具</b><br>该账号名称公开宣传搭建“iOS无感授权盗U系统”，推广针对USDT（主要在TRON上）的恶意授权盗币工具。</td><td><div class="tweet">新东西，，很炸，很猛   iOS 无感</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/kkxk379007/status/2123369752089542830" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 18:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@chenYijl<br>6,173 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>推文称经销商渠道售出的Ledger硬件钱包被篡改，会窃取助记词，其中一台Stax被盗50.7万USDT，涉及USDT资产被盗。</td><td><div class="tweet">好家伙，保险箱本身没毛病，毛病出在买之前。
+
+11 月 18 日，Ledger 更新：柏林确认有几台被动过手脚，迪拜两起正在查。
+
+迪拜那两台，都在 Virgin Megastore 买的。
+
+一台 Stax 没了 50.7 万 USDT，一台 Flex 没了约 1300 个 SOL。
+
+失主报的数，两台加起来 60.4 万美元。
+
+柏林第三位失主，11 月 14 日丢了 32 万多美元。
+
+手法都一样：机器里塞了个小改装。
+
+开机输 24 个助记词时，它全记下来，再用移动网络发出去。
+
+偷的不是你的密码，是你开箱那一刻😱
+
+Ledger 说芯片和系统没漏洞，官网买的没出问题。
+
+出问题的全是经销商手里的货。
+
+10 月 15 日首披，源头是一家东南亚经销商。
+
+同一周，Trezor 也中招了。
+
+不是钱包被改，是发货伙伴漏了约 2.7 万份订单。
+
+密钥没丢，名字地址电话全在别人手里。
+
+两个最老牌的硬件钱包，一周各挨一刀。
+
+一个货被人动过，一个单子被人看过。
+
+买硬件钱包，图的就是踏实。
+
+现在倒好，钱包本身也得验货。
+
+我那个还没验过，拆开了也不会看😅</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/chenYijl/status/2123360818209112070" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 18:15</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@sarakyumar<br>13 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安遭黑客攻击被盗63亿美元，其中USDT约25亿美元，可能涉及TRON上的USDT，需核实真伪。</td><td><div class="tweet">The $6.3 BILLION Binance hack is bigger than we thought.
+
+Hackers stole 192 different cryptocurrencies across 11 blockchain networks.
+
+USDT alone accounted for $2.5B, followed by $1.42B in BTC and $826M in USDC.
+
+Even more shocking, stablecoins made up 55% of the stolen assets. https://t.co/A5GJasXqVp</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/sarakyumar/status/2123359563525013896" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 18:08</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CultFinance_<br>16,509 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安被盗案法庭文件显示黑客跨11条链盗走192种代币，其中大部分是USDT等稳定币，可能涉及TRON上的USDT，需要核查是否有TRC-20资产被盗或冻结。</td><td><div class="tweet">🚨 Court papers reveal Binance hackers stole 192 different tokens
+
+The full scale of last month&#x27;s record Binance hack has been laid bare, with court documents showing the attackers took 192 different cryptocurrencies across 11 blockchains.
+
+Stablecoins made up more than half of the haul, led by Tether&#x27;s USDT and Circle&#x27;s USDC. That matters: unlike Bitcoin, stablecoins can be frozen by their issuers, which helps explain why so much of the loot has been blocked.
+
+The list also includes Bitcoin, tokenised gold, DeFi tokens such as Uniswap&#x27;s UNI, gaming tokens and even memecoins, with tens of milli…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/CultFinance_/status/2123357795252609051" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 17:55</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@BitcoinIncognit<br>813 粉丝</span></td><td><b>事件：迪拜购买的 Ledger Stax 疑遭篡改被盗50.7万USDT</b><br>推文称柏林和迪拜的Ledger硬件钱包疑遭物理篡改，造成约1.02亿美元损失，主要是TRON上的USDT。</td><td><div class="tweet">🚨 La autocustodia no significa confiar a ciegas en el hardware.
+
+Si se confirma manipulación física de dispositivos Ledger en Berlín y Dubái, estamos ante una alerta seria para toda la industria.
+
+Los US$102 millones reportados en pérdidas, principalmente en USDT sobre TRON, nos recuerdan algo fundamental:
+
+₿ Bitcoin no necesita que confíes en una empresa. Necesitas verificar, proteger tus claves y entender dónde está tu riesgo.
+
+Compra dispositivos por canales oficiales, verifica su integridad y nunca compartas tu seed phrase.
+
+No confíes. Verifica. La soberanía financiera comienza con la seg…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/BitcoinIncognit/status/2123354552485216676" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 17:55</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@GleyceTalita<br>59 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安遭黑客攻击，被盗资产横跨11条链，其中包括大量USDT，币安已获得65亿美元冻结令。被盗USDT可能涉及TRON链，需要核实。</td><td><div class="tweet">Binance just secured a $6.5 billion freezing order from an Abu Dhabi court to recover stolen crypto.
+
+Court documents show the hackers previously took 192 tokens across 11 chains — a huge portion was stablecoins, including large amounts of USDT.
+
+This is a strong reminder for everyone who moves USDT regularly:
+
+1. Big exchanges can still get hit. Never leave large amounts sitting on any exchange longer than necessary.
+
+2. Always double-check the network (TRC-20 / ERC-20 / others). One wrong selection = funds potentially gone.
+
+3. Prefer self-custody for longer-term holdings, but make sure you …</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/GleyceTalita/status/2123354465797362042" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-19 17:44</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@_OfficialBobgeh<br>2,149 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安遭63亿美元黑客攻击,被盗资产中USDT达25亿美元,可能涉及TRON链上USDT,需追踪资金流向。</td><td><div class="tweet">The $6.3 BILLION Binance hack is bigger than we thought.
+
+Hackers stole 192 different cryptocurrencies across 11 blockchain networks.
+
+USDT alone accounted for $2.5B, followed by $1.42B in BTC and $826M in USDC.
+
+Even more shocking, stablecoins made up 55% of the stolen assets.
+
+引用 @_OfficialBobgeh: The $6.3B Binance hack is far from over.
+
+Hackers have reportedly moved 81% of the stolen SOL, using THORChain to swap assets into $BTC while laundering the funds.
+
+Even with FBI intervention, the money keeps moving.
+
+Crypto security is still a major concern.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/_OfficialBobgeh/status/2123351656599626122" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr></table></body></html>
