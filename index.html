@@ -1,0 +1,730 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, noai, noimageai"><title>监控结果 · Twitter 事件扫描</title><style>
+body { font: 14px/1.5 -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; margin: 16px; color: #222; background: #fff; }
+nav { margin-bottom: 16px; } nav a { margin-left: 16px; }
+h2 { margin-top: 28px; font-size: 18px; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 8px; }
+th, td { border: 1px solid #ddd; padding: 4px 6px; text-align: left; vertical-align: top; }
+th { background: #f5f5f5; white-space: nowrap; }
+.tweet { white-space: pre-wrap; word-break: break-word; min-width: 240px; }
+pre { background: #f5f5f5; padding: 8px; overflow-x: auto; font-size: 12px; white-space: pre-wrap; }
+label { display: block; margin: 10px 0; }
+label.inline { display: inline-block; margin-right: 16px; }
+textarea, input:not([type=checkbox]) { display: block; width: 100%; max-width: 640px; box-sizing: border-box; font: inherit; }
+textarea { font-family: ui-monospace, Menlo, monospace; }
+form { margin-bottom: 12px; }
+code { word-break: break-all; }
+.ok { color: #067d17; } .error, .risk { color: #b00020; }
+.nowrap { white-space: nowrap; }
+</style></head><body><nav><b>Twitter 事件扫描</b></nav><p>更新于 10-23 20:13（UTC+0800），每 30 分钟左右更新一次。</p><h2>运行状态</h2><table><tr><td><b>状态</b></td><td>正常</td></tr><tr><td><b>近 24 小时</b></td><td>新抓到 1610 条推文，其中判为风险 78 条（47 条讲的是已推送过的事件且没有新信息，不单独推送）</td></tr></table><h2>最近几轮</h2><table><tr><th>时间</th><th>抓到</th><th>新增</th><th>重复</th></tr><tr><td>10-23 20:10</td><td>204</td><td>30</td><td>174</td></tr><tr><td>10-23 19:37</td><td>204</td><td>29</td><td>175</td></tr><tr><td>10-23 19:02</td><td>224</td><td>42</td><td>182</td></tr><tr><td>10-23 18:31</td><td>203</td><td>47</td><td>156</td></tr><tr><td>10-23 17:55</td><td>204</td><td>33</td><td>171</td></tr></table><h2>风险推文（最近 100 条）</h2><table><tr><th>发布时间</th><th>等级</th><th>类型</th><th>作者</th><th>判定理由</th><th>推文</th><th>告警</th><th></th></tr><tr><td><span class="nowrap">10-23 19:56</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@popmemecoin<br>577 粉丝</span></td><td><b>事件：某跨链桥被盗USDC/USDT及WETH、WBTC</b><br>WAX多链跨链桥据称因负手续费漏洞被攻击，被盗约7.8万美元，其中包括USDT。推文没有说明涉及哪条链，需要确认是否有TRON上的USDT。</td><td><div class="tweet">JUST IN: 🚨 WAX multi-chain bridge exploited due to a negative fee vulnerability.
+The attacker drained roughly $78,000 across USDC, USDT, DAI, WETH, and WBTC.
+$WAX $SOL $ETH #Crypto #Security https://t.co/ROehB0tB6P</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/popmemecoin/status/2113600476251853248" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 19:30</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@adsilva264<br>409 粉丝</span></td><td><b>事件：22个仿冒“TRON AML检测”及跨链桥、质押钓鱼网站共用盗币工具包</b><br>推文称有22个伪造的“TRON AML检测”、跨链桥和质押网站共用同一套盗币工具包，这套工具把服务器地址藏在BNB Chain合约中，直接针对TRON用户。</td><td><div class="tweet">22 fake &quot;TRON AML check&quot;, bridge and staking sites run one drainer kit that hides its server address in a BNB Chain contract. Full IOCs, on-chain trail and safety tips in article
+
+@trondao @TronLinkWallet @vercel @Cloudflare @MetaMask @BNBCHAIN @DeFi_JUST
+
+引用 @adsilva264: https://t.co/ysAqKlhpQG</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/adsilva264/status/2113593901429018626" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 19:29</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CHek_lee<br>49 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>讨论CoinDCX的TRON链USDT被盗事件后续，有用户称交易所禁止币提现，存在挤兑风险。</td><td><div class="tweet">@zachxbt @CoinDCX 提款的建议是对的，但有个悖论：评论区已经有人说CoinDCX禁了币提现、只能卖成法币——那所谓的&#x27;提款&#x27;就是一场砸盘式挤兑，交易所的流动性会先被干穿。与其盲目跟风，不如盯链上：看热钱包余额、看大额转出、看储备证明。恐慌杀死交易所的速度，可能比黑客更快。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/CHek_lee/status/2113593725456920950" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 19:28</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CryptoPatel<br>68,744 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX的TRON充值地址TQKJQ一笔转出15,819,002 USDT，总计约1599万USDT和5783 TRX，随后被拆分转入多家交易所，涉事地址早已泄露却一直在用。</td><td><div class="tweet">In 217 minutes, CoinDCX gave us 3 versions of the truth.
+
+The blockchain gave us only one.
+1️⃣ 1:40 PM: &quot;Not breached. False alarm. Don&#x27;t spread rumours.&quot;
+2️⃣ 1:44 PM: &quot;Misleading. No connection with CoinDCX.&quot;
+3️⃣ 5:17 PM: &quot;Sweeping process failed. Identified this morning. Losses absorbed by CoinDCX.&quot;
+
+If it was identified in the morning, why was &quot;no breach&quot; posted in the afternoon?
+
+WHAT THE CHAIN SHOWED:
+▪️ 15,819,002 $USDT left deposit address TQKJQ in one transaction
+▪️ About 15.99M USDT plus 5,783 TRX went out in total, then was split into major exchanges
+▪️ The same &quot;unused since July 20…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/CryptoPatel/status/2113593318655586588" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 19:23</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CHek_lee<br>49 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>讨论CoinDCX被盗约1600万USDT，Tether只冻结了220万，黑客在冻结前还转移了资金，大部分仍未追回。</td><td><div class="tweet">@AMLBotHQ @tether @CoinDCX 冻结220万只是挽回了零头，被盗的是1600万——大头还在外面。注意帖子里的细节：黑客在冻结前还挪了一跳，说明这是场和时间赛跑。中心化稳定币能冻结是双刃剑：这次是追回的功臣，下次也可能是审查的手。大家都在欢呼冻结，却没人问一句：这个开关为什么攥在一个公司手里。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/CHek_lee/status/2113592042660172161" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 19:18</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CHek_lee<br>49 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>印度交易所CoinDCX约1599万USDT和5783 TRX从热钱包和充值地址流向同一个TRON地址，交易所先否认，后来又承认有损失。</td><td><div class="tweet">1600万美元凭空消失，交易所说：不是被盗，是我们自己“搞丢”的。
+
+印度最大交易所CoinDCX这两天的剧本，比悬疑片还曲折：
+
+10月21日，链上侦探Darcy发现：约1599万USDT+5783枚TRX，从CoinDCX的热钱包和一批用户充值地址流出，全部打进同一个Tron地址，最大单笔1581.9万USDT，随后被拆成多笔转走。
+
+CEO Sumit Gupta第一时间在X否认：这些地址2025年1月创建、同年7月就被黑过（那次丢了4400万），早弃用了，“是黑客在重复使用旧地址”，误报。
+
+24小时后口径变了：承认“自动归集流程临时故障”——本该把旧地址存款扫进主钱包的程序坏了，造成“操作性损失”，交易所自己吞下，已给受影响用户补记。用户资金“安全”。
+
+但链上侦探ZachXBT直接打脸：至少一个所谓“已弃用”地址，2026年还在接收存款，还和CoinDCX的当前钱包有交互。弃用了15个月的地址还在收钱，这叫“弃用”？
+
+有意思的不是丢没丢币，而是“否认—承认”这两步：
+一家交易所，被黑过的地址一年多后还在收用户存款，说明它的“退役流程”只是嘴上说说。黑客不可怕，可怕的是你以为安全的充值地址，交易所自己都管不清。
+
+你会把币放在一家“弃用地址还在收钱”的交易所吗？</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/CHek_lee/status/2113590870327050269" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 18:46</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@deoriginalme<br>387 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>链上研究者发现印度交易所CoinDCX相关地址约1600万美元USDT和TRX可疑转移，交易所否认是新的攻击，称这些资金来自7月被盗事件的旧地址，值得核查TRON上的资金流向。</td><td><div class="tweet">Breaking:
+
+Bybit secured a license to offer spot trading services in Dubai, making it the first exchange to achieve this milestone. 
+
+While the approval marks a major regulatory win for its local headquarters, Bybit must still fulfill remaining operational conditions before officially rolling out spot services to customers.  
+
+Meanwhile, Indian crypto exchange CoinDCX denied reports of a new security breach after on-chain researchers flagged roughly $16 million in suspicious USDT and TRX transfers. 
+
+The exchange clarified that the flagged funds moved from old addresses linked to a previous Ju…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/deoriginalme/status/2113582920971571290" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 18:26</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@AlmightyMrPeter<br>9,187 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>有报道称CoinDCX热钱包疑似被盗约1600万美元，包括约1599万USDT和5784 TRX，资金被转到Binance、OKX和Gate，涉及TRON链上资产。</td><td><div class="tweet">CRYPTO SECURITY ISN’T OPTIONAL. IT’S THE FOUNDATION OF TRUST.
+
+CoinDCX is facing reports of a suspected ~$16M security breach, with approximately 15.99M USDT and 5,784 TRX reportedly drained from its hot wallets and transferred to Binance, OKX, and Gate.
+
+ What makes this situation more concerning? The exchange reportedly suffered another major incident involving ~$44M in July 2025.
+
+The latest reports still need official confirmation, but they raise an important question:
+
+How can the crypto industry build long-term trust without prioritizing security, transparency, and accountability?
+
+In We…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/AlmightyMrPeter/status/2113577776850629104" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 17:44</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@PublicAML<br>28 粉丝</span></td><td><b>事件：Ledger 经销商 CryptoBilis 相关盗窃案资金经 TRON 洗钱</b><br>链上追踪称Ledger/CryptoBilis盗窃案中有510万USDT从盗贼的TRON钱包经THORChain换成ETH并混币，可能与Drift Protocol攻击者为同一伙人，涉及TRON上被盗USDT的洗钱。</td><td><div class="tweet">Drift Protocol hack, update.
+
+The 1,000 ETH that left Tornado Cash an hour after the attacker&#x27;s 25,710 ETH deposit on 20 Oct: 500 ETH → NEAR Intents, ~440 ETH straight back into Tornado through fresh wallets.
+
+Those re-mixing wallets were also fed by a hub holding the Ledger / CryptoBilis money: 5.1M USDT from the thief&#x27;s Tron wallets → THORChain → 2,025 ETH on 10 Oct, since paid into Tornado in 100 ETH lots. This morning the hub moved its last 620 ETH to three new wallets.
+
+Two thefts, one set of hands. Candidates, not proof.
+
+https://t.co/tXuN0CHMOV
+https://t.co/d4t8q6He8l</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/PublicAML/status/2113567348539990286" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 17:30</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Smart_Money<br>53,961 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX钱包约1600万USDT流向单一TRON地址后拆分转入多家交易所及Huione/Xinbi相关地址,ZachXBT建议用户提币。</td><td><div class="tweet">⚠️ ALERT: ZachXBT rät Nutzern, ALLE Mittel von CoinDCX abzuheben 
+
+Mittwoch, kurz nach halb sechs deutscher Zeit. Aus Wallets der indischen Börse #CoinDCX fließen knapp 16 Millionen USDT auf eine einzige TRON-Adresse, die größte Überweisung allein 15,8 Millionen. Danach wird gestückelt und an Binance, OKX und Gate weitergereicht.
+
+Am Donnerstag lief es so:
+
+→ 07:30 Uhr: @DarcyAri von der Sicherheitsfirma Salus meldet die Abflüsse.
+→ 10:10 Uhr: Mitgründer und Chef Sumit Gupta schreibt, die Wallets seien nicht kompromittiert, man solle keine Gerüchte verbreiten. Das seien alte Adressen aus der Z…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Smart_Money/status/2113563610601402782" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 17:27</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Tibetan_Diviner<br>578 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX旧TRON地址(2025年7月被攻破)流出约1600万USDT,交易所承认运营损失,ZachXBT质疑其说法。</td><td><div class="tweet">CoinDCX says a process for collecting deposits sent to retired wallet addresses failed temporarily, resulting in operational losses that the exchange says it has absorbed. The statement follows investigators flagging approximately $16 million in $USDT transfers from #TRON addresses linked to the exchange.
+
+CoinDCX says the addresses were compromised in its July 2025 breach and that its current wallets were not affected. It also says customers who deposited to retired addresses were credited. Investigator ZachXBT disputes the exchange’s description of the wallets as unused, citing transfers and…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Tibetan_Diviner/status/2113562851851837775" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 17:23</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@MandoCT<br>254,862 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>印度交易所CoinDCX相关钱包于10月21日转出约1600万美元USDT及部分TRX，ZachXBT等质疑交易所“旧钱包”说法，可能为新的入侵事件，涉及TRON链资产。</td><td><div class="tweet">. @CoinDCX , India’s largest crypto exchange, denies it suffered a new hack after about $16 million in USDT and some TRX moved from wallets linked to the exchange on October 21.
+
+The exchange says the wallets were compromised in its July 2025 breach and haven’t been used since, and that customer funds are safe. But blockchain investigators, including ZachXBT, dispute that timeline: they say at least one of the wallets continued handling deposits after the 2025 incident. The transfers are visible on-chain; whether this was a fresh breach or whether customers lost money remains unconfirmed. 
+
+Th…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/MandoCT/status/2113561921022767536" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 17:10</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@MannuellFox<br>8,173 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>10月21日,约1600万美元的USDT和TRX从与CoinDCX有关的钱包转出。官方称这些是此前已被攻破的旧地址,不是新的攻击。</td><td><div class="tweet">🚨🚨 COINDCX UNDER FIRE AGAIN
+
+~$16M in USDT + TRX moved from wallets linked to CoinDCX on Oct. 21.
+
+CoinDCX initially said there was NO NEW HACK — claiming the wallets were old addresses compromised during the $44M July 2025 incident.
+
+引用 @CoinDCX: Users’ funds are safe. ✅
+
+Claims circulating on X regarding certain wallet addresses and transactions are misleading.
+
+The transactions mentioned in recent claims involve old wallet addresses created in January 2025. 
+These addresses were compromised in July 2025 and have not been used by CoinDCX since. 
+The activity now being reported relates to these old addresses and does not have any connection with CoinDCX.
+
+Trading &amp; investing continue as usual.
+
+For updates, trust only official CoinDCX channels. 
+For any queries, reach out to  @CoinDCX_Cares</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/MannuellFox/status/2113558749889655151" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 17:10</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Walifaks<br>25 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>与CoinDCX有关的地址流出约1600万美元的USDT/TRX。ZachXBT指出,其中一个据称已弃用的被盗地址在2026年仍在把充值资金归集到热钱包。</td><td><div class="tweet">CoinDCX denies a new hack after ~$16M in USDT/TRX left addresses linked to it. It says they were deposit addresses compromised in July 2025; ZachXBT says one still swept deposits to its hot wallet in 2026. Users were credited (CoinDesk). $TRX</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Walifaks/status/2113558707044790293" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 17:10</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Dripome<br>15 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>据报道,与CoinDCX有关的地址流出约1600万美元的USDT和TRX。CoinDCX否认这是新的黑客攻击,称这些是2025年7月已被攻破的旧地址。</td><td><div class="tweet">CoinDCX, India&#x27;s largest crypto exchange, denied a hack after sleuths flagged ~$16M in USDT and TRX outflows, per CoinDesk. It says the wallets were old ones compromised in July 2025.
+
+my take: retired deposit addresses that still take deposits are a leak waiting to happen 👀</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Dripome/status/2113558617454756348" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 16:54</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@yushuchqin88300<br>134 粉丝</span></td><td><b>事件：用户朋友USDT被盗转入币安后被冻结</b><br>用户称朋友的U(USDT)被盗后转入币安交易所，资金已被冻结，但还需要警方出函证明。</td><td><div class="tweet">@sisibinance 思思姐你好，我朋友的u被盗了，然后转入了币安交易所，然后联系了客服冻结了，但是客服要大陆警方发邮件给币安证明，但是由于大陆政策原因没有哪个大陆警方愿意发邮件，思思姐能不能处理下</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/yushuchqin88300/status/2113554689883349480" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 16:52</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@yushuchqin88300<br>134 粉丝</span></td><td><b>事件：用户朋友USDT被盗转入币安后被冻结</b><br>用户称朋友的U（USDT）被盗并转入币安，已被冻结但需警方证明，可能涉及TRON上的USDT被盗。</td><td><div class="tweet">@heyibinance 一姐你好，我朋友的u被盗了，然后转入了币安交易所，然后联系了客服冻结了，但是客服要大陆警方发邮件给币安证明，没有哪个大陆警方愿意发邮件，一姐能不能处理下</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/yushuchqin88300/status/2113554256859177058" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 16:46</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@nakulvibhor<br>363,014 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX的TRON充值地址据称于2025年7月被攻破，此后约8500万美元继续经该地址归集，涉及交易所TRON钱包安全事件。</td><td><div class="tweet">Last year, @smtgpt said DCX had an internal operational wallet breach.
+
+Now apparently the Tron deposit wallets were also compromised in July 2025.
+
+Around $85M was reportedly swept from this Tron address into CoinDCX&#x27;s system since 2025.
+The same address CoinDCX now says was compromised back in July 2025.
+So deposits kept coming in and the sweeper kept working. Who knew the address was compromised? 
+
+@cryptoady @pushpendrakum @zachxbt</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/nakulvibhor/status/2113552530341040138" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 16:36</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@yourweb3guys<br>158 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>交易所CoinDCX被监测到约1600万美元USDT和TRX异常流出，交易所否认被黑，需核查TRON链上资金流向。</td><td><div class="tweet">🚨 BREAKING: CoinDCX denies hack after $16M USDT &amp; TRX outflows flagged. Exchange cites retirement‑wallet cleanup failure, credits users, regulators watch. Full breakdown: 
+Stay informed on TG: htt...
+
+https://t.co/7ydTyrvZYi https://t.co/xh7u4t7s1C</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/yourweb3guys/status/2113550051687481605" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 16:05</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@TxnXray<br>335 粉丝</span></td><td><b>事件：Cysic 被攻击后黑客经 Tornado Cash 洗币并跨链转出USDT</b><br>Cysic 攻击者将部分被盗 ETH 换成约 22,647 USDT，并通过 Mayan Swift 跨链转出，目标链未知，可能流向 TRON，值得追踪。</td><td><div class="tweet">The Cysic exploiter&#x27;s ETH wallet is empty now. Tornado got 300 ETH, but not all of it ⬇️
+
+- 06:27-06:29 UTC: 3 x 100 ETH into Tornado
+- 48s later: the last 9.5 ETH was swapped to 22,647 USDT and sent cross-chain via Mayan Swift
+- 0.0188 ETH left
+
+The wallet got its first gas on 10-17 at 10:29 UTC, ~2h before the first stolen ETH landed (12:47)
+
+@cysic_xyz $CYS: the USDT is the trail still worth chasing. Which chain does it land on?
+
+Wallet: 0x1106De394da07e90b02161465EA0421B74DB4691</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/TxnXray/status/2113542384596209941" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 15:52</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@mono_i_love<br>21,795 粉丝</span></td><td><b>事件：GMO 交易所用户约207 LTC被盗并经 Bridgers 换成 TRON 上的USDT</b><br>用户在GMO交易所的约207 LTC被盗，据称攻击者4天后经Bridgers兑换为TRON链上的USDT，涉及TRON资金流向。</td><td><div class="tweet">スクショを見るに犯人のアドレスこれかな。
+4日後に 207 LTCをBridgers経由でTronのUSDTに換金済み。
+第一印象は、パスワード使い回しやフィッシング詐欺かなと。ログイン履歴やメールの履歴、特に「Trust」名義で犯人アドレスが登録された経緯も確認されると良いと思います
+https://t.co/r0xHYBfKjc
+
+引用 @totonosuke0815: ちょっと待ってww
+嫁に管理させてたGMOに置いてあったライトコインが10/10に変なところに送られて無くなってるんだけどw
+約207LTC。
+GMO個人情報抜かれてないか？</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/mono_i_love/status/2113539043237699880" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 15:21</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@HoodGangsters<br>51 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>据ZachXBT称，CoinDCX在2025年7月被黑时泄露的一个TRON充值地址此后仍在接收用户充值，10月21日有1580万USDT被转走，仍有约1580万美元充值下落不明。</td><td><div class="tweet">CoinDCX say the door been locked since July 2025. ZachXBT say somebody kept walkin&#x27; through it.
+
+Per @zachxbt, a TRON deposit address CoinDCX lost in its July 2025 hack kept takin&#x27; user deposits about 10 months after, swept funds to the exchange&#x27;s current hot wallet as late as April and May 2026, and moved 15.8M USDT on Oct 21. He says $15.8M in deposits still unaccounted for. CoinDCX says the address got compromised in that hack, ain&#x27;t been used by them since, and user funds are safe. Alleged, not proven. @CoinDCX @justinsuntron, TRON the getaway highway again.
+
+Kimchi&#x27;s legend got shrunk. Th…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/HoodGangsters/status/2113531252359794840" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 14:27</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@King_Maffy_14<br>3,854 粉丝</span></td><td><b>事件：博彩平台 Duelbits 热钱包被盗约700万美元</b><br>推文提到Duelbits热钱包被盗约700万美元，涉及Tron链，并提醒有人借重新上线之名发钓鱼链接。</td><td><div class="tweet">Duelbits 1.99 isn&#x27;t a new major launch the big news around Duelbits recently was actually the opposite.
+
+On September 24th, Duelbits confirmed a ∼$7M hot-wallet hack across Ethereum, BNB Chain, Tron and Bitcoin. Co-founder Joe posted that they were taking the site offline while investigating, and that user funds were safe.
+
+They relaunched a few days later on Sept 27th with around $8M across hot and cold wallets to cover withdrawals, and said the next step was to *launch Duelbits 2.0* after hardening their deposit/withdrawal servers.
+
+I can&#x27;t find any official announcement for a &quot;Duelbits 1.99…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/King_Maffy_14/status/2113517720335434210" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 14:27</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@icr_indiacrypto<br>1,770 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>ZachXBT称CoinDCX一个已被攻破的TRON充值地址(TQKJQ)约1580万USDT流向未标记地址，黑客疑似仍在复用旧地址，牵涉TRON上的USDT资金。</td><td><div class="tweet">CoinDCX Wallet Flags: What’s Alleged, What’s Disputed
+
+The allegation
+On-chain investigator @zachxbt alleges that a CoinDCX deposit address (TQKJQ) remained in use for about 10 months after the July 2025 incident. He says user deposits were swept from it to CoinDCX’s current hot wallet as recently as April–May 2026, and that ~$15.8M in user deposits was unaccounted for.
+
+ What the shared Arkham data shows
+🔹 On Oct 21, 2026, ~15.82M USDT moved out of TQKJQ to an unlabelled address.
+🔹 In May 2026, small USDT amounts (around $3 each) moved from TQKJQ to an Arkham-labelled CoinDCX hot wallet (TU7B…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/icr_indiacrypto/status/2113517580942234053" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 14:17</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@DeAnonymize<br>132 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX 关联的 TRON 充值地址被盗，约1599万 USDT 和5783 TRX 被转到同一个地址（TAg6SZ...5bT）。CoinDCX 已承认这些地址被攻破并造成运营损失。</td><td><div class="tweet">CoinDCX went from &quot;no connection with CoinDCX&quot; to &quot;operational losses&quot; in about 3.5 hours.
+
+What&#x27;s confirmed:
+• Oct 21, ~10:35am CT: ~15.99M USDT + 5,783 TRX moved from CoinDCX-linked TRON deposit addresses to one address (TAg6SZ…5bT), per on-chain tracker Darcy
+• Oct 22, 3:14am CT: CoinDCX said the addresses were compromised in July 2025, unused since, and the activity &quot;does not have any connection with CoinDCX&quot;
+• 6:47am CT: CoinDCX said its sweep of deprecated deposit addresses &quot;failed&quot; for a period, causing &quot;operational losses&quot; it absorbed, and that affected users were credited
+
+ZachXBT&#x27;s o…
+
+引用 @zachxbt: CoinDCX deposit address TQKJQ was in use by a LP for 10 months after your July 2025 incident and swept user deposits + received gas as recent as April &amp; May 2026 to your current public hot wallet. 
+
+Meaning $15.8M in user deposits was unaccounted for by your team.
+
+Why are Indian CEXs so untrustworthy? 
+
+WazirX
+BitBNS 
+Now CoinDCX</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/DeAnonymize/status/2113515074899845535" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 13:48</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@nehalzzzz1<br>46,364 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>据称约1600万美元USDT和TRX从与CoinDCX关联的钱包转出,这些已泄露的旧地址仍在接收用户充值,涉及TRON链上资产。</td><td><div class="tweet">🚨🚨 COINDCX UNDER FIRE AGAIN
+
+~$16M in USDT + TRX moved from wallets linked to CoinDCX on Oct. 21.
+
+CoinDCX initially said there was NO NEW HACK — claiming the wallets were old addresses compromised during the $44M July 2025 incident.
+
+But on-chain investigators pushed back. 👀
+
+They pointed out that these supposedly “deprecated” addresses were still receiving user deposits in 2026, with funds being swept toward CoinDCX’s wallets.
+
+CoinDCX later clarified that a failed sweeping process caused operational losses — which the exchange says it absorbed — and that affected user deposits were credited…
+
+引用 @CoinDCX: Users’ funds are safe. ✅
+
+Claims circulating on X regarding certain wallet addresses and transactions are misleading.
+
+The transactions mentioned in recent claims involve old wallet addresses created in January 2025. 
+These addresses were compromised in July 2025 and have not been used by CoinDCX since. 
+The activity now being reported relates to these old addresses and does not have any connection with CoinDCX.
+
+Trading &amp; investing continue as usual.
+
+For updates, trust only official CoinDCX channels. 
+For any queries, reach out to  @CoinDCX_Cares</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/nehalzzzz1/status/2113507907182690747" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 13:41</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Moneygurudigi<br>16,708 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>有报道称CoinDCX钱包出现约1600万美元USDT和TRX可疑转出。CoinDCX否认这是新的入侵，称地址已在2025年7月事件中失陷，但ZachXBT对其解释提出质疑。</td><td><div class="tweet">🚨 CoinDCX Faces Fresh Questions Over $16M Crypto Transfers!
+
+Reports of suspicious transactions involving nearly $16 million in USDT and TRX have sparked fresh concerns about CoinDCX’s wallet security. 🧐
+
+🔹 CoinDCX denies a new wallet breach and says the addresses were compromised in the July 2025 incident.
+🔹 Blockchain investigator ZachXBT has questioned the exchange’s explanation and raised concerns about deposit handling.
+🔹 CoinDCX says users’ funds are safe and it will cover the operational losses.
+
+⚠️ The latest claims remain disputed. Transparency, proper wallet management, and independe…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Moneygurudigi/status/2113506189770416418" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 13:28</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@0xGaCrypto<br>5,897 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>推文称交易所CoinDCX遭第二次黑客攻击，热钱包内近1600万美元的USDT和TRX被盗并转往其他交易所，涉及TRON资产。</td><td><div class="tweet">@DucCryptoX Quản lý ví nóng vẫn là mối quan ngại lớn của CoinDCX sau vụ hack lần thứ hai, khi gần 16 triệu USDT và TRX bị đánh cắp và chuyển đến các sàn khác, thể hiện sự cần thiết phải cải thiện hệ thống an ninh và quản lý rủi ro.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/0xGaCrypto/status/2113502735463281012" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 13:13</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@AMLConsensus<br>35 粉丝</span></td><td><b>事件：发行方24小时内冻结约1890万USDT（最大一笔约694万在 TRON）</b><br>统计称过去24小时发行方冻结17个地址共约1890万USDT，其中最大一笔约694万USDT位于TRON，可能与非法资金或安全事件有关，值得看一眼。</td><td><div class="tweet">Issuer freezes and laundering in the last 24h — our own count from public data:
+
+17 addresses blocked, holding 18,899,777 USDT
+largest: 6,939,547 USDT (TRON)
+7,360 ETH went into Tornado Cash
+
+Feed with hashes and addresses: https://t.co/mlXMie2w3w</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/AMLConsensus/status/2113498923671142624" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 12:48</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@VishalSahu21<br>4,994 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>疑似交易所CoinDCX热钱包被盗约1600万美元，涉及约1599万USDT和5784 TRX（TRON链），资金转入Binance、OKX、Gate。</td><td><div class="tweet">CoinDCX faces a suspected ~$16M hack after ~15.99M USDT and 5,784 TRX were drained from its hot wallets and moved to Binance, OKX, and Gate.
+
+This comes just months after the exchange lost ~$44M in July 2025. Not yet confirmed, but the pattern is concerning.
+
+#CoinDCX #CryptoHack #USDT #TRON #CryptoSecurity #IndiaCrypto</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/VishalSahu21/status/2113492844975726689" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 11:56</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@HolbrooksScott<br>5,812 粉丝</span></td><td><b>事件：用户 @hdeed 被盗6800 USDT</b><br>该回复提到用户@hdeed有6,800 USDT被盗，可能涉及TRON上的USDT。不过这条回复本身像是资产追回服务的引流推广，建议查看原帖核实。</td><td><div class="tweet">@hdeed I hope you get a resolution on this. If your 6,800 USDT was stolen, preserve the transaction hashes and wallet addresses. @AssetTracepro may be able to help you review the transfer trail and understand your next steps.</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/HolbrooksScott/status/2113479571815473554" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 11:32</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@DucCryptoX<br>31,991 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>推文称交易所CoinDCX疑似再次被黑，约1600万美元的USDT和TRX从热钱包转出，拆分后流向Binance、OKX和Gate，涉及TRON链上资产。</td><td><div class="tweet">CoinDCX nghi bị hack lần nữa.
+
+~16M USDT và TRX chuyển từ ví nóng rồi chia nhỏ về Binance, OKX, Gate. Trước đó từng mất ~44M.
+
+Lặp lại vụ việc cho thấy quản lý ví nóng vẫn là điểm yếu lớn của một số sàn.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/DucCryptoX/status/2113473486450753835" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 10:26</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@AmolJagde<br>854 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX交易所一个旧版TRON充值地址出现约1580万美元USDT的争议转账，ZachXBT提醒用户提币，可能涉及私钥泄露或资金被盗。</td><td><div class="tweet">🚨 @CoinDCX users, before you scroll past this, ask yourself one question: &quot;Are your funds as safe as you think? &quot;
+
+On-chain investigator #ZachXBT went as far as urging users to withdraw their funds. when major crypto accounts start warning users to exit, trust is already under pressure.
+
+The issue isn’t just the ~$15.8M USDT transfer. It’s the disputed activity around a legacy #TRON deposit address and CoinDCX’s reported failure to sweep deposits sent to deprecated addresses.
+
+#CoinDCX should publish:
+
+• Full transaction records for every disputed transfer, including wallet addresses, timestam…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/AmolJagde/status/2113456992979394882" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 08:30</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@SuneetSpeaks<br>3,572 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>推文称CoinDCX交易所卷入涉及1600万美元TRON钱包的新问题（官方否认），该交易所此前曾被黑客盗走4400万美元，可能涉及TRON链上资金异常。</td><td><div class="tweet">CoinDCX founders arrested in March 2026 over a ₹71.6 lakh cheating case linked to fake site https://t.co/DNb1h17NoR.
+
+Court granted bail in 72 hours — no prima facie case, pure impersonation.
+Same exchange lost $44M in July 2025 hack.
+
+Now facing fresh $16M TRON wallet questions (which they deny).
+
+How many times can “India’s largest crypto exchange” make headlines for security &amp; trust issues?</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/SuneetSpeaks/status/2113427699574382696" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 08:00</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@bertinaverina<br>13 粉丝</span></td><td><b>事件：借口 Trust Wallet 提USDT需TRX的公开助记词诱饵骗局</b><br>另一个账号发了一模一样的帖子：以助记词作诱饵，借口USDT需要TRX付手续费，诱骗TRON用户充值TRX，属于批量发布的骗局。</td><td><div class="tweet">Could anyone help me understand why my USDT withdrawal from Trust Wallet is waiting for TRX?
+
+12 seed phrase
+#DOT #OnChain #USDT #usdt兌換 #TronNetwork https://t.co/6YJMQuHWJH</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/bertinaverina/status/2113420212095906213" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 07:59</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@666zksync<br>32 粉丝</span></td><td><b>事件：借口 Trust Wallet 提USDT需TRX的公开助记词诱饵骗局</b><br>这是典型的“泄露助记词”诱饵骗局：帖子声称Trust Wallet里的USDT提币需要TRX，并附上助记词，诱骗用户往该地址充TRX付手续费，钱会被监控机器人自动转走。</td><td><div class="tweet">Could anyone help me understand why my USDT withdrawal from Trust Wallet is waiting for TRX?
+
+12 seed phrase
+#DOT #OnChain #USDT #usdt兌換 #TronNetwork https://t.co/BMLP7WyIkI</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/666zksync/status/2113420087382487550" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 06:40</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@xsunset<br>418 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>印度交易所CoinDCX热钱包及存款地址链上异动约1600万USDT，官方称系去年被盗地址由黑客转移，ZachXBT呼吁用户提币，可能涉及TRON上的USDT。</td><td><div class="tweet">印度最大交易所 CoinDCX 昨天链上又动了 1600 万 USDT，有人扒出来热钱包带着一串存款地址全在跑。
+
+官方嘴硬：那是去年 7 月被盗的老地址，黑客自己在转钱，用户资金很安全。
+
+但 ZachXBT 直接下场喊话：赶紧把钱提出来。
+
+一边是 CEO 的嘴，一边是链上 1600 万 USDT 的脚——你信谁？
+
+https://t.co/Sn2I6mSBf0</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/xsunset/status/2113400002168938770" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 05:25</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@BC_Journal_ESP<br>160 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>该推文是CoinDCX在TRON上异常转出USDT事件的后续报道链接，可与主帖一并核查。</td><td><div class="tweet">🔍 ¿Qué revelan realmente los movimientos de las billeteras?
+
+Lee nuestro informe completo 👇 https://t.co/zx1VIj3vvB</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/BC_Journal_ESP/status/2113381127754772706" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 05:24</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@BC_Journal_ESP<br>160 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>链上研究者发现与CoinDCX相关的钱包在TRON上转出约1600万美元USDT，ZachXBT等人质疑官方否认新入侵的说法，可能是交易所遭到黑客攻击。</td><td><div class="tweet">🚨 $16M en USDT salieron de billeteras vinculadas a CoinDCX. ¿Otro hackeo?
+
+Investigadores on-chain detectaron transferencias sospechosas en TRON, pero el cofundador de CoinDCX, Sumit Gupta, negó una nueva brecha y vinculó inicialmente las direcciones con el ataque de 2025.
+
+ZachXBT y Darcy cuestionaron esa explicación con nuevos datos, mientras CoinDCX afirmó que estaba investigando y sostuvo que los saldos de sus clientes seguían respaldados.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/BC_Journal_ESP/status/2113381121258147938" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 04:10</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@cryptodevivtdx<br>13 粉丝</span></td><td><b>事件：兜售“闪电USDT”(Flash USDT) 假币诈骗</b><br>推文兜售所谓“闪电/假USDT TRC20”，这是针对TRON链USDT用户的典型诈骗，通过WhatsApp和Telegram引流。</td><td><div class="tweet">🚨 FLASH/FAKE USDT Trc20— AVAILABLE 🚨
+Looking for a reliable Flash Trc20
+💎Trc20 -compatible
+💎 Transferable from wallet to wallet 
+💎 120-day Flash validity
+💎 Suitable for Exchange &amp; Web3
+💎 Available to serious buyers
+📩 Interested? 
+WhatsApp: +1 (365) 530-1445
+Telegram: https://t.co/YlH13iIyOw</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/cryptodevivtdx/status/2113362439568072882" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 03:30</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@cryptonewsfeeds<br>1,260 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>ZachXBT指控印度交易所CoinDCX被盗约1600万美元，涉及TRON地址TQKJQ，黑客事件后该地址仍在归集用户存款，交易所否认发生新的入侵。</td><td><div class="tweet">ZachXBT told users to withdraw from Indian exchange CoinDCX and accused its co-founders of lying or being incompetent about a roughly $16M theft.
+
+He said they first denied any theft of assets and only later disclosed the loss. He specifically pointed to deposit address TQKJQ on TRON, which he claims was used by a liquidity provider for about 10 months after the July 2025 incident, continuing to sweep user deposits and receive gas into CoinDCX’s current public hot wallet as late as April–May 2026. From that he concluded roughly $15.8M in user deposits remained unaccounted for. He grouped CoinD…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cryptonewsfeeds/status/2113352260000370691" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 03:15</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@jHG2Mo94X185896<br>73 粉丝</span></td><td><b>事件：用户 Klever 钱包转入4万多USDT后被盗</b><br>用户称刚转入Klever钱包的4万多U（USDT）被他人转走，本人未做任何验证，属单个用户的USDT被盗报告。</td><td><div class="tweet">@klever_io 你们这个钱包是怎么回事？钱包21号注册的，助记词是手抄的，今天钱刚转进你们这个钱包4万多u就给人转走了，也不用我验证，怎么回事？</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/jHG2Mo94X185896/status/2113348519226744876" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 03:11</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@bpaynews<br>3,386 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX在TRON上的已泄露旧地址转出约1599万USDT及5784 TRX，资金被归集后分散转入多家交易所；有指出该旧地址直到2026年仍在接收用户充值。</td><td><div class="tweet">About $16M in USDT just left wallets tied to an Indian crypto exchange. The exchange says it isn&#x27;t a new hack.
+
+Here&#x27;s what happened.
+
+Late on Oct 21 (UTC+8), roughly $15.99M in USDT plus about 5,784 TRX moved out of addresses labeled as CoinDCX&#x27;s on Tron. The largest single transfer was about 15.82M USDT. The funds were pooled into one address, then split and sent toward deposit addresses at several big exchanges.
+
+CoinDCX&#x27;s first answer: old wallets, old breach. Co-founder Sumit Gupta said the flagged addresses were created in January 2025, compromised in the July 2025 attack (about $44M los…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/bpaynews/status/2113347640750477624" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 01:42</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@Promirexy<br>6,880 粉丝</span></td><td><b>事件：木马在 TronLink、imToken、TokenPocket 处于前台时记录键盘输入</b><br>Report URI与iVerify披露DeadTag攻击活动，利用劫持域名和广告向iPhone投放间谍软件，目标包括TronLink等钱包，可窃取钥匙串密码。</td><td><div class="tweet">Your iPhone wallet could be at risk just from scrolling past an ad
+
+You may not need to click anything
+
+Report URI and iVerify uncovered DeadTag, a campaign abusing expired analytics domains still loaded by thousands of websites
+
+660+ domains linked to an operation reaching around 135M visits a month
+
+Some of that traffic gets pushed to a fake Polymarket page that can drop spyware on vulnerable iPhones
+
+iVerify also documented a finance worker infected while scrolling past a football themed Instagram ad
+
+The spyware targets Binance, Coinbase Wallet, OKX, Bitget, Trust Wallet, Exodus, TronLink …
+
+引用 @reporturi: Forgotten website tags are being turned into spyware delivery routes.
+
+Working with iVerify, we traced DeadTag: 660+ hijacked domains, thousands of sites, and traffic feeding the Coruna and DarkSword iPhone exploit kits.
+
+The investigation: https://t.co/iwh7rNhDBv https://t.co/XI6iBreI3T</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Promirexy/status/2113325064951079225" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 01:15</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@MirelVegar<br>17,291 粉丝</span></td><td><b>事件：木马在 TronLink、imToken、TokenPocket 处于前台时记录键盘输入</b><br>推文称TronLink警告iPhone用户更新iOS,因存在针对钱包的恶意网页,需核实该安全警告及影响范围。</td><td><div class="tweet">▶ Use official links only
+
+Bookmark them. https://t.co/StNK4rc6LH for the protocol, https://t.co/c5b2XjDQta for vaults and savings, https://t.co/4gn3WARITr for documentation.
+
+Also: TronLink just warned iPhone users to update iOS because of malicious web pages targeting wallets. Do the update.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/MirelVegar/status/2113318377263407388" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 01:15</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@MirelVegar<br>17,291 粉丝</span></td><td><b>事件：骗子冒充 USDD 客服骗取用户积蓄</b><br>推文称有用户因冒充USDD客服的诈骗者损失积蓄,属针对USDD用户的冒充客服诈骗信号,但未给出具体事件。</td><td><div class="tweet">I keep seeing people lose savings to fake &quot;USDD support agents&quot;.
+
+The scammers are getting smarter, so here are the rules I personally follow as a USDD holder. Please share this with someone new 🧵
+
+@justinsuntron
+@USDDecentralize
+#TronEcoStar https://t.co/zt4pQUwEfQ</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/MirelVegar/status/2113318367839076485" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 00:56</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@coin360com<br>18,822 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>有报道称CoinDCX交易所否认再次被黑，但链上研究者发现了被攻击后的钱包异动，交易所也承认旧地址有损失。推文带了USDT和TRON标签，可能涉及TRON链上资金。</td><td><div class="tweet">.@CoinDCX’s denial of a fresh hack is facing scrutiny after on-chain researchers flagged post-breach wallet activity and the exchange acknowledged losses tied to deprecated addresses.
+
+https://t.co/QC39ANdJtB
+
+#CoinDCX #Crypto #Blockchain $USDT #TRON #ZachXBT #OnChain #CryptoNews https://t.co/FlbP3SHKBu</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/coin360com/status/2113313564739932619" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 00:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@tayvano_<br>90,596 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>安全研究员 Tay 指出某平台 TRON 充值地址遭攻击损失约1600万美元，称本可通过轮换权限密钥避免，疑似与 CoinDCX 事件相关。</td><td><div class="tweet">@eskoropisov Actually it’s Tron so they could have literally rotate the authority keys for these deposit addresses 
+
+Or they could have rotated the deposit addresses
+
+Either would have saved them $16m</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/tayvano_/status/2113304395349905707" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-23 00:09</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@NFTNews_EU<br>19,628 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>ZachXBT 发现 CoinDCX 疑似被盗约1580万美元 USDT 和 5784 TRX，CoinDCX 否认，涉及 TRON 链上资产。</td><td><div class="tweet">🚨 CoinDCX Denies New $15.8M Hack
+
+On-chain investigator ZachXBT flagged transfers of $15.8M in USDT and 5,784 TRX. https://t.co/Eyn4GmK1P6</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/NFTNews_EU/status/2113301603822272843" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 23:59</span></td><td><span class="nowrap">严重</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@AMLBotHQ<br>8,161 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>AMLBot称CoinDCX在TRON上的约40个充值地址于10月21日被盗约1600万USDT，资金归集至TAg6SZ1HhgVVjUaKY1paQoFBUS2JFrg5bT后流入OKX、币安、Gate等交易所，仍有约240万USDT未被冻结。</td><td><div class="tweet">@BitcoinArchive We tracked this case as well. About $5.5M of the stolen USDT was deposited to OKX. https://t.co/F2fMMtVZSh
+
+引用 @AMLBotHQ: Wallets on TRON linked to @CoinDCX were drained of ~$16M USDT on Oct 21. ~40 deposit addresses, one of them holding $15.8M, were swept to
+TAg6SZ1HhgVVjUaKY1paQoFBUS2JFrg5bT
+
+Tracing shows the funds were deposited to @okx (~$5.5M), @binance (~$2.8M) and @Gate (~$1.4M). A large share went through unidentified services
+
+~$2.4M is still parked across fresh addresses, including TQPyFb2HodpR9WYRidAye1V2NzJXKNHS1V (720K) and TMHURkhvUHSNdLmGeD2akjZC2YExGDQYD5 (664K). None are frozen by @tether yet
+
+We are actively monitoring this case</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/AMLBotHQ/status/2113299254328586647" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 23:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@kytme_aml<br>11 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX关联的TRON充值地址于10月21日流出1580万USDT，ZachXBT称该被盗地址在2025年7月事件后仍持续归集用户充值，疑似交易所被盗事件。</td><td><div class="tweet">🚨️️️️️️ So was it a #hack or not? A question for @CoinDCX.
+
+On 21 October, 15.8M USDT left an address tied to the exchange. CoinDCX says its wallets were not breached, customer funds are safe, and those addresses were compromised back in the July 2025 incident and are no longer part of its active infrastructure.
+
+ZachXBT says something else: that same TRON deposit address kept sweeping user deposits for about ten months after that incident, with the last transfers in April and May 2026. In his words, $15.8M in user deposits went unaccounted for by the team.
+
+引用 @zachxbt: Withdraw all funds from CoinDCX if you value your assets. 
+
+Its co-founders are clowns running a circus. 
+
+They publicly and privately denied a theft of its assets occurred meaning they straight up lied or are negligently incompetent. 
+
+Later they disclosed the $16M theft and wasted everyone’s time instead of being transparent with the public initially.  
+
+Not the first time CoinDCX has done it. 
+
+Indian CEXs like CoinDCX, WazirX, BitBNS are all the same. 
+
+(I still helped freeze 6 figures for CoinDCX)</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/kytme_aml/status/2113289480765337918" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 23:13</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@MirelVegar<br>17,291 粉丝</span></td><td><b>事件：TRON 地址投毒团伙四周内盗取15名受害者940万美元</b><br>推文称TRON上有一名攻击者在四周内通过地址投毒（零额USDT转账）盗取15名受害者共940万美元，最大两笔各250万美元，需核实。</td><td><div class="tweet">$9.4M gone in four weeks, and nobody hacked anything. Here are the 3 habits that beat address poisoning, in a short video 🎥
+
+The trick is simple. A scammer sends a tiny or zero USDT transfer from an address with the same first and last characters as one you use. Then they wait for you to copy it from your history.
+
+On 𝗧𝗥𝗢𝗡, one operator drained 15 victims this way in four weeks. The two largest lost $2.5M each.
+
+Step 1: Copy addresses from the source or your saved address book, never from your transaction history.
+
+Step 2: Check the middle characters, not just the ends. That&#x27;s where the fake o…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/MirelVegar/status/2113287717756731830" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 23:09</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Azharthegreat<br>1,714 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX废弃TRON地址TQKJQ于10月21日被转走15,819,002 USDT，接收地址TSC5Mz...仍在从437个地址收取USDT，疑似持续盗取。</td><td><div class="tweet">All 15,819,002 USDT drained from CoinDCX&#x27;s deprecated TQKJQ address on 21 October came from one wallet, in 88 transfers between 29 January and 30 March. CoinDCX says it built up because users kept depositing there while a sweep was failing.
+
+Before that, deposits into TQKJQ were forwarded on in a median 33 seconds. Forwarding came back on 28 April and moved another 3.0M of new money the same way, but it never touched the pile. That sat for 205 days, until it left in a single transfer.
+
+I can&#x27;t put a name on the sender, TSC5MzYDNqtp3HDpqCNpTAs5pnT7wt4Hrd. Since 3 September it has taken USDT fro…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Azharthegreat/status/2113286589912584528" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 23:00</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@TronWeekly<br>61,555 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX关联钱包流出15.99M USDT和5783 TRX，疑似新的安全事件，涉及TRON链资产。</td><td><div class="tweet">CoinDCX denies a new security breach after blockchain investigator Darcy flagged roughly $16M in crypto transfers from historically linked wallets, including 15.99M USDT and 5,783.81 TRX. 🔎
+
+Co-founder Sumit Gupta says the addresses were compromised in the July 2025 incident, which involved $44M in stolen assets. CoinDCX maintains that current wallets and customer funds remain safe, but the latest transfers have renewed security scrutiny. 🛡️
+
+https://t.co/7HL9cHwoai</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/TronWeekly/status/2113284241316544652" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 22:54</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@0X_BeBopFaye<br>2,358 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>印度交易所CoinDCX疑似被盗约1600万USDT（U），ZachXBT指出其否认盗窃事实，涉及USDT资金流出。</td><td><div class="tweet">印度最大交易所 CoinDCX 疑似又出事，链上流出约 1600 万 U。
+
+地址是 Arkham 标记的热钱包和充值地址，钱出来后一路拆分撒向币安、OKX、Gate。
+
+创始人 Sumit Gupta 第一反应是否认三连：老钱包、去年 7 月被盗 4400 万那次的锅、误报。
+
+@zachxbt 直接上链打脸：这个地址今年 4、5 月还在收用户充值、往热钱包扫款。
+
+交易所被盗不丢人，瞒报才丢人。
+
+这是印度所的老毛病，WazirX 当年也是同一套剧本。
+
+链上侦探这次明着喊话：珍惜资产，赶紧提走。
+
+引用 @zachxbt: Withdraw all funds from CoinDCX if you value your assets. 
+
+Its co-founders are clowns running a circus. 
+
+They publicly and privately denied a theft of its assets occurred meaning they straight up lied or are negligently incompetent. 
+
+Later they disclosed the $16M theft and wasted everyone’s time instead of being transparent with the public initially.  
+
+Not the first time CoinDCX has done it. 
+
+Indian CEXs like CoinDCX, WazirX, BitBNS are all the same. 
+
+(I still helped freeze 6 figures for CoinDCX)</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/0X_BeBopFaye/status/2113282830969262248" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 22:46</span></td><td><span class="nowrap">严重</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@AMLBotHQ<br>8,159 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>AMLBot称CoinDCX在TRON上的约40个充值地址于10月21日被盗约1600万USDT，资金归集至TAg6SZ1Hhg...并流入OKX、币安、Gate，约240万USDT仍在新地址中，尚未被Tether冻结。</td><td><div class="tweet">Wallets on TRON linked to @CoinDCX were drained of ~$16M USDT on Oct 21. ~40 deposit addresses, one of them holding $15.8M, were swept to
+TAg6SZ1HhgVVjUaKY1paQoFBUS2JFrg5bT
+
+Tracing shows the funds were deposited to @okx (~$5.5M), @binance (~$2.8M) and @Gate (~$1.4M). A large share went through unidentified services
+
+~$2.4M is still parked across fresh addresses, including TQPyFb2HodpR9WYRidAye1V2NzJXKNHS1V (720K) and TMHURkhvUHSNdLmGeD2akjZC2YExGDQYD5 (664K). None are frozen by @tether yet
+
+We are actively monitoring this case</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/AMLBotHQ/status/2113280928869126408" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 22:27</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@RomanChainOps<br>38 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>印度交易所CoinDCX被曝此前泄露私钥的TRON充值地址被盗转约1599万USDT和5783 TRX，经TRON中转地址分散转入Binance、OKX、Gate。</td><td><div class="tweet">POINT OF FAILURE - COINDCX: THE $16M &quot;GHOST WALLET&quot; DRAIN &amp; KEY LIFECYCLE COLLAPSE
+
+On October 21–22, 2026, Indian cryptocurrency exchange CoinDCX (@CoinDCX) found itself at the center of a pivotal on-chain transparency showdown.
+
+Security monitors flagged anomalous outflows totaling 15.99 million USDT and 5,783 TRX from wallets historically tagged as CoinDCX deposit infrastructure. The assets were swept in a single batch to an intermediate TRON hub (TAg6SZ1H...), split across secondary hops, and routed directly into deposit addresses at Binance, OKX, and Gate.
+
+CoinDCX CEO Sumit Gupta (@sumit…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/RomanChainOps/status/2113276094702833852" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 22:11</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@blocklist24x7<br>1,396 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX在TRON上被盗约1600万美元(15.99M USDT+TRX),给出攻击者地址TAg6SZ1HhgVVjUaKY1paQoFBUS2JFrg5bT。</td><td><div class="tweet">CoinDCX ~$16M drain (TRON, Oct 21, 2026)
+~15.99M USDT + 5,783.81 TRX, largest transfer 15,819,002 USDT
+Receiving/attacker address:
+TAg6SZ1HhgVVjUaKY1paQoFBUS2JFrg5bT
+https://t.co/iiAIsoM4eZ
+
+引用 @tayvano_: See for yourself
+
+Attacker Address:
+TAg6SZ1HhgVVjUaKY1paQoFBUS2JFrg5bT
+
+Drained Addresses:
+TQKJQrWok6fsBqZi3mkLkL6qX4YEgjqWUy $15,807,818
+TLajaNxvQheexbDwfxNNmw6V3i3c4g3b38 $35,431
+TDQ961qWXVHy1RCLM1TEhDjPyTNevhxnDL $22,952
+TMWoopE69yutHrVKkcqMMjCA4pSqT5kTZw $18,612
+TFLxNHunhEizmeEdiMyA3r2XGLSKaEznGd $9,354
+THuWriDhUhhU2sp6LWpp6FvzW6E58CRkY9 $9,009
+TKh5wPmh9n1UvWissAyAzQsUBwWvY6fg5r $6,746
+TGZUwucwhChHi1X7mq6JKtMojhwknhQcrQ $6,489
+TZBdZDFdz54XRfXHTu5sWcTJUmBTdpTyAU $6,368
+TLUQsVHsmUrcWEy3tGrpEdh2ue8z2NHPYk $6,162
+TXz8zvGyxCjjbBSsdgd35RZinVWKSww442 $5,763
+TTTZH6nWX8tk1b73xHfCJk3x9aBR</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/blocklist24x7/status/2113272110009479350" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 22:06</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Blockcastcc<br>55,581 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX热钱包/存款地址转出约1599万USDT和5783 TRX至TRON地址,疑似新安全事件,资金流向Binance、OKX、Gate。</td><td><div class="tweet">印度交易所CoinDCX疑似遭遇新安全事件，10月21日其热钱包及存款地址转出约1599万美元USDT和5783 TRX至TRON地址，后续资金分拆流向Binance、OKX和Gate存款地址，此前该交易所在2025年7月已损失约4400万美元。
+
+CoinDCX官方及联合创始人Sumit Gupta回应称用户资金安全，相关交易来自2025年1月创建并在7月被攻破的旧地址，这些地址已废弃未使用，当前热钱包未受影响。
+
+链上调查者ZachXBT质疑官方解释，提供证据显示涉事地址在黑客事件后仍活跃十个月并处理用户存款，CoinDCX后续补充说明为用户误存废弃地址导致运营损失，已由平台全额承担并为用户补款，客户资产仍隔离存放于冷钱包。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Blockcastcc/status/2113270858613739689" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 21:56</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@ccsj1026<br>1,028 粉丝</span></td><td><b>事件：用户称 GMGN 内部提取功能缺乏验证致电脑被黑后资金被盗</b><br>用户称此前电脑被盗导致损失数万U（USDT），并提到gmgn内部提取存在验证漏洞。这是过去的事件，细节有限。</td><td><div class="tweet">@noah__xbt @Anbzydd520 那没办法了。gmgn这个内部提取有漏洞。导入其他钱包然后提取是没验证的。电脑设备被黑了或者被物理拿了真没办法。因为我之前的电脑被盗过几万u。所以我现在打狗专门的电脑只下了几个软件，垃圾插件和莫名其妙的网站不会点。只在gmgn和debot一些官方交易软件交易。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/ccsj1026/status/2113268199030661317" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 21:42</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@TheSeerGuru<br>25 粉丝</span></td><td><b>事件：木马在 TronLink、imToken、TokenPocket 处于前台时记录键盘输入</b><br>用户称iPhone上Trust Wallet中68,327 USDT被盗,疑与iOS漏洞有关,USDT可能在TRON上。</td><td><div class="tweet">LATEST: Ukrainian says 68,327 USDT was stolen from his iPhone&#x27;s Trust Wallet
+
+Artur Romanchuk blames DarkSword exploits on outdated iOS, which is not independently confirmed. Those vulnerabilities are already patched in iOS updates.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/TheSeerGuru/status/2113264766659785095" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 21:42</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Satoshi_Talks<br>45,342 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>约1600万美元USDT从TRON上标记为CoinDCX的钱包流出，部分已转入币安、OKX、Gate的充值地址，疑似CoinDCX再次被盗。官方否认，称这些是2025年7月被盗时已泄露的旧钱包，但ZachXBT指出其中一个钱包直到2026年5月还在往热钱包归集用户充值。</td><td><div class="tweet">Coinbase-backed Indian exchange CoinDCX is denying a second hack.
+
+~$16 million in USDT left CoinDCX-labeled wallets on TRON, and part of it has already reached deposit addresses on Binance, OKX and Gate.
+
+The CEO says these are old wallets compromised in the July 2025 hack. But ZachXBT says one of them was still sending user deposits to CoinDCX&#x27;s hot wallet as late as May 2026.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Satoshi_Talks/status/2113264709642174559" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 21:41</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@laowu3677<br>33,006 粉丝</span></td><td><b>事件：骗子在 TG 群冒充博主 @laowu3677 骗取500 USDT</b><br>有骗子在TG群冒充博主@laowu3677，骗走一名用户500U（USDT）。</td><td><div class="tweet">卧槽，都有骗子冒充我出去赚钱了
+
+刚刚得知了一件很糟心的事
+
+有个朋友在TG群里，被一个冒充我的骗子，骗走了500U
+
+听见这个消息，我挺难受的，建群的目的就是大家一起聊聊项目，交流交流行情，现在被人利用这份信任去骗钱
+
+郑重提醒一下：
+
+我不会主动私聊任何人索要转账，更不会以投资、带单、内部名额等理由要求大家打钱，当初开五六个微信满人群，我都不割韭菜，赚钱就赚狗庄的，不赚兄弟的
+
+任何冒充我的账号，只要涉及转账，请第一时间核实身份
+
+大家愿意关注我、进我的群，是对我的信任
+
+我不希望这份信任最后变成骗子赚钱的工具，也希望大家帮忙转发提醒一下，别再有人上当了
+
+我就一个推特@laowu3677 一个飞机号@laowu137 剩下都是假冒的</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/laowu3677/status/2113264357538980058" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 21:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@chaingull<br>87 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>推文称交易所CoinDCX疑似遭黑客攻击，被盗约1600万USDT及部分TRX，资金已转入多个交易所，涉及TRON链资产。</td><td><div class="tweet">Crypto Brief — Oct 22, 13:20 UTC
+
+TOP STORY — impact 68 / 100
+▲ Bitcoin spot ETFs see $528M in net inflows, extending their streak to three days.
+
+BULLISH
+▲ 62 Bitcoin ETFs draw $528M as ether funds end five-day outflow streak
+▲ 62 Bitcoin ETFs add $528M, pushing their three-day total above $1B
+▲ 62 U.S. spot Bitcoin ETFs see $524.8M in inflows; spot Ethereum ETFs take in $14.9M
+
+BEARISH
+▼ 52 A whale sells another 246.25 BTC worth about $20.64M today
+▼ 50 CoinDCX is suspected of a hack involving about 16M USDT; funds went to multiple exchanges
+▼ 45 A whale sells 1,917 BTC and buys 64,500 ETH
+▼…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/chaingull/status/2113259232363733182" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 21:14</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@huowangBTC<br>26,712 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>约1599万USDT从CoinDCX标签地址转出，ZachXBT指出被盗旧地址此后仍在使用，平台已承认归集失效、损失自担。</td><td><div class="tweet">CoinDCX 被链上侦探追着咬
+
+约 1599 万 USDT 从它标签地址转出，平台称是去年被盗旧地址复用，资金安全
+
+ZachXBT：地址事后还用近 10 个月，今春仍扫用户存款进热钱包，约 1580 万美元对不上账
+
+平台后认归集失效、损失自担
+
+停用地址还能收钱，对账靠侦探追问🤔 https://t.co/oJXgTfFEM3</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/huowangBTC/status/2113257735563214982" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 21:14</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@realarmaansidhu<br>2,129 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX承认2025年7月已泄露私钥的地址于10月21日又转出约1600万美元的USDT和TRX，说明事件处置没有做彻底。</td><td><div class="tweet">Whether this turns out to be a new theft or old loot moving does not change the operational point. CoinDCX itself says the addresses were created in January 2025 and compromised in July 2025, and about $16 million in USDT and TRX moved from those addresses on October 21. If value can still move through addresses whose keys were compromised in July 2025, incident closure failed at a specific step. Closing a breach means sweeping every tainted address, emptying it, and monitoring it continuously, with proof that no live system still routes through it. ZachXBT&#x27;s challenge, that a deposit address …</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/realarmaansidhu/status/2113257568088773116" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 21:12</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@sprunky_eth<br>6,891 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>链上追踪显示约1580万USDT从CoinDCX相关的TRON地址转出，汇集到TAg6SZ...地址后分流到Binance、OKX、Gate等交易所，疑似被盗资金洗白。</td><td><div class="tweet">We traced the TRON activity.
+
+The funds consolidated to TAg6SZ1HhgVVjUaKY1paQoFBUS2JFrg5bT, which was created on 21 October 2026.
+
+Largest inflow: 15,819,002 USDT from TQKJQrWok6fsBqZi3mkLkL6qX4YEgjqWUy at 15:35 UTC.
+
+From TAg6SZ the funds were split:
+- \~2.02M USDT to Binance
+- \~5.47M USDT to OKX
+- \~1.39M USDT to Gate
+- remainder to intermediate wallets
+
+Whether the source addresses were still operational CoinDCX infrastructure or old compromised wallets is not fully verifiable from the public data.
+
+Verify, then trust. 👁️</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/sprunky_eth/status/2113257221358342316" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 20:57</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@SellerOfOptions<br>44,437 粉丝</span></td><td><b>事件：某跨链桥被盗USDC/USDT及WETH、WBTC</b><br>推文提及某跨链桥被盗，被盗资产主要是USDC/USDT稳定币，可能涉及TRON上的USDT，建议核实。</td><td><div class="tweet">这次被盗的虽然主要是稳定币
+（USDC/USDT），但WETH和WBTC也被提走了
+这又一次证明：只要是跨链的资产
+原生的安全永远比映射代币强
+大家以后能走官方桥就走官方桥
+哪怕慢点、贵点也值得</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/SellerOfOptions/status/2113253404369957161" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 20:42</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@BC_Journal_ESP<br>160 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>有报道称CoinDCX在TRON上约1600万美元USDT发生异常转移，交易所否认被黑，需核实。</td><td><div class="tweet">🔗 CoinDCX niega hack por 16 millones de dólares en USDT tras movimientos en TRON 
+
+Noticia Completa 🔻
+
+https://t.co/rsi1BAQs1L https://t.co/9Yl7TWSAwD</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/BC_Journal_ESP/status/2113249522717438330" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 20:41</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Bitquery_io<br>6,083 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>据报10月21日有攻击者从CoinDCX在TRON上的40个旧钱包盗走约1599万美元USDT。</td><td><div class="tweet">A thief took $15.99M in USDT from 40 CoinDCX wallets on TRON on 21 October. 
+
+The exchange says they were old addresses it stopped using in 2025. 
+
+https://t.co/IZ5bZezwld</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Bitquery_io/status/2113249363950735695" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 20:29</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@cryptowalax<br>53,953 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>有人报告约1600万USDT从TRON上一个标记为CoinDCX的地址转出。该地址曾在2025年7月的黑客事件中被攻破，ZachXBT称有1580万美元来源不明，疑似与该黑客事件有关。</td><td><div class="tweet">$16M USDT just left a CoinDCX-tagged address on TRON.
+
+CoinDCX: that address was compromised in the July 2025 incident, no user funds affected.
+
+ZachXBT: the same address kept receiving user deposits into May 2026, $15.8M still unexplained.
+
+Any thoughts on this from anyone ?
+
+引用 @smtgpt: Thanks for highlighting but this is incorrect and CoinDCX wallets are not breached. Pls don&#x27;t spread rumours. 
+
+The addresses tagged by Arkham used to belong to CoinDCX before the last year hack ie July 2025. These addresses were generated in Jan 2025 and were compromised in the previous hack in July 2025. The hackers seem to be re-using the old wallet addresses and this sounds like a false alarm. We have checked all the present CoinDCX central and user addresses. None of them have sent money to these old addresses.
+
+All the CoinDCX addresses are public and can be seen on our POR link</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cryptowalax/status/2113246260874318025" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 20:20</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@cryptowalax<br>53,947 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX 被盗事件后续:推文称约 1599 万 USDT 和 5783 TRX 已在链上转移，涉及 TRON 上的资产，建议追踪相关资金流向。</td><td><div class="tweet">ALERT: 
+CoinDCX 2025 breach: $44.2M
+reported stolen.
+October 2026: $16M moved on chain, with cause and loss still disputed.
+
+$15.99M USDT + 5,783 TRX moved on chain.
+
+CoinDCX: Hack or Not? ZachXBT questions post-breach activity. Where full accounting? 
+Still holding CoinDCX? https://t.co/GiXz9OwOn3</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cryptowalax/status/2113244088384487815" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 20:15</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@qiaohailong<br>102 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>链上侦探称 CoinDCX 相关地址转出约1600万 USDT,疑似被盗。CEO 否认,ZachXBT 指出该地址被盗后仍使用了10个月。</td><td><div class="tweet">ZachXBT 今天又动手了。链上侦探 Darcy 爆料：CoinDCX 相关地址转出约 1600 万 USDT，疑似被盗。CoinDCX CEO 否认，说那是 2025 年 7 月被盗的老钱包。但 ZachXBT 打脸：那个存款地址被盗后还用了 10 个月，一直在往热钱包转用户存款。罗生门这东西，链上数据不会撒谎，等下文</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/qiaohailong/status/2113242737889960120" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 20:07</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@lunaowlai<br>81 粉丝</span></td><td><b>事件：公开私钥“钓鱼钱包”诱饵骗局（权限已改多签）</b><br>回复称某钱包所有权已被转移或改成多签,只能查看、无法签名,属于常见的“泄露私钥”钓鱼骗局。推文未写明链,TRON 账户权限修改类骗局较常见,值得看一眼。</td><td><div class="tweet">@GX_wuyanzu 这个地址已经是非法的，资产被冻结，成钓鱼钱包了，所有权被转移或多签模式，仅凭这个私钥只能看，没有任何签发权限。而且，如果你将这个钱包导入自己钱包，可能也会因为非法导致自己钱包出问题。
+结论：删除这个钱包，也别往这个钱包转任何钱</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/lunaowlai/status/2113240723751383460" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 20:05</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@zjy525<br>143 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>复盘中提到 CoinDCX 疑似被盗约1600万,已报警,官方否认,事件仍有争议。涉及资产为 TRON 上的 USDT 和 TRX。</td><td><div class="tweet">今日复盘：BTC 约 81,770（日 −2.1%），夜里摸近 85,000 后回落，全天 3,000 美元往返多空双杀；ETH 约 2,400（−2.8%）。（Finnhub、CoinDesk）
+
+爆仓：24h 全网约 4.31 亿美元——冲高挤压空头 1.73 亿，跌下来 12 小时多头被爆 2.10 亿；最大单为币安 1,180 万 BTC 多单。（Coinglass via CoinDesk）
+
+ETF（美东 10/21）：BTC 现货净流出 3,388 万；ETH 净流出 3,142 万，10 月累计流出破 10.8 亿美元。（SoSoValue）
+
+美股：10/21 三指数齐涨，但今晚 21:30 开盘前盘前偏弱——特斯拉盘前跌约 4-5%（下调 2026 资本开支预期至约 200 亿），纳指 100 期货跌 1.1%。美元指数约 101.5–101.7（三周低点），10 年期美债约 5.08%。（Finnhub 等）
+
+突发：CoinDCX 疑似被盗约 1,600 万（下午 15:37 已报警），官方否认有新攻击，事件争执中；钱志敏案天津二中院受理没收 61,800 BTC 申请（6 个月参与期至 2027 年 4 月），涉案市值约 50–57 亿美元。
+
+夜盘：今晚 20:30 初请失业金（预期 20 万，9 月非农或延迟公布）；明晚全球 PMI 初值；10/28 …</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/zjy525/status/2113240346104586656" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:56</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@guli1872676<br>3,928 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX被盗事件,最大单笔转移1581.9万USDT并拆分流向交易所,涉及TRON上USDT。</td><td><div class="tweet">事件回溯：CoinDCX 2025 年 7 月曾被盗约 4400 万美元（内部流动性钱包，公司称用国库资金兜底、用户未受损）。调查员 Darcy 称此次最大单笔转移 1581.9 万 USDT，资金随后被拆分，多笔流向币安、OKX、Gate 的充值地址。 (2/3)</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/guli1872676/status/2113238025039708600" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:55</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@guli1872676<br>3,831 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX 关联地址异常流出约1599万 USDT 和5783 TRX。ZachXBT 质疑该地址在2025年7月被盗后仍继续接收用户充值。</td><td><div class="tweet">印度最大交易所 CoinDCX 今日否认再遭黑客攻击：链上调查员昨日标记约 1599 万 USDT + 5783 TRX 从其关联地址异常流出。公司称涉事地址 2025-07 被盗后已弃用、用户资金安全。但链上侦探 ZachXBT 公开质疑——称该地址此后近 10 个月仍在接收用户充值。 (1/3) #加密货币</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/guli1872676/status/2113237850733068402" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:48</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Crypto_geek___<br>3,411 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>链上调查人员指出,CoinDCX 相关地址异常转出约1599万 USDT 和5783 TRX,怀疑交易所再次被盗。CoinDCX 否认发生新的攻击。</td><td><div class="tweet">🚨 CoinDCX faces fresh $16M hack allegations.
+
+On chain investigator  flagged $15.99M in USDT and 5,783 TRX transferred on October 21, with funds reportedly routed to Binance, OKX, and Gate.
+
+CoinDCX denies a new breach, claiming the activity is linked to its July 2025 hack.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Crypto_geek___/status/2113236069676437630" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:45</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@tieunhanlong<br>7,520 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX旧充值地址转出约1580万美元的USDT和TRX，ZachXBT质疑官方“没有二次被黑”的说法，链上数据显示该地址至今仍在活动，可能涉及TRON上的资产。</td><td><div class="tweet">CoinDCX says no second hack.
+
+ZachXBT isn&#x27;t buying it.
+
+$15.8M in $USDT and $TRX moved from old deposit addresses. The exchange says those wallets were compromised in July 2025 and should&#x27;ve been dead.
+
+But the on-chain data shows one of them still receiving deposits and sending to CoinDCX&#x27;s hot wallets as recently as April and May 2026.
+
+Either the cleanup was sloppy, or the story has holes.
+
+via https://t.co/Y2NieImaPU</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/tieunhanlong/status/2113235289816936554" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:35</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@QuangNguye58587<br>6,822 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX已泄露的旧钱包于10月21日转出1600万USDT和5783 TRX，涉及TRON链上资产，与其7月被黑事件有关。</td><td><div class="tweet">CoinDCX says those wallet addresses weren&#x27;t theirs anymore.
+
+Old wallets from January 2025, compromised in the July hack, not used since.
+
+The $16M $USDT and 5,783 $TRX moving on Oct. 21? Exchange calls the claims misleading.
+
+The July breach already cost them $44M.
+
+Old compromised wallets resurfacing months later, that&#x27;s the part that should make you check your own habits.
+
+Source: https://t.co/Cf4RmsiNUC</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/QuangNguye58587/status/2113232898186993720" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:33</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@TanselKayaTR<br>27,425 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>有人指CoinDCX遭遇新一轮攻击：1600万USDT从交易所钱包转入单一TRON地址，交易所称这些是旧的已泄露地址，ZachXBT对此提出质疑。</td><td><div class="tweet">Hindistan&#x27;ın büyük borsası CoinDCX&#x27;te yeni hack iddiası: On-chain verilere göre 16M USDT, borsaya ait cüzdanlardan tek bir TRON adresine aktarıldı.
+
+CoinDCX &quot;fonlar güvende, bunlar 2025&#x27;te ele geçirilen eski adresler&quot; diyor. 
+
+ZachXBT ikna olmamış.
+
+https://t.co/SWCSiCQCdq https://t.co/vYWC7HBfhm
+
+引用 @zachxbt: CoinDCX deposit address TQKJQ was in use by a LP for 10 months after your July 2025 incident and swept user deposits + received gas as recent as April &amp; May 2026 to your current public hot wallet. 
+
+Meaning $15.8M in user deposits was unaccounted for by your team.
+
+Why are Indian CEXs so untrustworthy? 
+
+WazirX
+BitBNS 
+Now CoinDCX</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/TanselKayaTR/status/2113232157535858957" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:25</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Quan1M<br>8,939 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX被标记的钱包转出约1600万USDT及5784 TRX，ZachXBT质疑该地址被入侵后仍在接收用户充值，资金经TRON转出并分散至多家交易所。</td><td><div class="tweet">CoinDCX says no user funds were lost after $16M moved from flagged wallets
+
+but ZachXBT says one of those addresses was still receiving deposits until April-May 2026
+
+the exchange claims those wallets were compromised in the July 2025 hack and retired since
+
+the investigator&#x27;s timeline would mean deposits kept flowing in for 10 months after
+
+$15.99M in $USDT and 5,784 $TRX were split across Binance, OKX, and https://t.co/rLU9k4od3o
+
+source: cryptobriefing</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Quan1M/status/2113230236326510792" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@CaudexCatena<br>9 粉丝<br>认证机构</span></td><td><b>事件：某机构在 BSC 上遭朝鲜黑客盗取约284万美元经 TRON 洗钱</b><br>疑似朝鲜黑客资金通过WBTC换USDT跨链至TRON洗钱,TRON枢纽钱包分四批转移约2180万美元。</td><td><div class="tweet">The Tron route is older than the theft. Its hub wallets were created within 8 minutes on Aug 19, then carried four waves:
+
+Aug 22: $2.0M
+Sep 1: $5.0M
+Sep 21: $4.8M
+Oct 20: $9.99M
+
+Sep 21 used the same method: WBTC, swapped to USDT, bridged to Tron. https://t.co/VUBWH8FtVo</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/CaudexCatena/status/2113229053620613144" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:20</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@CaudexCatena<br>9 粉丝<br>认证机构</span></td><td><b>事件：某机构在 BSC 上遭朝鲜黑客盗取约284万美元经 TRON 洗钱</b><br>BNB链上284万美元被盗(疑似朝鲜SquidSquad),资金经TRON路线洗钱,该路线自8月19日起转移约2180万美元。</td><td><div class="tweet">Last week ZachXBT flagged a $2.84M theft on BNB Chain, suspected to be SquidSquad (DPRK-linked).
+
+We followed the money further with an AI agent. The Tron route those funds took moved $9.99M that same morning, and about $21.8M since Aug 19.
+
+What we found 🧵 https://t.co/qEPd0mbQVs</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/CaudexCatena/status/2113229040182342006" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:18</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@MirelVegar<br>17,291 粉丝</span></td><td><b>事件：TRON 地址投毒团伙四周内盗取15名受害者940万美元</b><br>链上调查者Specter追踪到TRON上一名攻击者通过地址投毒在四周内盗取15名受害者共940万美元,最大两笔各250万美元。</td><td><div class="tweet">Step 2: Look at the scale of it
+
+This is not a rare edge case. On-chain investigator Specter tracked one operator on TRON who drained 15 victims of $9.4M in just four weeks, as reported on 27 August 2026.
+
+The two largest victims lost $2.5M each.
+
+▶ One operator ➡ a single attacker ran this playbook
+▶ Fifteen victims ➡ people who pasted a poisoned address
+▶ Four weeks ➡ the whole run took about a month
+▶ No exploit ➡ every loss came from a normal, signed transfer
+
+What stuck with me is how ordinary each mistake was. These were people moving serious amounts, and one quick paste from history und…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/MirelVegar/status/2113228410533155259" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:16</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@MirelVegar<br>17,291 粉丝</span></td><td><b>事件：TRON 地址投毒团伙四周内盗取15名受害者940万美元</b><br>提到TRON上地址投毒攻击四周内造成940万美元损失,涉及具体事件。</td><td><div class="tweet">$9.4M gone in four weeks, and nobody hacked a single wallet. The victims simply pasted the wrong address.
+
+This scam is called address poisoning, and it works on 𝗧𝗥𝗢𝗡 because people trust their own transaction history. So I run a short routine before every send.
+
+Here&#x27;s what I&#x27;ll walk you through, step by step:
+
+▶ The trick ➡ how a fake address ends up in your history
+▶ The damage ➡ what one operator took in a month
+▶ The fix ➡ address book, middle characters, test send
+▶ The cleanup ➡ revoking approvals you no longer use
+
+Save this and share it with the friend who copies addresses from old tr…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/MirelVegar/status/2113228109734441004" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:12</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@ChainCatcher_<br>46,523 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX 被标记地址向同一 TRON 地址转出约1599万USDT，ZachXBT 质疑涉及用户存款，疑似攻击事件。</td><td><div class="tweet">CoinDCX 回应约 1600 万 USDT 异常转账，ZachXBT 质疑其解释
+
+据 Salus 首席营销官 Darcy 监测，10 月 21 日晚，被标记为 CoinDCX 热钱包及充值地址的多个地址，向同一 TRON 地址转入约 1599 万 USDT 及 5783.81 枚 TRX。资金随后被拆分，部分流向币安、OKX 及 Gate 等交易所充值地址。
+
+CoinDCX 回应称，相关地址创建于 2025 年 1 月，在同年 7 月遭入侵后已停止使用，近期交易与平台当前运营无关，用户资金安全、交易正常。该平台 2025 年 7 月曾遭遇约 4400 万美元攻击，当时称受影响的是自有运营资金，用户资产未受影响。
+
+ZachXBT 随后质疑，充值地址 TQKJQ 在 2025 年 7 月事件后仍被一家流动性提供方使用约 10 个月，今年 4、5 月仍归集用户充值，并与平台当前公开热钱包存在资金往来。他据此质疑，平台未能交代约 1580 万美元用户存款的去向。</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/ChainCatcher_/status/2113227097439363405" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:08</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@btc_hipe<br>121 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX 相关钱包约1599万USDT和TRX转入单一TRON地址，疑似新的黑客攻击。</td><td><div class="tweet">🚨 JUST IN: CoinDCX faces fresh $16M hack allegations!
+
+On-chain investigator Darcy flagged transfers of $15.99M in USDT + 5,783 TRX from CoinDCX-linked wallets to a single TRON address.
+
+💸 Funds were later routed to Binance, OKX &amp; Gate.
+
+@CoinDCX denies a new breach, saying the activity is linked to its July 2025 hack that cost ~$44M.
+
+⚠️ New exploit or old hack fallout?
+
+#CoinDCX #Crypto #USDT</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/btc_hipe/status/2113225937370112262" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:06</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@esatoshiclub<br>134,635 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>约1600万 USDT 从 CoinDCX 在 TRON 上的钱包流出，ZachXBT 质疑 CoinDCX 称其为旧事件的解释。</td><td><div class="tweet">Coinbase-backed Indian exchange CoinDCX is denying a second hack.
+
+~$16 million in USDT left CoinDCX-labeled wallets on TRON, and part of it has already reached deposit addresses on Binance, OKX and Gate.
+
+The CEO says these are old wallets compromised in the July 2025 hack. But ZachXBT says one of them was still sending user deposits to CoinDCX&#x27;s hot wallet as late as May 2026.  
+
+Who do you believe here?</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/esatoshiclub/status/2113225385068433486" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:05</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@DFIR_Radar<br>2,052 粉丝</span></td><td><b>事件：木马在 TronLink、imToken、TokenPocket 处于前台时记录键盘输入</b><br>DeadTag 恶意广告活动投递 Coruna/DarkSword iOS 间谍软件，窃取 TronLink 等钱包数据，攻击设施还托管 USDT/TRON 支付仿冒站点。</td><td><div class="tweet">Chinese-speaking exploit crew uses malvertising and hijacked analytics tags to mass-deliver Coruna and DarkSword iOS spyware, reaching an estimated 135 million monthly visitors across thousands of websites including major consumer brands.
+
+Key findings:
+
+- Two distinct delivery vectors feed the same operation. The DeadTag campaign works by buying up expired domains behind analytics and ad tags that thousands of websites never removed, then quietly routing iPhone visitors to Coruna and DarkSword. Separately, a P7 variant of DarkSword was confirmed delivered via a malicious Instagram ad themed a…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/DFIR_Radar/status/2113225292827214215" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 19:02</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@thisisksa<br>35,402 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX 热钱包约1599万USDT及TRX转入单一TRON地址，随后被拆分转入多家交易所，疑似新的攻击事件。</td><td><div class="tweet">COINDCX FACES FRESH $16M HACK ALLEGATIONS 🚨
+
+On-chain investigator Darcy reported that around $15.99M in $USDT and 5,783.81 $TRX moved from CoinDCX hot wallets and deposit addresses to a single TRON address on October 21.
+
+The largest transfer alone was worth $15.82M. Funds were subsequently split and routed to deposit addresses at Binance, OKX and Gate.
+
+CoinDCX denies a new breach, saying the activity is linked to a wallet compromised in its July 2025 hack, which cost around $44M.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/thisisksa/status/2113224507494207826" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 18:37</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@theCryptera<br>5,694 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>链上调查员称CoinDCX相关地址转出约1599万USDT和5784 TRX，涉嫌新的黑客事件，CoinDCX否认并称是2025年7月已被盗的旧地址。</td><td><div class="tweet">🇮🇳 COINDCX FACES FRESH $16M HACK ALLEGATIONS
+
+On-chain investigator Darcy flagged:
+
+• $15.99M in USDT
+• 5,784 TRX
+• Funds routed to addresses linked to Binance, OKX and Gate
+
+CoinDCX&#x27;s Sumit Gupta denies a new hack, saying the wallets were compromised in July 2025
+
+The on-chain transfers are real.
+
+引用 @smtgpt: Thanks for highlighting but this is incorrect and CoinDCX wallets are not breached. Pls don&#x27;t spread rumours. 
+
+The addresses tagged by Arkham used to belong to CoinDCX before the last year hack ie July 2025. These addresses were generated in Jan 2025 and were compromised in the previous hack in July 2025. The hackers seem to be re-using the old wallet addresses and this sounds like a false alarm. We have checked all the present CoinDCX central and user addresses. None of them have sent money to these old addresses.
+
+All the CoinDCX addresses are public and can be seen on our POR link</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/theCryptera/status/2113218056633962546" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 18:31</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Arisk_io_en<br>338 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>Arisk追踪到与CoinDCX事件相关的超过100万USDT资金在TRON链上流入与汇旺(Huione)、新币担保有关联的高风险地址，可能涉及被盗资金洗钱。</td><td><div class="tweet">🔎 A recipient of 1,013,312 $USDT has transaction links to addresses associated with Huione and Xinbi Guarantee.
+
+High-risk receiving address:
+TB3U9KPtffSxrNqjvKz3AMYcaT1UWh3Grq
+This address received the funds from the main receiving wallet in this flow, TAg6…Frg5bT.
+
+Arisk’s address analysis identified:
+• Connections to 63 risk-associated addresses.
+• 402 risk-related transactions, representing 23.9% of its total transaction count.
+• Risk categories including frozen funds, illicit activity, money laundering and fraud.
+
+Further examination of its transaction history showed fund transfers with a…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Arisk_io_en/status/2113216602615296089" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 18:31</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Arisk_io_en<br>338 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>Arisk追踪到CoinDCX相关TRON地址约1599万USDT经中转进入交易所，其中101万USDT流向有洗钱风险的地址，另有资金跨链到以太坊。</td><td><div class="tweet">Multiple addresses associated with CoinDCX recorded large outflows, with approximately 15.99 million $USDT converging in one wallet before being distributed onward.
+
+Arisk traced funds through intermediary wallets on TRON into exchanges including OKX and Binance. Another 1,013,312 $USDT went to an address with illicit-finance and money-laundering risk associations.
+
+🔎 The change in the consolidation route deserves attention.
+
+Public transaction analysis indicates that TQKJQ…jqWUy had previously been regularly sweeping funds into CoinDCX’s hot wallet. This time, it transferred a large amount of…
+
+引用 @CoinDCX: Users’ funds are safe. ✅
+
+Claims circulating on X regarding certain wallet addresses and transactions are misleading.
+
+The transactions mentioned in recent claims involve old wallet addresses created in January 2025. 
+These addresses were compromised in July 2025 and have not been used by CoinDCX since. 
+The activity now being reported relates to these old addresses and does not have any connection with CoinDCX.
+
+Trading &amp; investing continue as usual.
+
+For updates, trust only official CoinDCX channels. 
+For any queries, reach out to  @CoinDCX_Cares</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Arisk_io_en/status/2113216597318050069" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 18:29</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@cryptowithmaddy<br>2,054 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX相关地址转出约1599万USDT和5783 TRX。官方称这些是2025年7月已被盗的旧地址，但链上记录与这一说法存在矛盾。</td><td><div class="tweet">🇮🇳 COINDCX: $16M TRANSFER SPARKS CONTROVERSY
+
+On-chain analyst Darcy flagged:
+
+• $15.99M in USDT
+• 5,783 TRX transferred
+• Funds reportedly reached exchange deposit addresses
+
+Sumit Gupta says no current CoinDCX wallets were breached and the addresses were compromised in July 2025
+
+why do the on-chain records and CoinDCX&#x27;s explanation appear to conflict?
+
+引用 @smtgpt: Thanks for highlighting but this is incorrect and CoinDCX wallets are not breached. Pls don&#x27;t spread rumours. 
+
+The addresses tagged by Arkham used to belong to CoinDCX before the last year hack ie July 2025. These addresses were generated in Jan 2025 and were compromised in the previous hack in July 2025. The hackers seem to be re-using the old wallet addresses and this sounds like a false alarm. We have checked all the present CoinDCX central and user addresses. None of them have sent money to these old addresses.
+
+All the CoinDCX addresses are public and can be seen on our POR link</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cryptowithmaddy/status/2113216269285732657" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 18:28</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Pratoshigeek<br>3,547 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>推文给出CoinDCX在TRON上的充值地址向新地址转出1582万USDT，资金再分流至币安、OKX、Gate及汇旺/新币保相关地址，呈现钱包被盗特征。</td><td><div class="tweet">🧵The 15.819M USDT that left CoinDCX Deposit address 
+TQKJQrWok6fsBqZi3mkLkL6qX4YEgjqWUy on Oct 21 went straight to 
+TAg6SZ1HhgVVjUaKY1paQoFBUS2JFrg5bT.
+
+That wallet then split the funds (part of a larger ~15.99M USDT + TRX move) and sent portions to Binance (~2.02M), OKX (~5.47M), Gate (~1.39M), and other destinations including addresses linked to Huione/Xinbi.
+
+PoR-listed CoinDCX addresses (TFLxNHunhEizmeEdiMyA3r2XGLSKaEznGd, TM5r1bNJ2TjZwfS757tPPtr84MwtEjL9qN)
+also interacted with the destination wallet.
+The hot wallet continued routine 15 TRX gas distributions around the same period.
+
+This …</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Pratoshigeek/status/2113216024195567806" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 18:16</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@kuchnewforyou<br>4,250 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>链上侦探称印度交易所CoinDCX相关TRON地址约1599万USDT和5784 TRX被转至单一TRON地址后分散到各交易所，疑似再次遭黑客攻击。</td><td><div class="tweet">CoinDCX Faces Suspected $16 Million Hack After $44 Million Breach in 2025
+
+India&#x27;s CoinDCX, one of the country&#x27;s largest cryptocurrency exchanges, may have suffered another security breach, according to on-chain investigator Darcy. On October 21, approximately 15.99 million USDT and 5,784 TRX were transferred from CoinDCX hot wallets and deposit addresses to a single TRON address, including one transfer of 15.82 million USDT. The funds were subsequently split and routed to deposit addresses at Binance, OKX and Gate. CoinDCX previously lost about $44 million in a July 2025 hack. The latest susp…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/kuchnewforyou/status/2113212794443375044" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 18:00</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@PopaRecon<br>30 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX回应10月21日的TRON异常转账,称涉及2025年7月已泄露的旧地址,事件仍需关注。</td><td><div class="tweet">CoinDCX says October 21 TRON transfers involved addresses compromised in July 2025.
+The exchange says current customer and central wallets were not breached.
+Ask a question: https://t.co/nAIezWCQ31</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/PopaRecon/status/2113208776807285197" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 17:53</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@DarcyAri<br>5,895 粉丝</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>Darcy列出CoinDCX的TRON热钱包地址向黑客地址TAg6...转账,被盗USDT流入交易所以及Huione、Xinbi相关地址。</td><td><div class="tweet">If @CoinDCX was not hacked, then it appears to have stolen its users’ assets itself.
+
+The following addresses listed in the latest PoR:
+
+TFLxNHunhEizmeEdiMyA3r2XGLSKaEznGd
+TM5r1bNJ2TjZwfS757tPPtr84MwtEjL9qN
+have transferred funds to the hacker address:
+
+TAg6SZ1HhgVVjUaKY1paQoFBUS2JFrg5bT
+
+Moreover, your hot wallet address, TFLxNHunhEizmeEdiMyA3r2XGLSKaEznGd, continued distributing 15 TRX both before and after what you describe as the hacking incident. Are you suggesting that the hackers were handling gas funding distribution for you?
+
+Some of the stolen funds have already flowed into exchanges…
+
+引用 @smtgpt: Thanks for highlighting but this is incorrect and CoinDCX wallets are not breached. Pls don&#x27;t spread rumours. 
+
+The addresses tagged by Arkham used to belong to CoinDCX before the last year hack ie July 2025. These addresses were generated in Jan 2025 and were compromised in the previous hack in July 2025. The hackers seem to be re-using the old wallet addresses and this sounds like a false alarm. We have checked all the present CoinDCX central and user addresses. None of them have sent money to these old addresses.
+
+All the CoinDCX addresses are public and can be seen on our POR link</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/DarcyAri/status/2113206998028480778" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">10-22 17:51</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@wublockchain12<br>182,055 粉丝<br>认证机构</span></td><td><b>事件：交易所 CoinDCX 热钱包疑似被盗约1599万USDT</b><br>CoinDCX的TRON充值地址异动,涉及约1580万美元用户充值资产,ZachXBT对官方的解释提出质疑。</td><td><div class="tweet">针对社区热议的异动转账，CoinDCX 官方及其联合创始人 Sumit Gupta 回应称用户资金绝对安全，相关异动地址系 2025 年 1 月生成并在同年 7 月黑客攻击中已遭泄露的废弃旧地址，此后平台从未再使用，本次链上转账系黑客重用旧地址所致，现存所有中央及充值热钱包未受影响。然而，链上侦探 ZachXBT 发文驳斥该说法，指出其涉事充值地址（TQKJQ 开头）在 2025 年 7 月被盗事件发生后的长达 10 个月内仍被流动性提供商（LP）持续使用，甚至在 2026 年 4 月与 5 月仍在归集用户充值并接收 Gas 费向 CoinDCX 当前公开热钱包转账，这意味着约 1,580 万美元的用户充值资产在官方管理中出现账目失控。目前 CoinDCX 官方尚未进一步置评回应。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/wublockchain12/status/2113206481902551121" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr></table></body></html>
