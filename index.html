@@ -1,0 +1,961 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, noai, noimageai"><title>监控结果 · Twitter 事件扫描</title><style>
+body { font: 14px/1.5 -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; margin: 16px; color: #222; background: #fff; }
+nav { margin-bottom: 16px; } nav a { margin-left: 16px; }
+h2 { margin-top: 28px; font-size: 18px; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 8px; }
+th, td { border: 1px solid #ddd; padding: 4px 6px; text-align: left; vertical-align: top; }
+th { background: #f5f5f5; white-space: nowrap; }
+.tweet { white-space: pre-wrap; word-break: break-word; min-width: 240px; }
+pre { background: #f5f5f5; padding: 8px; overflow-x: auto; font-size: 12px; white-space: pre-wrap; }
+label { display: block; margin: 10px 0; }
+label.inline { display: inline-block; margin-right: 16px; }
+textarea, input:not([type=checkbox]) { display: block; width: 100%; max-width: 640px; box-sizing: border-box; font: inherit; }
+textarea { font-family: ui-monospace, Menlo, monospace; }
+form { margin-bottom: 12px; }
+code { word-break: break-all; }
+.ok { color: #067d17; } .error, .risk { color: #b00020; }
+.nowrap { white-space: nowrap; }
+</style></head><body><nav><b>Twitter 事件扫描</b></nav><p>更新于 11-08 01:55（UTC+0800），每 30 分钟左右更新一次。</p><h2>运行状态</h2><table><tr><td><b>状态</b></td><td>正常</td></tr><tr><td><b>近 24 小时</b></td><td>新抓到 1859 条推文，其中判为风险 84 条（51 条讲的是已推送过的事件且没有新信息，不单独推送）</td></tr></table><h2>最近几轮</h2><table><tr><th>时间</th><th>抓到</th><th>新增</th><th>重复</th></tr><tr><td>11-08 01:52</td><td>227</td><td>35</td><td>192</td></tr><tr><td>11-08 01:18</td><td>227</td><td>32</td><td>195</td></tr><tr><td>11-08 00:45</td><td>247</td><td>33</td><td>214</td></tr><tr><td>11-08 00:09</td><td>247</td><td>52</td><td>195</td></tr><tr><td>11-07 23:37</td><td>247</td><td>33</td><td>214</td></tr></table><h2>风险推文（最近 100 条）</h2><table><tr><th>发布时间</th><th>等级</th><th>类型</th><th>作者</th><th>判定理由</th><th>推文</th><th>告警</th><th></th></tr><tr><td><span class="nowrap">11-08 01:45</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Nickmeta<br>7,235 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称有报道将DarkSword iPhone漏洞利用与TRON链上约400万美元USDT被盗关联，涉及手机钱包私钥被窃，需核实影响范围。</td><td><div class="tweet">Reports tie the DarkSword iPhone exploit to ~$4M in USDT drained on TRON 📱
+
+If your keys live on your phone, your phone is the vault.
+
+Update your iOS.
+Move long-term holdings off your daily device.
+Keep keys offline with something like @tangemwallet 🔐
+
+Where do your keys live? https://t.co/BbjfW1l0Pm</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Nickmeta/status/2119123968695177547" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-08 01:12</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@mycrypto_signal<br>71 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文引用CryptoSlate报道称零点击iOS漏洞从活跃TRON钱包中盗走约400万美元USDT,需核实是否涉及TronLink等钱包。</td><td><div class="tweet">End of day in crypto. 📊
+
+• 24h movers: QNT +2.3%, ENA -5.3%
+• CryptoSlate: Zero-click iOS exploits drain $4M USDT from active TRON wallets — CryptoSlate
+• Market cap: $2.40T (-0.3% 24h)
+
+More → https://t.co/xRRnZCSqJh
+Data, not advice.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/mycrypto_signal/status/2119115716586586430" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-08 00:39</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CWN_HQ<br>112 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安被盗事件中黑客将被盗的SOL、XRP及TRX等约1.75亿美元资产换成约2300枚BTC,被盗资产涉及TRX,与TRON生态相关。</td><td><div class="tweet">🚨 BREAKING
+
+The Binance hackers are swapping stolen altcoins into bitcoin.
+
+Elliptic says about $175M of SOL, XRP and TRX is now 2,300 BTC, spread across 20,000 wallets.
+
+Their main BTC and ETH haul hasn&#x27;t moved. Elliptic ties the theft to North Korea.
+
+Coins that sit still can be frozen if they ever touch a regulated exchange.
+
+But a laundering run this automated, one new wallet every 30 seconds, is hard to chase.
+
+Source: https://t.co/484ebhFzdi News
+
+$BTC #Bitcoin #CryptoHack #CryptoWorldNews</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/CWN_HQ/status/2119107589967388784" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-08 00:33</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@fanxing001_btc<br>4,766 粉丝</span></td><td><b>事件：MEXC 关闭 TRC20 等网络提现，用户资金面临提现受限风险</b><br>推文称MEXC(抹茶)遭FinCEN限制后已关闭TRC20等网络提现，USDT用户可能面临提现受限和流动性风险，涉及TRON上的USDT。</td><td><div class="tweet">现在别研究从抹茶MEXC 提出来的钱怎么洗白了。
+
+你现在要做的就是，立刻马上把你的钱从抹茶提出来，趁这些中心交易所还没有动作之前。这是你目前最好的选择！
+
+现在该怎么做？
+用 USDT 兑换成 USDC，然后立刻提现，不要再研究后续处理。
+
+优先提到自己控制的钱包（最好是硬件钱包），而不是直接冲其他中心化交易所。
+
+检查当前可用网络，避开正在维护的通道，小额测试后再大额操作。
+
+提完后不要急着去其他交易所充值。即使你是干净资金，从MEXC热钱包出来的地址现在很容易被其他平台的KYT系统打高风险分，可能触发延迟到账或额外审核。
+
+目前还开放的主流网络还有ERC20，BASE，
+而TRC20、BSC (BEP20)、SOL 、Arbitrum、Polygon 等多个网络都已经关闭，这不是个好消息！
+
+我猜，大规模系统性限制提现的窗口大概在未来 24–72 小时内，而且不一定会提前公告。直接宣告破产的可能性不大，但是一旦出现流动性危机，有可能会软跑路。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/fanxing001_btc/status/2119106014482137411" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 23:54</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">后门/恶意代码</span></td><td><span class="nowrap">@0xutopia<br>1,497 粉丝</span></td><td><b>事件：悟空外卖App被植入恶意木马致用户USDT被盗</b><br>推文称悟空外卖App曾被植入恶意木马，导致许多用户的U（USDT）被盗。</td><td><div class="tweet">5 购物 美食 外卖 打车
+
+曼谷的美食太多太多了，我无法一一追述。大部分都可以在万能的小红书上找到。点外卖打车可以使用grab (大部分都是泰国菜，不过蜜雪霸王茶姬等在grab上可以搜到。grab可以绑定u卡。) 中餐可以使用悟空外卖和简单点这两个软件（关于悟空外卖暂时不建议下载app，可以先试用微信小程序。因为前段时间悟空app被植入了恶意木马，很多人因此被盗u）。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/0xutopia/status/2119096158283034762" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 23:50</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@qkl2058<br>83,807 粉丝</span></td><td><b>事件：TRON 用户遭地址投毒损失53.5万USDT</b><br>推文称有用户遭地址投毒攻击，损失53.5万USDT，资金在Tether冻结前已被转走。</td><td><div class="tweet">🚨 如果你在加密圈，忽视这篇帖子，风险自己承担。
+
+一位朋友损失了 535,000 USDT。他甚至先做了一笔测试转账。钱包没被黑，私钥也从没泄露。他是输给了一个机器人。
+
+测试转账顺利到账。几秒内，一个机器人从一个假地址给他的钱包转了 1 USDT。这个假地址的开头和结尾字符，和真实地址一模一样。现在，这个假地址就出现在他的交易历史里，紧挨着真实地址。
+
+等他去转全款时，从交易历史里复制了地址，选中的却是假地址。钱 30 秒内就没了，在 Tether 冻结之前，USDT 已经被换走。
+
+这叫地址中毒攻击，已经在工业规模上运行。搞到他的那个机器人，已经执行了超过 600 万笔交易，专门盯着任何转移大额资金的人。
+
+下面这些做法，能确保这件事永远不发生在你身上：
+
+• 永远不要从交易历史或区块链浏览器复制地址
+• 测试转账后，从收款方发给你的原始消息里重新复制地址
+• 逐个字符检查，因为这些机器人会匹配开头和结尾
+• 把已验证地址保存在钱包地址簿里，并加上名称
+
+现在打开你的钱包，检查历史记录。如果有一笔来自陌生地址的小额存款，说明已经有机器人盯上你了。发现了就在下面告诉我。
+
+转发这篇帖子，分享给你认识的在链上转移资金最多的人。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/qkl2058/status/2119095028429779181" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 23:48</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@hokanewscom<br>27,374 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>Hokanews报道Bitquery追踪到约400万美元USDT被盗，涉及365个TRON地址，与iPhone漏洞利用有关。</td><td><div class="tweet">JUST IN:Bitquery Traces $4 Million USDT Theft Across 365 TRON Addresses Linked to iPhone Exploits</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/hokanewscom/status/2119094719343100004" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 23:48</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@0xutopia<br>1,497 粉丝</span></td><td><b>事件：假冒泰国入境卡填写链接诈骗疑涉盗U</b><br>推文称网上有冒充泰国入境卡的诈骗链接，涉及东南亚盗U黑产，可能针对持有USDT的用户。</td><td><div class="tweet">一、入境篇
+1、入境卡:所有游客不管是什么类型签证在入境前都需要填写入境卡。在网络上有很多入境卡的填写链接是诈骗链接可能涉及东南亚盗u灰黑产。目前泰国官方出了专用的app：Thim。 （此处避坑入境卡填写后不需要支付任何费用。需要付费的都是诈骗）
+2、其他入境相关：除了长期签证以外。旅游签和落地签证都需要回程机票以及全程的酒店预定订单(可以使用中介代办或者咸鱼)。 一年免签入境太多次可能会被海关卡，如果有这种情况。需要提前购买保关服务。如果没有保关，被海关拉到小黑屋,注意坚持自己是真实的旅游,不要签任何关于遣返的文件,否则临时再去保关会是天价。
+（上述入境政治背景说明：这两年太多灰黑产使用各类手段躲在泰国，目前泰国政府严查各类身上有各类大小事情的中国人，今年抓了很多人抄了很多家。如需入境签证）</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/0xutopia/status/2119094603798438034" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 23:42</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@cryptomediazone<br>66 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称已追踪到至少406万美元从365个TRON钱包被盗，涉及与DarkSword相关的大规模钱包盗取事件（据PANews统计，加上其他链共430个钱包、416万美元），但与DarkSword的关联尚未证实。</td><td><div class="tweet">@CryptosR_Us Caution: the link between the drained wallets and DarkSword is still unproven. What is traced is at least $4.06M from 365 TRON wallets, and PANews counts $4.16M across 430 wallets once eight more chains are included.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cryptomediazone/status/2119093262136889849" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 23:34</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@WaterShowX<br>112 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文引用Bitquery数据称,10月5日至11月4日间约400万美元USDT从365个TRON地址被盗。攻击者疑似利用iOS零点击漏洞,先给受害地址转入TRX作手续费,再转走USDT。</td><td><div class="tweet">How to protect your crypto from a zero-click iOS exploit targeting wallets.
+Bitquery traced $4 million in USDT thefts across 365 TRON victim addresses between October 5 and November 4.
+the play: check device &gt; update iOS &gt; secure keys
+
+A zero-click exploit requires no action from you to infect your device. Attackers use spyware like DarkSword delivered through malicious ads to drain crypto wallets on iPhones.
+
+• Trust Wallet and Uniswap Wallet users reported compromises totaling $127,000 in a separate recent log
+• The attackers fund a target wallet with TRX for network fees and then drain the …</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/WaterShowX/status/2119091187214651685" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 22:55</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@rst_cloud<br>916 粉丝</span></td><td><b>事件：NIKKE PC 启动器 CDN 文件被篡改植入窃密木马</b><br>威胁报告称NIKKE PC启动器CDN文件被篡改，植入远控木马，会窃取钱包扩展数据，目标钱包中明确包括TronLink，TronLink用户的私钥/资产可能面临风险。</td><td><div class="tweet">#threatreport #MediumCompleteness
+MotherSphere/nikke-pc-launcher-compromise.md | 05-11-2026
+Source: https://t.co/6KWvy4AHfy
+Key details below ↓
+
+💀Threats:
+Dll_hijacking_technique, 
+🎯Victims: Video gaming
+
+🏭Industry: Financial
+
+📚TTPs:
+⚔️Tactics: 1
+🛠️Technics: 0
+
+🤖LLM extracted TTPs:`
+T1005, T1012, T1016, T1027, T1027.013, T1041, T1059.007, T1059.011, T1083, T1105, ...
+
+🧨IOCs:
+ - File: 23
+ - Hash: 1
+ - IP: 1
+ - Registry: 2
+ - Path: 1
+
+💽Software: Linux, Steam, Chrome, Google Chrome, Discord, OpenAI, Anthropic, Vivaldi, Opera, Firefox, ...
+
+📲Wallets: metamask, coinbase, bybit, rabby, keplr, solfla…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/rst_cloud/status/2119081218742288410" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 22:52</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@kupa208<br>21,224 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称有一个iOS零点击漏洞，导致活跃的TRON钱包被盗约400万美元USDT，属于影响TRON用户的具体攻击事件，需要核实。</td><td><div class="tweet">Crypto security is no longer just about smart contracts.
+
+Và những gì xảy ra trong ngày hôm nay là một lời nhắc nhở khá rõ.
+
+Hai sự kiện đáng chú ý:
+• Một vụ zero-click exploit trên iOS được báo cáo đã khiến các ví TRON đang hoạt động mất $4M USDT.
+• NEAR Intents từ chối hơn 500 triệu transaction quote liên quan đến dòng tiền từ vụ hack Binance.
+
+Hai sự kiện, hai lớp bảo mật khác nhau.
+
+Một bên là thiết bị của người dùng.
+Một bên là tầng thực thi giao dịch.
+
+Trước đây, khi nói đến security trong crypto, phần lớn chúng ta nghĩ đến audit smart contract, private key và ví lạnh.
+
+Nhưng thực tế đan…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/kupa208/status/2119080567937618251" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 22:12</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@eastern_oa<br>3,656 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>新闻摘要称零点击iOS漏洞从活跃的TRON钱包中盗走约400万美元USDT，与TRON生态用户资金直接相关，需要核实。</td><td><div class="tweet">Today’s 5 stories ·
+
+1. Stablecoin contraction forces Bitcoin drop despite Fed reserve gains
+
+2. PA Daily | The central bank responded to suspending Solana Shanghai offline activities: it will investigate the units and individuals involved; Binance will close French user accounts on December 31
+
+3. Zero-click iOS exploits drain $4M USDT from active TRON wallets
+
+4. WuBlockchain Weekly: Democratic Win Triggers Market Selloff, Vitalik Flags Crypto Survival Priority, Binance Exposes $6.34B Hack Plot, etc
+
+5. Why are tokenized U.S. stocks collectively rejected by listed companies? Whose hands are …</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/eastern_oa/status/2119070443592458578" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:41</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@lovezihuatanejo<br>37,659 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>BlockBeats 搜索页被植入 DarkSword 攻击链，会按 iOS 版本加载漏洞利用代码，目标包括 TronLink 钱包。</td><td><div class="tweet">This feels like sci-fi. You read news on iPhone and lose your wallet?
+
+Oct 22, @GCSAHK&#x27;s agent caught DarkSword injected into BlockBeats search page. No click. No auth. No connect.
+
+The chain is nasty: page loads -&gt; hidden page created -&gt; detects your iOS version -&gt; loads matching exploit -&gt; targets MetaMask, imToken, TronLink.
+
+We used to think &quot;don&#x27;t click weird links = safe&quot;. Not anymore. In AI era, attack AND defense are both automated. GCSA scored big here. https://t.co/8PEiDi3Bzk
+
+引用 @yyyole: 什么世道啊？这也太科幻了吧！！
+用 iPhone 看个新闻，都可能把自己的资产看没了？？
+这是我最近看过最刺激的Agent攻防战！
+
+这次中招的居然是知名币圈媒体 BlockBeats！
+10 月 22 日，@GCSAHK 的Agent 巡检发现BlockBeats的搜索页面被植入了与 DarkSword 有关的恶意脚本！
+
+整个攻击方式相当阴险！！
+用户正常搜索新闻资讯，页面看起来一切正常。
+但在用户毫无察觉的情况下：
+→ 页面会自动加载第三方恶意脚本；
+→ 然后脚本偷偷创建隐藏页面；
+→ 接着会自动识别用户的 iOS 系统版本；
+→ 最后尝试加载对应的 DarkSword 漏洞利用代码；
+→ 攻击配置甚至直接将 MetaMask、imToken、TronLink 等加密钱包列为目标！
+
+最恐怖的是！！
+无需点击！无需授权！甚至不需要连接钱包！！
+只要访问受感染页面，恶意脚本就可能自动运行。
+攻击链专门针对 iOS 漏洞，试图突破系统防护，窃取钱包敏感信息！
+
+真的是防不胜防！细思极恐！！
+以前觉得只要不乱点链接、不授权钱包、不泄露助记词，资产就足够安全。
+现在连正常浏览网站，都可能成为攻击入口！
+
+果然在AI 时代，攻击与防御都在加速自动化。
+很多人都忽略了，安全领域，AI绝对是有大作为的！
+
+另外一说，GCSA这波真的是上大分了！
+有兴趣可以看看：https</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/lovezihuatanejo/status/2119062735497609304" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:39</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Cholesmartstore<br>150 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>GCSA 发现 BlockBeats 搜索页被注入 DarkSword 恶意脚本，零交互攻击 iOS 设备上的 TronLink 等钱包。</td><td><div class="tweet">This is surreal! You risk losing crypto just reading news on iPhone.
+
+GCSA’s Agent‑based monitoring found DarkSword malicious scripts injected into BlockBeats search page on Oct 22. Zero‑interaction attack: no clicks, no wallet connect, no signature needed. Just loading the page runs exploits targeting MetaMask, imToken, TronLink and more by abusing iOS flaws.
+
+We can’t feel safe even browsing trusted sites anymore. AI‑powered automated offense‑defense is reshaping Web3 security. Shout‑out to GCSA for this great finding.
+
+引用 @yyyole: 什么世道啊？这也太科幻了吧！！
+用 iPhone 看个新闻，都可能把自己的资产看没了？？
+这是我最近看过最刺激的Agent攻防战！
+
+这次中招的居然是知名币圈媒体 BlockBeats！
+10 月 22 日，@GCSAHK 的Agent 巡检发现BlockBeats的搜索页面被植入了与 DarkSword 有关的恶意脚本！
+
+整个攻击方式相当阴险！！
+用户正常搜索新闻资讯，页面看起来一切正常。
+但在用户毫无察觉的情况下：
+→ 页面会自动加载第三方恶意脚本；
+→ 然后脚本偷偷创建隐藏页面；
+→ 接着会自动识别用户的 iOS 系统版本；
+→ 最后尝试加载对应的 DarkSword 漏洞利用代码；
+→ 攻击配置甚至直接将 MetaMask、imToken、TronLink 等加密钱包列为目标！
+
+最恐怖的是！！
+无需点击！无需授权！甚至不需要连接钱包！！
+只要访问受感染页面，恶意脚本就可能自动运行。
+攻击链专门针对 iOS 漏洞，试图突破系统防护，窃取钱包敏感信息！
+
+真的是防不胜防！细思极恐！！
+以前觉得只要不乱点链接、不授权钱包、不泄露助记词，资产就足够安全。
+现在连正常浏览网站，都可能成为攻击入口！
+
+果然在AI 时代，攻击与防御都在加速自动化。
+很多人都忽略了，安全领域，AI绝对是有大作为的！
+
+另外一说，GCSA这波真的是上大分了！
+有兴趣可以看看：https</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Cholesmartstore/status/2119062099213377832" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:33</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@yahyaiqbal40785<br>6,079 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>Binance 安全事件后分阶段恢复提现，涉及 TRON 网络，需关注此事件对 TRON 资产的影响。</td><td><div class="tweet">Good Night @binance
+
+Binance Daily Update #25 | November 7, 2026
+
+SECURITY RECOVERY: What&#x27;s New and What&#x27;s Next?
+
+Here are the latest important Binance developments explained simply:
+
+Recovery Update #9: Binance announced another phased reopening of withdrawals on November 6.
+
+Nine Networks: The rollout covers BSC, Base, Ethereum, Optimism, Polygon, Arbitrum, Avalanche, TRON and Sui. Not all assets will become available at once. Security checks will determine the pace of restoration.
+
+Recovery Progress: Binance&#x27;s November 4 update reported that approximately 98% of affected assets had been rep…
+
+引用 @yahyaiqbal40785: Peaceful Maghrib Moments and a Beautiful Evening https://t.co/2397jWnrD3</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/yahyaiqbal40785/status/2119060791852949694" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:32</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@lovezihuatanejo<br>37,659 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>据报 BlockBeats 搜索页被植入 DarkSword 恶意脚本，可零交互利用 iOS 漏洞，目标钱包包含 TronLink，已有钱包被盗的提醒。</td><td><div class="tweet">Another wallet drain with no phishing link. No connect. No signature. Nothing.
+
+You just search for a coin on BlockBeats, like normal, and your iPhone wallet could be at risk. The script was loaded from the official media domain itself - not some sketchy link you clicked.
+
+Target list includes imToken, MetaMask, TronLink. Basically everyone&#x27;s daily wallet.
+
+If you browsed that search page recently:
+1. Update iOS NOW
+2. Turn on Lockdown Mode for extra safety
+3. If you see weird transfers, migrate to a brand new seed phrase. Do NOT import the old one to another phone.
+
+This GCSA report is the re…
+
+引用 @zhongying14: 我去！！！又一个不用点钓鱼链接就能投钱包的！！
+朋友们注意了，BlockBeats 搜索页被挂了 DarkSword 相关脚本，你只是正常搜个币，iPhone 钱包就可能中招！不用连钱包、不用签名、也不用点陌生链接！！
+
+这里有个很关键的细节！！
+攻击是从媒体官网域名里直接加载的，不是你点了啥奇怪的链接！目标清单里有 imToken、MetaMask、TronLink 这些常用钱包
+
+如果你最近用 iPhone 刷过相关搜索页：
+1️⃣ 先去设置里把系统更新到最新
+2️⃣ 暂时更稳的话可以开「锁定模式」
+3️⃣ 已经出现莫名转账的，立刻换新助记词迁资产，别再把旧助记词导入另一台手机了！！
+
+这份是 GCSA 全球网络安全联盟的排查报告，BlockBeats 已经在通知后修了，建议先看完再继续刷链上新闻👇
+https://t.co/N46w3lO2nV</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/lovezihuatanejo/status/2119060375572537631" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:24</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@rst_cloud<br>914 粉丝</span></td><td><b>事件：Armorsteal Python 恶意软件经假冒工具网站窃取 TronLink 等钱包数据</b><br>威胁报告称Armorsteal Python恶意软件通过假冒工具网站传播，会窃取TronLink等钱包扩展数据和助记词，并用假钱包通知诱导用户解锁钱包。</td><td><div class="tweet">#threatreport #MediumCompleteness
+Armorsteal Unpacked: Breaking Down a Python Malware Kit That Steals Data and Mines Crypto | 06-11-2026
+Source: https://t.co/KHP789ltsr
+Key details below ↓
+
+💀Threats:
+Armorsteal, Xmrig_miner, Pyarmor_tool, Process_hacker_tool, Chromelevator_tool, 
+📚TTPs:
+⚔️Tactics: 7
+🛠️Technics: 33
+
+🧨IOCs:
+ - Domain: 11
+ - Path: 2
+ - File: 8
+ - IP: 2
+ - Hash: 25
+
+💽Software: Chocolatey, Process Explorer, Windows Defender, Discord, Discord Canary, Discord PTB, Lightcord, Chrome, Opera, Opera GX, ...
+
+📲Wallets: tron, metamask, exodus_wallet, rabby, tronlink, electrum, coinomi, coi…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/rst_cloud/status/2119058461824545242" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:16</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@shitunote<br>5,272 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>GCSA报告BlockBeats搜索页被注入DarkSword相关恶意脚本，会探测iPhone上安装的TronLink等钱包，为后续窃取做准备。</td><td><div class="tweet">最近网络安全事件频发！
+
+先是10月21日曝光的PHP2Shell高危漏洞，几乎影响所有PHP版本，可未认证远程代码执行；紧接着10月29日币安遭遇约63亿美元资产被盗的史上最大加密货币盗窃案。这些已经足够让人警惕。
+
+而另一个更贴近日常使用的风险也需要重点关注 👇
+
+GCSA安全团队@GCSAHK在10月22日的日常巡检中发现，加密媒体BlockBeats的搜索页被注入了与DarkSword攻击链相关的恶意脚本。用户用iPhone浏览器正常打开页面，搜索结果照常显示，页面既不会弹出“连接钱包”提示，也不会要求签名或点击任何确认按钮。但后台已经在悄悄加载来自第三方域名的可疑脚本，并创建隐藏页面，尝试检测设备系统版本、识别已安装的钱包应用（如imToken、MetaMask、TronLink等），为后续攻击做准备。
+
+这意味着，只要访问受影响的正规页面，无需任何额外操作，就可能接触到攻击入口。以往大家主要防的是陌生人发的钓鱼链接或假网站，现在连自己常看的正规媒体页面也可能被投毒。DarkSword是Google威胁情报团队今年3月披露的iOS攻击链，由多个漏洞串联而成，主要针对iOS 18.4至18.7等版本，可突破浏览器沙箱并进一步提升权限，最终读取钥匙串、钱包数据等敏感信息。新变种还专门强化了针对加密钱包的扫描与提取能力。
+
+BlockBeats在收到通知后已于10月23日确认并…
+
+引用 @GCSAHK: 🚨 On Oct 22, GCSA Security Agent detected a DarkSword-linked script injection on the BlockBeats search page targeting iPhone crypto wallets without requiring user interaction. BlockBeats confirmed the issue was resolved on Oct 23 following our notification. 🛡️ #GCSAInsights
+
+Read the full analysis:
+GCSA Insight: BlockBeats Poisoned by DarkSword Attack Chain, iPhone Wallets at Risk of Theft 
+🔗 https://t.co/fmCh8vvTEW</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/shitunote/status/2119056387208806519" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:16</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@IPFS15<br>5,737 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>引用推文称BlockBeats搜索页被注入DarkSword攻击脚本，无需交互即可攻击iPhone钱包，目标包括TronLink。</td><td><div class="tweet">BlockBeats已经修了，但这类从官网加载的脚本以后还会有。建议大家平时把常用钱包助记词单独备份好，出事先换新的最稳。
+
+引用 @zhongying14: 我去！！！又一个不用点钓鱼链接就能投钱包的！！
+朋友们注意了，BlockBeats 搜索页被挂了 DarkSword 相关脚本，你只是正常搜个币，iPhone 钱包就可能中招！不用连钱包、不用签名、也不用点陌生链接！！
+
+这里有个很关键的细节！！
+攻击是从媒体官网域名里直接加载的，不是你点了啥奇怪的链接！目标清单里有 imToken、MetaMask、TronLink 这些常用钱包
+
+如果你最近用 iPhone 刷过相关搜索页：
+1️⃣ 先去设置里把系统更新到最新
+2️⃣ 暂时更稳的话可以开「锁定模式」
+3️⃣ 已经出现莫名转账的，立刻换新助记词迁资产，别再把旧助记词导入另一台手机了！！
+
+这份是 GCSA 全球网络安全联盟的排查报告，BlockBeats 已经在通知后修了，建议先看完再继续刷链上新闻👇
+https://t.co/N46w3lO2nV</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/IPFS15/status/2119056287434735692" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:10</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@yyyole<br>36,660 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>BlockBeats页面被注入DarkSword漏洞利用脚本，针对iOS设备窃取钱包信息，攻击配置将TronLink列为目标。</td><td><div class="tweet">什么世道啊？这也太科幻了吧！！
+用 iPhone 看个新闻，都可能把自己的资产看没了？？
+这是我最近看过最刺激的Agent攻防战！
+
+这次中招的居然是知名币圈媒体 BlockBeats！
+10 月 22 日，@GCSAHK 的Agent 巡检发现BlockBeats的搜索页面被植入了与 DarkSword 有关的恶意脚本！
+
+整个攻击方式相当阴险！！
+用户正常搜索新闻资讯，页面看起来一切正常。
+但在用户毫无察觉的情况下：
+→ 页面会自动加载第三方恶意脚本；
+→ 然后脚本偷偷创建隐藏页面；
+→ 接着会自动识别用户的 iOS 系统版本；
+→ 最后尝试加载对应的 DarkSword 漏洞利用代码；
+→ 攻击配置甚至直接将 MetaMask、imToken、TronLink 等加密钱包列为目标！
+
+最恐怖的是！！
+无需点击！无需授权！甚至不需要连接钱包！！
+只要访问受感染页面，恶意脚本就可能自动运行。
+攻击链专门针对 iOS 漏洞，试图突破系统防护，窃取钱包敏感信息！
+
+真的是防不胜防！细思极恐！！
+以前觉得只要不乱点链接、不授权钱包、不泄露助记词，资产就足够安全。
+现在连正常浏览网站，都可能成为攻击入口！
+
+果然在AI 时代，攻击与防御都在加速自动化。
+很多人都忽略了，安全领域，AI绝对是有大作为的！
+
+另外一说，GCSA这波真的是上大分了！
+有兴趣可以看看：https://t.co/K…
+
+引用 @GCSAHK: 🚨 On Oct 22, GCSA Security Agent detected a DarkSword-linked script injection on the BlockBeats search page targeting iPhone crypto wallets without requiring user interaction. BlockBeats confirmed the issue was resolved on Oct 23 following our notification. 🛡️ #GCSAInsights
+
+Read the full analysis:
+GCSA Insight: BlockBeats Poisoned by DarkSword Attack Chain, iPhone Wallets at Risk of Theft 
+🔗 https://t.co/fmCh8vvTEW</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/yyyole/status/2119054869474517498" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:09</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@zhongying14<br>6,755 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>BlockBeats搜索页被植入DarkSword相关恶意脚本，无需交互即可攻击iPhone钱包，目标清单包含TronLink。</td><td><div class="tweet">我去！！！又一个不用点钓鱼链接就能投钱包的！！
+朋友们注意了，BlockBeats 搜索页被挂了 DarkSword 相关脚本，你只是正常搜个币，iPhone 钱包就可能中招！不用连钱包、不用签名、也不用点陌生链接！！
+
+这里有个很关键的细节！！
+攻击是从媒体官网域名里直接加载的，不是你点了啥奇怪的链接！目标清单里有 imToken、MetaMask、TronLink 这些常用钱包
+
+如果你最近用 iPhone 刷过相关搜索页：
+1️⃣ 先去设置里把系统更新到最新
+2️⃣ 暂时更稳的话可以开「锁定模式」
+3️⃣ 已经出现莫名转账的，立刻换新助记词迁资产，别再把旧助记词导入另一台手机了！！
+
+这份是 GCSA 全球网络安全联盟的排查报告，BlockBeats 已经在通知后修了，建议先看完再继续刷链上新闻👇
+https://t.co/N46w3lO2nV
+
+引用 @GCSAHK: 🚨 On Oct 22, GCSA Security Agent detected a DarkSword-linked script injection on the BlockBeats search page targeting iPhone crypto wallets without requiring user interaction. BlockBeats confirmed the issue was resolved on Oct 23 following our notification. 🛡️ #GCSAInsights
+
+Read the full analysis:
+GCSA Insight: BlockBeats Poisoned by DarkSword Attack Chain, iPhone Wallets at Risk of Theft 
+🔗 https://t.co/fmCh8vvTEW</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/zhongying14/status/2119054526401372275" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 21:00</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@AI_jacksaku<br>28,815 粉丝</span></td><td><b>事件：某用户授权 VSCode 插件致钱包被盗约15万U</b><br>用户称粉丝群成员因授权恶意VSCode插件，钱包被黑客转走约15万U（USDT），可能涉及TRON上的USDT。</td><td><div class="tweet">被黑客转走15万是真事！兄弟们，我真的没开玩笑，本来只是想着搞点芝麻，谁知道把西瓜弄丢了😅 https://t.co/eg4XkFJDfc
+
+引用 @AI_jacksaku: 卧槽啊！兄弟们，我刚看完这份报告手心全是汗🤯！！
+
+联想起上个月我粉丝群里一个兄弟因为授权了vscode的插件，导致被黑客转走了钱包所有的币，累计损失去到15万u了！
+
+我赶紧就去把自己钱包的授权全撤了一遍，太后怕了。
+
+上个月币安被盗约 63.4 亿美元，黑客最后就是靠滥用一个链上授权机制，绕开了正常提现。连头部交易所都会栽在授权上，我们平时随手点的 approve 有几个人管过？？
+
+GCSA @GCSAHK  他们把21 亿笔历史交易一笔一笔重放，揪出了 100 多个有风险的合约，里面说不定就有你天天在用的。
+
+这些合约的问题都差不多，谁都能指定它去调用哪个合约，你给过它的授权就可能被别人拿去转走你的币。
+
+我真心建议兄弟们，有些授权用完就撤销吧。要知道赚多少不重要，能守住多少才重要啊！
+
+这份报告出自全球网络安全联盟 GCSA 的 Web3 实验室，感兴趣的兄弟可以去👉https://t.co/8XobzzCitQ看看更多详细内容</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/AI_jacksaku/status/2119052248240234983" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 20:29</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@keke11199<br>4,550 粉丝</span></td><td><b>事件：$TENDRIL 卖出逻辑漏洞被利用致流动性池USDT被抽干</b><br>安全事件汇总提到$TENDRIL流动性池内USDT被抽干约55.5万美元，引用推文称Predict用户钱包被盗约39.77万USDT。两起事件都没有写明链，可能涉及TRON上的USDT，值得核查。</td><td><div class="tweet">最新一周加密安全事件，连查黑客的公司都被黑了：
+
+加密钱包 Keplr 部分 Google／Apple 登录账户出现未授权交易。
+
+Gnosis Pay 的旧系统遭入侵，部分客户资料泄露。
+
+链上分析公司 Chainalysis 用户信息、密码哈希及登录令牌泄露，部分交易监控账户遭未授权访问。
+
+巴西加密交易所 Mercado Bitcoin 多链钱包遭盗，Bitquery统计损失约4,860万美元，其中约1,180万美元已冻结。
+
+BitMart 被攻击，估算关联钱包损失约42.4万美元，攻击者与Mercado Bitcoin案件有关联。
+
+BTCPay Server 部分旧版服务器上的热钱包遭盗，损失约163万美元，涉及BTC和LTC。
+
+FLOKI Telegram交易机器人遭攻击，已下线并计划迁移剩余用户资金，损失金额尚未公布。
+
+$TENDRIL 卖出逻辑漏洞被利用，流动性池内USDT几乎被抽干，估计损失约55.5万美元。
+
+Solana套利机器人 King 主钱包被盗约85.6万美元。
+
+Loopscale 金库逻辑遭利用，官方称已补足受影响金库，用户存款不承担损失。
+
+引用 @keke11199: 近一周加密安全事件，每天睁眼都是狼人杀：
+
+-币安热钱包被盗约 63 亿美元，目前约 30 亿美元涉案资产已冻结。
+
+-Polymarket第三方监控脚本遭篡改，损失约 270 万美元，95% 的受影响钱包已获全额返还。
+
+-Bloom Trading第三方模块漏洞导致 9,408 SOL 被盗，涉及 9 名用户，承诺全额赔付。
+
+-Predict用户钱包遭盗，累计金额约 39.77 万 USDT，疑与 API 文档网站入侵有关
+
+-Avalanche 上 RWA 信贷池结算漏洞被利用，损失约 101.34 万 USDC。
+
+-zkLink Nova跨链桥遭攻击，损失约 78 万—80 万美元，已暂停出块、提现并紧急修补。
+
+-Hifi FinanceDAO 治理被黑客接管；Yapeswap治理门槛漏洞被利用。
+
+-Diamante约 1.61 亿枚 DIAM 被未经授权增发，官方称约 70% 已冻结。
+
+-Solflare验证者运营密钥受损、部分运营资金被转走
+
+-Flap、Kintsu、StonkFun 等10多个网站同一轮前端攻击涉及盗币脚本。
+
+-Bithumb内部办公系统被入侵，844 名客户信息泄露，另有加密客户资料及员工资料被取走。
+
+-Keystone客户资料及设备认证密钥泄露，宣布销毁 18,835 台库存设备。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/keke11199/status/2119044460093095963" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 20:18</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@0x_web3_wagmi<br>274 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安被盗资金中大量稳定币被Tether冻结，被盗资产包含USDT，可能涉及TRON上的USDT，值得核查相关地址和资金流向。</td><td><div class="tweet">币安被盗的钱有44%，约28.5亿美元被冻结或扣押，大部分是 Tether 和 Circle 在一小时内锁住的稳定币
+
+Bybit 那次只冻住3%左右
+
+所以黑客现在专挑冻不了的跑：约5000万美元的XRP已经经 THORChain 换成BTC，还有2.26亿美元排队，稳定币能冻，比特币冻不了 https://t.co/Y47HHt0IeM</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/0x_web3_wagmi/status/2119041766603251723" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 20:18</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@benson_kris<br>224 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称一名用户在iPhone Safari访问恶意网页后，被DarkSword漏洞利用链窃取约16,428美元USDT，据称影响25款以上钱包App，可能涉及TRON上的USDT及TronLink。</td><td><div class="tweet">你的加密货币可能因为逛了个 porn 网站就被偷光
+
+听着像段子。但加密资产被盗这事儿，可不是闹着玩的。
+
+据报道，一位女士在 iPhone 上看了个 furry porn（兽人色情）视频，结果丢了 16,428 美元的 USDT。
+
+她在 Safari 里打开视频，被广告跳转到了别的页面，没过多久，钱包就被掏空了。
+
+没下载任何 App，没输入助记词，没批准任何交易。
+
+更离谱的还在后面。
+
+只要你的 iPhone 运行的是有漏洞的 iOS 版本，光是加载一个恶意网页，就可能被攻破。
+
+实际过程是这样的：
+- 你打开了一个不太正经的网站。  
+- 恶意代码被注入到页面里。  
+- 像 DarkSword 这样的 Safari 漏洞利用链，专挑你过时 iOS 上的漏洞下手。  
+- 攻击者接触到敏感数据，包括钱包凭证和助记词。  
+- 你的币就这么没了，你连交易确认都没点过。  
+
+研究人员已经记录到 DarkSword 影响了 25 款以上的加密钱包 App。关掉标签页？没用的，该发生的已经发生了。
+
+两分钟安全自查清单：
+- 把 iOS 更新到最新版本。  
+- 助记词千万别存在备忘录或截图里。  
+- 助记词离线保存。  
+- 大额资产用硬件钱包。  
+
+浏览记录丢人就算了，钱包被清空才是真的惨。
+
+gmgn：https://t.co/Y2SvOE069G
+
+引用 @benson_kris: 他曾经有7万枚比特币。然后他拿去买了两块披萨
+
+我扒过不少早期地址，这个看完，沉默了半天。
+
+2010年，他手里7万枚 $BTC。
+
+花掉的方式，现在看每一条都像刀子：
+1万枚，买了两个披萨。  
+1.5万多枚，转给朋友。  
+2万多枚，带女孩去夜店、去度假。  
+剩下的，换豪车、换手表。
+
+今天，这7万枚 $BTC，价值超过1000亿美元。
+
+说真的，我平时不太替别人心疼钱。这次真破防了。
+
+最贵的从来不是披萨。是他当时觉得，那玩意儿不值钱。
+
+人这一生最残酷的一课：你花掉的不是币，是你还没看懂的未来。
+
+gmgn：https://t.co/Y2SvOE069G</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/benson_kris/status/2119041676882653532" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 20:10</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@AI_jacksaku<br>28,812 粉丝</span></td><td><b>事件：某用户授权 VSCode 插件致钱包被盗约15万U</b><br>推文称一名用户因授权VSCode插件，钱包里的币被黑客全部转走，累计损失约15万U（USDT）。这是可能涉及TRON链USDT的被盗报告。</td><td><div class="tweet">卧槽啊！兄弟们，我刚看完这份报告手心全是汗🤯！！
+
+联想起上个月我粉丝群里一个兄弟因为授权了vscode的插件，导致被黑客转走了钱包所有的币，累计损失去到15万u了！
+
+我赶紧就去把自己钱包的授权全撤了一遍，太后怕了。
+
+上个月币安被盗约 63.4 亿美元，黑客最后就是靠滥用一个链上授权机制，绕开了正常提现。连头部交易所都会栽在授权上，我们平时随手点的 approve 有几个人管过？？
+
+GCSA @GCSAHK  他们把21 亿笔历史交易一笔一笔重放，揪出了 100 多个有风险的合约，里面说不定就有你天天在用的。
+
+这些合约的问题都差不多，谁都能指定它去调用哪个合约，你给过它的授权就可能被别人拿去转走你的币。
+
+我真心建议兄弟们，有些授权用完就撤销吧。要知道赚多少不重要，能守住多少才重要啊！
+
+这份报告出自全球网络安全联盟 GCSA 的 Web3 实验室，感兴趣的兄弟可以去👉https://t.co/8XobzzCitQ看看更多详细内容
+
+引用 @GCSAHK: We replayed 2.1B historical transactions to uncover systemic risk. This deep-dive flags 100+ vulnerable contracts across multiple code families, breaks down the exploit anatomy, cross-validates the findings, and outlines robust defense blueprints. #GCSAInsights 
+
+Read the full analysis:
+GCSA Insight: On-Chain Protocol Fund Security, Analysis of Arbitrary External Call Vulnerability Based on Replay of 2.1 Billion Historical Transactions
+https://t.co/mL2X2vJqN5</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/AI_jacksaku/status/2119039816151273633" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 20:05</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@ChainAware<br>79,177 粉丝<br>认证机构</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安被盗约63亿美元，黑客把6000万枚被盗USDT存入Aave用于洗钱。事件涉及被盗USDT，需核查是否有TRON链上USDT资金流转。</td><td><div class="tweet">The Binance hacker deposited $60M stolen USDT into @Aave. Aave is permissionless - it couldn’t know.
+
+But the UI could.
+
+Integrating Transaction Monitoring at the frontend layer would flag that wallet before the deposit lands - 97%+ fraud score, connected to a $6.3B hack.
+
+Aave stays permissionless at protocol level. The UI protects users and Aave from money laundering exposure.
+
+That’s the integration DeFi frontends need.
+
+引用 @punkquidity: the Binance hacker&#x27;s Aave loan can be liquidated if $ETH rises 6%
+
+he put $60M of stolen $USDT into @aave, then borrowed 19,763 $ETH against it, so Tether can&#x27;t freeze that $ETH
+
+i checked the position onchain at 12:00 UTC, and once $ETH passes about $2,366, liquidators can start repaying his loan and taking his $USDT plus a bonus
+
+a post calling this move genius has over 1.5M views, while the genius has $60M of $USDT locked in Aave for about $44M of $ETH</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/ChainAware/status/2119038460711354879" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 20:01</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Musk_BXS<br>72 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称iOS零点击漏洞DarkSword已从TRON钱包盗走约400万USDT，属于影响TRON用户的资金被盗事件。</td><td><div class="tweet">iPhone用户注意：零点击漏洞DarkSword已从TRON钱包盗走约400万USDT，不用点任何链接就会中招。现在立刻把iOS更新到最新版，大额资产转进冷钱包。你更新了吗？</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Musk_BXS/status/2119037484470513805" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 19:59</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@yangye01<br>11,201 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>Bitquery调查称iPhone零点击攻击从365个TRON钱包地址盗走至少406万美元USDT，涉及TRON生态用户资金被盗。</td><td><div class="tweet">Bitquery的调查追踪到一波针对iPhone的零点击攻击，至少406万美元USDT从TRON钱包被盗走，涉及365个地址～😓
+
+         其中一笔51.9万美元就转进了收款钱包。43个收款钱包都连着同一个付手续费的公共钱包，看着像一张网，但文章也写明了，单一团伙操盘还没证实～😱
+
+         另外地址数不等于受害人数，大多数受害者的设备和漏洞至今没确认，只有一笔被盗交易能对应上已公开的iPhone机主～🫅
+
+         Trust Wallet已经发了安全建议，核心就一句：把iOS升到最新，助记词别放截图和笔记里。这波攻击的教训不在钱包本身，而是在手机系统层～🤷</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/yangye01/status/2119037111370493982" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 19:39</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@twitslaynews<br>0 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称朝鲜黑客将币安被盗资金经中国网络洗钱，其中约5亿美元通过1000多个TRON地址转移，涉及TRON链上洗钱活动。</td><td><div class="tweet">BREAKING: North Korea&#x27;s Binance hackers are now funnelling the loot through Chinese networks. Chainalysis traced nearly $1B into laundering channels, $500M of it through TRON across 1,000+ addresses. $3B is frozen, but $2.42B in BTC and ETH hasn&#x27;t moved. #Binance #Crypto https://t.co/YIpJ3Lfut8</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/twitslaynews/status/2119031972148269105" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 19:27</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@autopsy_sol<br>41 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安约63.6亿美元被盗事件中攻击者将6000万枚被盗USDT存入Aave，Lazarus仍持有大量未冻结资金并在多链洗钱，涉及被盗USDT，需核查是否有TRON链USDT流动。</td><td><div class="tweet">Autopsy of &quot;Permissionless DeFi&quot; as the market hits Extreme Fear ($75.8K BTC / $2,243 ETH):                                                           All week, CT celebrated how &quot;resilient&quot; DeFi was during the $6.36B Binance heist. Then the actual onchain post-mortem dropped (@MetrikaCo &amp; @elliptic), and the curtain came down: 1. The @aave Pool Contagion &amp; Guardian Override:
+The attacker deposited 60M stolen USDT into Aave’s shared pool to borrow ETH. @Tether_to couldn’t blacklist the pool contract without nuking every institutional lender inside it.
+• So what happened? At 21:47 UTC, Aave risk…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/autopsy_sol/status/2119029003537273026" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 19:25</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Adellbah<br>30,396 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>Bitquery报告称一个月内365个TRON钱包被盗约406万USDT，资金归集到43个关联同一手续费钱包的地址，疑与DarkSword iOS漏洞工具窃取助记词有关，盗窃网络仍在运作。</td><td><div class="tweet">365 tron wallets were drained in one month and every thief in the network was paid from the same wallet.
+
+here is what happened.
+
+blockchain analytics firm bitquery announced on november 5 that at least 4.06 million dollars in usdt was moved from 365 tron wallets between october 5 and november 4, and all of it was taken by 43 collector addresses connected to one single fee wallet.
+
+that is the fingerprint of a machine, because 43 collectors funded by the same wallet means the same drain was run hundreds of times at once, and bitquery matched one victim account to the chain almost to the second…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Adellbah/status/2119028536841228586" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 18:30</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@cryptopuxiii<br>3,146 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称365个钱包的USDT在用户未操作的情况下被转走：先转入少量手续费，约18秒后被全部转出，其中一个钱包损失51.9万美元，疑似批量盗币事件。</td><td><div class="tweet">Un dólar digital (USDT) puede irse sin que pulses enviar. Truco en 365 carteras: entra un pellizco para la comisión y, 18 segundos después, sale todo. Una perdió 519.000$. Actualiza el iPhone. La clave, en papel.
+
+https://t.co/hDymjHIPrY</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cryptopuxiii/status/2119014519728984200" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 16:43</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@MirelVegar<br>17,280 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文引用Elliptic称币安被盗黑客于10月29日在TRON的SunSwap上将约2.34亿USDT兑换为TRX，涉及通过波场DEX洗钱，值得核查。</td><td><div class="tweet">TRON&#x27;s DEX volume fell 36% this week. I think that&#x27;s the more honest number.
+
+DefiLlama shows $759M over the last seven days, against $1.19B the week before.
+
+The prior week had one outlier: 29 Oct, when TRON DEXs printed $666M in a single day, the day the Binance hacker swapped about $234M of USDT into $TRX on SunSwap, per Elliptic.
+
+Strip that out and a normal day since 1 Nov runs $59M to $122M.
+
+SunSwap V3 did 62% of the week&#x27;s volume, V4 another 27%.
+
+𝗕𝗮𝘀𝗲𝗹𝗶𝗻𝗲 beats spikes. Judge TRON DeFi by its quiet days.
+
+@justinsuntron
+@trondao #Tron
+#TronEco</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/MirelVegar/status/2118987603634446401" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 16:31</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@KentCristofer<br>65 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文讲的是63亿美元被盗事件的洗钱进展，赃款分布在两万多个钱包、十六条链上，被冻结的稳定币可能包括TRON上的USDT，值得跟踪。</td><td><div class="tweet">偷了63亿，九天只洗出1.24亿美元比特币。
+
+Elliptic 这条线挺刺耳：两万多个钱包、十六条链，稳定币大半冻在28.5亿里，真正换成比特币的才一千六百多枚，比前一天翻了一倍。18270枚被盗比特币还是那十九个地址，一聪没动。
+
+我觉得他们不是不会动，是动了就等于自己送货上门。你更怕这笔钱慢慢渗进现货，还是继续趴着当定时炸弹？</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/KentCristofer/status/2118984747334750303" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 16:29</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@gcsbtc<br>129,867 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安被朝鲜黑客盗取约63亿美元，Tether冻结了9.7亿枚USDT。被盗资产中有USDT，可能涉及TRON链上的USDT，需要核查相关地址。</td><td><div class="tweet">这帮黑客的耐心，好得吓人。
+
+币安被盗约 63 亿美元，动手之前，他们已经在币安内部待了约 8 周。
+
+一切从一次招聘开始。黑客装成招人的公司，找上一位币安工程师，把恶意软件种进了他的工作电脑。FBI 认定是朝鲜黑客组织 TraderTraitor 干的，朝鲜否认。
+
+这伙人入侵别的加密机构，一般潜伏 3 到 6 周。在币安，他们待了约 8 周，还借一个内部 AI 工具，摸到了批准转账的签名服务。
+
+10 月 29 日，钱被搬走了。
+
+稳定币发行方能直接把币冻住。37 分钟后，Tether 就冻结了 9.7 亿枚 $USDT 。各家发行方合计冻结约 26.7 亿美元，算上查封的，被拦下的钱占到 44%。去年 Bybit 被盗，这个比例只有 3% 左右。
+
+可 $BTC 和 $ETH 没有这个开关。
+
+还有约 31 亿美元没洗出去，大部分就是这两种币，很可能还在朝鲜手里。
+
+其中 18270 枚 $BTC ，案发当天被拆进 19 个地址，到现在一动没动。
+
+能等 8 周才动手的人，这笔钱大概也等得起。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/gcsbtc/status/2118984202641117518" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 16:22</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Cryptoqqbus1<br>87 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>用户提到交易所被盗数十亿美元的同时，散户约1万U(USDT)的损失无人处理，可能涉及USDT被盗，但细节模糊，值得核查。</td><td><div class="tweet">@1ts_hodlkitty 妈的，被盗几十亿美金，然后小散的1万u就置之不理。评论区还有一堆代入交易所视角的，我真服了</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Cryptoqqbus1/status/2118982433509142553" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 16:03</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@TuncaIchizo<br>6,441 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>据Bitquery数据，一个涉及365个TRON地址的网络盗走了至少400万美元USDT，与针对iPhone钱包的攻击有关，43个归集钱包都关联到同一个手续费钱包。</td><td><div class="tweet">Bitquery verilerine göre, 365 TRON (TRX) adresini kapsayan bir ağda en az 4 milyon dolarlık USDT çalındı; olay iPhone cüzdanlarına yönelik saldırılarla bağlantılı.
+
+- Bitquery, 5 Ekim-4 Kasım arasını inceledi ve 43 toplayıcı cüzdanı ortak bir ücret cüzdanına bağladı; ağın tek bir kişi tarafından yönetildiği ise henüz kanıtlanmadı</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/TuncaIchizo/status/2118977585946280260" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 15:51</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@xinyi7171<br>6,985 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>报道称用户因Safari漏洞利用链DarkSword被盗16,428美元USDT，该漏洞影响25款以上钱包App，可能波及TRON钱包用户。</td><td><div class="tweet">🍓 你的加密货币可能因为逛了个 porn 网站就被偷光。
+
+听着像段子。但加密资产被盗这事儿，可不是闹着玩的。
+
+据报道，一位女士在 iPhone 上看了个 furry porn（兽人色情）视频，结果丢了 16,428 美元的 USDT。她在 Safari 里打开视频，被广告跳转到了别的页面，没过多久，钱包就被掏空了。
+
+没下载任何 App，没输入助记词，没批准任何交易。
+
+更离谱的还在后面。
+
+只要你的 iPhone 运行的是有漏洞的 iOS 版本，光是加载一个恶意网页，就可能被攻破。
+
+实际过程是这样的：
+→ 你打开了一个不太正经的网站。
+→ 恶意代码被注入到页面里。
+→ 像 DarkSword 这样的 Safari 漏洞利用链，专挑你过时 iOS 上的漏洞下手。
+→ 攻击者接触到敏感数据，包括钱包凭证和助记词。
+→ 你的币就这么没了，你连交易确认都没点过。
+
+研究人员已经记录到 DarkSword 影响了 25 款以上的加密钱包 App。关掉标签页？没用的，该发生的已经发生了。
+
+两分钟安全自查清单：
+→ 把 iOS 更新到最新版本。
+→ 助记词千万别存在备忘录或截图里。
+→ 助记词离线保存。
+→ 大额资产用硬件钱包。
+
+浏览记录丢人就算了，钱包被清空才是真的惨。</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/xinyi7171/status/2118974699267080386" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 15:35</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@thecryptoblunt<br>2 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>报道称零点击iOS攻击从活跃TRON钱包中盗走约400万美元USDT，直接涉及TRON钱包用户，需核实。</td><td><div class="tweet">Zero-Click iOS Attacks Steal $4M in USDT From Active TRON Wallets https://t.co/GdUCpMPePj By @hardikzwriter 
+#iOS #Attacks #USDT #TRON #Wallets #Thecryptoblunt #Crypto</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/thecryptoblunt/status/2118970549334622611" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 15:30</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@MirelVegar<br>17,282 粉丝</span></td><td><b>事件：TRON 多签权限陷阱骗局：骗取助记词后篡改账户权限</b><br>提及imToken本周警告的TRON多签陷阱骗局：诈骗者通过假钱包获取助记词后修改账户权限，导致用户只能收款无法转出。</td><td><div class="tweet">Your TRON wallet can still receive. It just won&#x27;t send. That&#x27;s the multisig trap imToken warned about this week.
+
+How it works: a scammer gets your seed phrase, often through a fake wallet app, then signs an account permission update adding their own key. Deposits keep landing. Your transfers fail with a signature error. They wait until the balance is worth taking.
+
+Two checks:
+Open your address on Tronscan and scroll to Permissions. 𝗢𝗻𝗹𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗮𝗱𝗱𝗿𝗲𝘀𝘀 should appear, weight 1, threshold 1.
+Never sign anything labelled &quot;account permission update&quot;.
+
+Already trapped? Stop sending $TRX in. Paid…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/MirelVegar/status/2118969447004229776" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 15:25</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@YvetteChan99013<br>3 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>用户称币安表示TRX/USDT(TRON)提现已修复但仍无法提现，可能存在提现通道异常，值得关注。</td><td><div class="tweet">@binancezh 说TRX USDT修复了但是还是无法提现，比诈骗还6 https://t.co/4brMjyGKnI</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/YvetteChan99013/status/2118968130429182045" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 15:23</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Bitquery_io<br>6,206 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>Bitquery称币安被盗黑客一周内洗钱3.33亿美元，并经由TRON链快速转移资金，涉及TRON生态的洗钱活动。</td><td><div class="tweet">Binance hacker laundered $333 million in a week, $208 million of it in the first two and a half days. 
+
+On TRON, it moved faster than the thieves who robbed Bybit
+
+https://t.co/draIgFSxaF</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Bitquery_io/status/2118967687443521988" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 14:54</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@MirelVegar<br>17,282 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>Bitquery追踪到TRON上一波盗币事件：10月5日至11月4日共43个归集钱包从365个TRON钱包盗走至少406万美元USDT，据称与iPhone漏洞利用工具窃取助记词有关，攻击者会先向受害地址转入少量TRX作手续费。</td><td><div class="tweet">18 TRX in. 519,093 USDT out 18 seconds later. That&#x27;s one drain from a wave Bitquery traced on TRON.
+
+Between 5 Oct and 4 Nov, 43 collector wallets tied to one fee wallet took at least $4.06M in USDT from 365 TRON wallets. Reports point at iPhone exploit kits that lift seed phrases off unpatched phones.
+
+The tell: a stranger sends you a few TRX. Thieves need $TRX for fees, so they top you up first.
+
+If that happens, 𝗺𝗼𝘃𝗲 𝗲𝘃𝗲𝗿𝘆𝘁𝗵𝗶𝗻𝗴 to a new seed now. Update iOS. Keep the seed on paper only.
+
+Full trace:
+https://t.co/lkH0ATNRhM
+
+@justinsuntron
+@trondao #Tron
+#TronEcoStar</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/MirelVegar/status/2118960151776391286" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 14:37</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@cryptomediazone<br>64 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>据Bitquery统计,至少365个TRON钱包被盗约406万美元,有安全公司怀疑与iPhone攻击工具DarkSword有关,Trust Wallet已提醒用户更新。</td><td><div class="tweet">Data firm Bitquery counted at least $4.06M drained from 365 TRON wallets. Some security firms blame an iPhone hacking kit called DarkSword, and Trust Wallet urged users to update. The link is unproven; Apple and TRON are not accused. https://t.co/aI0EMUNRZ2 https://t.co/TKqTDTN4Fj</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cryptomediazone/status/2118956056424697996" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 14:31</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Inter_Saigon<br>4,603 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>Binance被盗64.3亿美元事件中，据TRM Labs称，黑客在TRON上创建代币和流动性池来洗白被盗资金，与TRON生态直接相关。</td><td><div class="tweet">TIN TẶC BINANCE ĐÃ ĐỔI 124 TRIỆU ĐÔ LA TIỀN ĐIỆN TỬ THAY THẾ BỊ ĐÁNH CẮP THÀNH BITCOIN KHI CÁC GIAO DỊCH RÚT TIỀN ĐƯỢC MỞ LẠI.
+
+Theo báo cáo của Elliptic ngày 6 tháng 11 , các hacker chịu trách nhiệm đánh cắp số tiền điện tử trị giá 6,43 tỷ đô la từ Binance đã đổi các altcoin bị đánh cắp trị giá 124 triệu đô la lấy Bitcoin. Các giao dịch này đang được thực hiện đồng thời với việc Binance mở lại chức năng rút tiền cho khách hàng.
+
+Chuyển đổi altcoin, không phải rút tiền mặt.
+Các giao dịch hoán đổi altcoin của tin tặc đã mang lại khoảng 1.650 BTC. Số tiền này tách biệt với 1,48 tỷ đô la bị đánh …</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Inter_Saigon/status/2118954517601677573" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 14:18</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@Lniosytest<br>8,611 粉丝</span></td><td><b>事件：假合作文档诱导访问假 Web3 网站盗U钓鱼</b><br>用户称有人以假合作文档诱导其访问假Web3网站以盗取U(USDT),属于针对用户的钓鱼尝试,未称已有损失。</td><td><div class="tweet">前几天有人拿合作文档给我挖坑，想把我引到假 Web3 网站盗 U。昨天又折腾 AI 逆向，结果手机系统桌面崩了😂
+
+所以看到 GCSA 这篇介绍，我挺有感触：既要防外面的恶意输入，也要管住自己工具的操作边界。AI 越能干，执行权限越不能只靠一句「别乱来」🤔
+
+翻了他们公开的调查，有两处我觉得很值得展开：
+
+KuCoin 那份报告，把邮件认证通过的域名和显示的发件域拆开分析，还追到了假安全中心投放的远控样本。按报告记录，GCSA 通报后，KuCoin 反馈已完成相关邮件配置整改，这个流程真的很棒
+
+这就和我遇到的假合作文档很贴近：对方不一定先攻破系统，把身份和入口伪装得像真的，就可能让人自己走进陷阱
+
+企业内部做安全，难的往往也是后半段。收到告警以后，谁确认、哪里受影响、交给谁修？证据说不清楚，安全、开发、运维就得来回沟通。我很认可这种把攻击路径、原因和处置反馈讲清楚的调查，方便接手的人继续处理。
+
+TranchePool 那份分析更具体。同一笔提款输入，历史回放里跨日前回滚、跨日后成功，报告把原因定位到结算先重置已提金额、再检查额度的顺序问题。这种带状态变化的业务漏洞，只报一个漏洞名称远远不够，得把它为什么能发生讲透，他们这点做的也很好！
+
+对安全厂商来说，客户环境和业务各不相同，搭环境、复现、解释结果都是交付成本。GCSA 产品页介绍的测试靶标搭建、动态验证、交易回放，我觉得就对…
+
+引用 @GCSAHK: 🔝Introduction to Global Cybersecurity Alliance (GCSA) and Its Ecosystem Product Matrix
+
+· Global Cybersecurity Alliance (GCSA )
+Bringing together governments, enterprises, individual users, and security experts from a global network perspective, GCSA focuses on emerging threats in AI and Web3. It promotes cross-border joint defense standards and actionable defense systems to safeguard security and trust in the digital world.
+
+· GCSA Ecosystem Product Matrix
+In addition to partnering with research institutions, GCSA builds dozens of self-developed security products through its ecosyste</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Lniosytest/status/2118951104280924200" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 13:59</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Cassie1656439<br>40 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称Bitquery追踪到部分被盗钱包先收到陌生TRX作手续费、随后USDT被转走，涉及TRON链上USDT盗币模式，值得关注。</td><td><div class="tweet">钱包突然收到陌生 TRX，可能是盗币者在付手续费。
+
+Bitquery 追踪到部分被盗钱包先收到 TRX，随后 USDT 被转走。但陌生转账本身不能证明钱包被盗。
+
+检查助记词是否存在照片、备忘录或云端，并更新手机系统。若发现未经授权的转账，用可信设备创建新钱包，按官方指引处理资产。</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Cassie1656439/status/2118946523908374561" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 13:28</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Layer7Reports<br>8 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安被盗后Tether冻结约15.7亿美元USDT，被盗资金涉及USDT，可能涉及TRON链上的USDT，需要核实。</td><td><div class="tweet">Binance: Tether froze nearly US$1.57bn of USDT and Circle over US$800m of USDC. Binance has not confirmed the amount stolen, the method or who is responsible. It says user funds are &quot;completely safe&quot;. Stablecoin issuers are now acting as first responders.</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Layer7Reports/status/2118938741779935485" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 13:02</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@OrcaTradezz<br>1 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称iOS零点击漏洞导致TRON钱包损失约400万USDT,涉及365个地址,需核实是否涉及TronLink等钱包。</td><td><div class="tweet">Lỗ hổng iOS zero-click khiến ví TRON thiệt hại 4 triệu USDT với 365 địa chỉ bị ảnh hưởng. Ae có đang dùng iOS quản lý crypto không?
+
+#OrcaTradez #Crypto #Daily https://t.co/8plg4HLeRI</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/OrcaTradezz/status/2118931964241629319" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 12:32</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@s_hxxtn<br>3,090 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>Chainalysis称，币安被盗63亿美元一案的朝鲜黑客已通过TRON链转移约5亿美元，资金被分散到1000多个地址后跨链转出。</td><td><div class="tweet">63亿美元！朝鲜盗币安资产正流向中国洗钱网络 
+美国区块链分析公司Chainalysis表示，盗窃63亿美元币安资产的黑客正在通过中国洗钱网络转移部分被盗资产。据信，朝鲜黑客正在通过数千个数字钱包和多个区块链转移被盗资产，并试图掩盖来源。
+美国当局已确认这批黑客是朝鲜“交易者叛徒”（TraderTraitor）组织的成员。
+朝鲜黑客在之前的盗窃案中也曾使用过中国的洗钱网络。
+Chainalysis表示，他们追踪到币安被盗事件中数十万美元流入了这些网络。
+Chainalysis指出，资金流入包括场外交易平台在内的洗钱网络，表明黑客正试图将资金从区块链网络转移出去并兑现为现金。
+此次攻击活动主要涉及将资金拆分成小额资金、兑换加密货币以及在不同区块链之间转移资产。朝鲜否认与此次黑客攻击有关。
+据Chainalysis数据显示，黑客已通过波场（TRON）区块链转移了约5亿美元。攻击者利用TRON上的各种交易协议（TRON也曾被用于非法交易），将这笔资金分散到1000多个地址，最终转移到以太坊、比特币和其它网络上的钱包。
+币安于10月29日披露了这起盗窃事件，这已成为有史以来规模最大的加密货币黑客攻击事件。该交易所周二表示，攻击者使用了包括虚假招聘面试和恶意软件在内的手段来获取其系统的访问权限。
+
+截至11月6日，比特币交易价格为75,000美元，今年迄今已下跌13%。#币安 #TRON #…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/s_hxxtn/status/2118924647932785146" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 12:32</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Tangxs0628<br>38 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>这是上一条DarkSword窃取TRON上USDT一事的信息来源帖，引用CertiK预警：该iOS漏洞利用工具针对未打补丁iPhone上的加密钱包。</td><td><div class="tweet">来源：
+Bitquery 调查 https://t.co/s2F07VkDSV
+CertiK 预警 https://t.co/e8FWobzcxD
+本帖不涉及任何币的持仓。
+
+引用 @CertiKAlert: #CertiKInsight 🚨  
+
+A new version of DarkSword, an iOS exploit kit, is being used to target crypto wallets on unpatched iPhones.  
+
+Simply opening a malicious site in Safari can be enough: no wallet connection, no signature needed.  
+
+Here&#x27;s what you need to know 🧵</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Tangxs0628/status/2118924636771516864" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 12:32</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Tangxs0628<br>38 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>据Bitquery调查，iOS漏洞利用工具DarkSword可能导致365个TRON地址被转走至少406万美元USDT，受害者只需在未更新的iPhone上打开恶意网页。</td><td><div class="tweet">iPhone 不更新 iOS，开个网页就可能丢币：Bitquery 追到至少 406 万美元 USDT 被转走。
+
+· 365 个 TRON 地址，10/5–11/4
+· CertiK：DarkSword 串 6 个漏洞，iOS 18.4–18.7，Safari 开恶意页就行
+· 只有 1 笔对上 iPhone 车主，不能说全是它
+
+先更新 iOS，助记词别放备忘录和相册。不构成投资建议 https://t.co/loDWcFNm92</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Tangxs0628/status/2118924459361083430" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 12:18</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@TheCurrencyA<br>17,869 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>媒体引用Bitquery称365个TRON地址被盗约400万美元USDT,另有89个受害者仅损失TRX,属于TRON生态大规模被盗事件。</td><td><div class="tweet">Bitquery traced $4M in USDT thefts to 365 TRON addresses. 🕵️‍♂️
+
+89 victims lost only TRX, while others saw stablecoins drained. 💸
+
+Is your wallet safe? #Crypto https://t.co/doMnf9i7H6</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/TheCurrencyA/status/2118920945402327459" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 12:15</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@GuardPay_web3<br>34 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称零点击iOS漏洞导致365个TRON钱包被盗约400万美元USDT,其中89个仅损失TRX;附带的检测链接可能为引流,需核实。</td><td><div class="tweet">⚠️ Per CryptoSlate, zero-click iOS exploits drained ~$4M USDT from 365 active TRON wallets, 89 losing only TRX. Check your wallet free at https://t.co/naXKvIxp5q and trace stolen USDT at https://t.co/RRFAYDNcVR.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/GuardPay_web3/status/2118920368161263838" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 12:14</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@Tianmei933961<br>1 粉丝</span></td><td><b>事件：Telegram 账号 @win884 兜售“无授权提示盗U系统”及TRX合约盘源码</b><br>推文公开售卖“钱包无授权提示盗U系统”及TRX合约盘源码，属于针对USDT/TRX用户的盗币工具和诈骗盘广告。</td><td><div class="tweet">11🈷️ 币安被盗68亿黑客公开最新技术钱包无授权提示盗U系统 专注海外 定制开发TRX合约盘 交易所 资金盘互看 点赞刷单 商城矿机 另可单售源码 专注海外各类盘口搭建源码二开技术维护定制开发app TG：@Ke884
+#抖音刷单 #商城开店 #期货盘 #黄金盘 #现货盘 #区块链 #宣传片 #资金盘 #牌照注册 #外汇讲师 https://t.co/YmN89KHdIN</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Tianmei933961/status/2118919876857520347" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 12:03</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CryptoCoverageX<br>248 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>报道称约400万美元USDT通过零点击攻击从TRON钱包被盗，可能涉及iPhone漏洞，需核实。</td><td><div class="tweet">$4M USDT Drained From TRON Wallets With Zero Clicks: Your iPhone Could Be Next
+
+https://t.co/sTkyKBIajw
+
+#crypto #bitcoin #solana</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/CryptoCoverageX/status/2118917205504995546" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 12:03</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Morosaki<br>1,039 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称TRON钱包被零点击攻击盗走约400万USDT，并警告iPhone用户可能受影响，疑似针对TRON钱包的攻击事件。</td><td><div class="tweet">$4M USDT Drained From TRON Wallets With Zero Clicks: Your iPhone Could Be Next
+
+https://t.co/G2tqZxTaq0
+
+Like/Follow/Repost/Comment your wallet to win some #eth or #sol
+
+#crypto #memecoin</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Morosaki/status/2118917151444611352" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 11:55</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@AprilagripaTwi<br>1 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安约2.42亿美元被盗资金在2天内经TRON链转移，FBI呼吁封锁相关地址，涉及TRON链上洗钱。</td><td><div class="tweet">I’m tracking the reported $242M Binance theft: funds allegedly moved through Tron in just 2 days, across Relay, THORChain, Chainflip and Symbiosis. The FBI is urging protocols to block related addresses. No chain is risk-free. DM “TRACE” for the full breakdown. https://t.co/LPjigKdHWZ</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/AprilagripaTwi/status/2118915278486819065" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 11:38</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@TheCurrencyA<br>17,869 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>报道称 365 个 TRON 地址被盗约 400 万美元，其中 iOS 钱包被攻破造成的损失约 12.7 万美元。</td><td><div class="tweet">Crypto thefts hit $4M via 365 TRON addresses. $127k lost in iOS wallet compromises. Is your wallet safe? #CryptoSecurity 📱💸 https://t.co/0YUp5KKRm1</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/TheCurrencyA/status/2118910828703273079" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 11:35</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CryptoPlanet247<br>1,360 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>报道称零点击 iOS 漏洞从活跃 TRON 钱包盗走约 400 万美元 USDT，共涉及 365 个地址，其中 89 个只损失了 TRX。</td><td><div class="tweet">Zero-click iOS exploits drain $4M USDT from active TRON wallets https://t.co/pORZWsIu4v Gino Matos 
+The 365-address TRON network includes 89 TRX-only losses, while just one theft matches a published iPhone-owner account.
+
+Read the full story on CryptoSla… https://t.co/da6KOp8si2</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/CryptoPlanet247/status/2118910182784741576" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 11:35</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@CryptoSlate<br>66,278 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>Bitquery 发现涉及 365 个 TRON 受害地址的网络，至少 400 万美元 USDT 被盗，攻击手法和受影响设备大多尚未查明。</td><td><div class="tweet">At least $4M in USDT thefts link to a network involving 365 TRON victim addresses, @Bitquery_io found.
+
+Only one counted theft matches a published iPhone-owner account; devices and exploits remain unidentified for most counted addresses.
+
+via @pelicamatos
+
+https://t.co/Mll14zSyjW</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/CryptoSlate/status/2118910059485024684" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 11:31</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@hhp121222<br>11,860 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>长文称10月30日币安热钱包遭黑客利用EIP-7702攻击,被盗约63.6亿美元，其中包括16亿USDT，波场等10条公链上的资产也被盗，涉及TRON生态，需核实链上资金流向。</td><td><div class="tweet">今天写一篇关于赵长鹏的长文，喜欢的朋友慢慢看。
+币圈教父赵长鹏
+还记得《我的女友XX》事件吧？闹得沸沸扬扬，当时，XX眼看要被某人挂在热搜上活活骂死，结果远在阿布扎比的一位大佬拔刀相助，立刻缓解了问题。
+
+8月29日凌晨，已经很少掺和中文圈八卦的赵长鹏，突然发了一段话：
+“市场营销激进一点可以，但利用和上升到人身攻击，甚至损害人家未来职业生涯发展，没有必要。直接打官司也比披露不必要的细节好。互相尊重！”
+
+神奇的一幕发生了。
+在赵长鹏发话后不到一个小时，他立马在评论区立正：
+“谢谢CZ，说得对。互相尊重，妥善解决，剩下的交给法院。我不再多说了。”
+不得不说，赵长鹏真是币圈教父，生杀予夺、一言九鼎。
+
+然而，江湖最残酷的地方就在于，谁也不能保证教父的宝座底下，藏没藏着炸弹。
+两个月后的10月30日凌晨，神秘黑客在短短20分钟内，从赵长鹏的币安偷走了63.6亿美元，导致币安一度暂停提现。
+人类历史上最大的一场加密货币劫案，就此诞生。
+这是币安成立以来，遇到最严重的危机之一。
+
+1
+故事，要从1988年说起。
+这一年，英特尔退休科学家蒂莫西·梅，向一群计算机极客发表了《加密无政府主义宣言》。
+宣言第一句我们似曾相识：
+“一个幽灵，加密无政府主义的幽灵，在现代的世界游荡。”
+
+在那份宣言里，他们描绘了一个让所有极客热血沸腾的理想国：
+未来的某一天，人类将用数学和加密代码筑起一道坚不可摧的墙…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/hhp121222/status/2118909302194974931" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 11:05</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@m_3721_mori<br>2,601 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称iPhone攻击工具包DarkSword被用于窃取钱包助记词,Bitquery披露至少406万美元USDT从TRON上365个钱包被转走。</td><td><div class="tweet">【鍋の日 × iPhone攻撃 × ヴィタリック：今は「勝つ」より「守り抜く」】
+​
+#仮想通貨 #ビットコイン #イーサリアム #CryptoNews #セキュリティ #iPhone #ウォレット #Web3 #今日の積み上げ #おは戦 #共創応援
+​
+こんにちは😃
+​
+土曜日、一週間お疲れさまでした。千葉は晴れ時々くもりで最高20℃、昨日より4℃低く、ようやく秋らしい空気になりそうです🍂
+北海道では雪の便りも。冬の足音が聞こえてきましたね。
+
+🔹 11月7日の記念日 🔹
+​
+今日は「鍋の日」🍲
+食品メーカーのヤマキが制定。この日が立冬になることが多いこと、そして「いい（11）な（7）べ」の語呂合わせが由来です。同じ理由で「もつ鍋の日」でもあります。
+​
+そしてもう一つ、「ココアの日」☕
+森永製菓の申請で2016年に日本記念日協会に登録されました。寒くなり始めるこの時期、温かいココアがおいしくなりますね。
+​
+鍋もココアも、冬に備えて体を温める知恵。今日のニュースは、仮想通貨の「冬支度」ともいえる、資産の守り方の話です。
+
+🔸本日の気になる仮想通貨ニュース🔸
+​
+📌【iPhone攻撃キット「DarkSword」、仮想通貨窃盗に悪用か】
+​
+iPhoneの脆弱性を突く攻撃キット「DarkSword」が、仮想通貨ウォレットからの窃盗に悪用されている疑いがあります。
+ブロックチェーン分…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/m_3721_mori/status/2118902672673890797" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 10:51</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@king_steph10051<br>47 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>据Bitquery披露，某黑客团伙通过iPhone本地攻击工具（如DarkSword）窃取助记词，先向受害钱包转入少量TRX作手续费，再转走全部USDT，仅TRON链上就有365个钱包被盗，至少406万USDT。</td><td><div class="tweet">If you hold crypto on an iPhone, watch out. Bitquery disclosed that since mid-October, a single hacker group has drained 430 crypto wallets belonging to iPhone users, stealing over 4.16 million dollars.
+
+The operation is calculated. Attackers gain access to private keys and send a tiny amount of TRX into the victim&#x27;s wallet to cover gas fees, before wiping out every tether inside. On Tron alone, they cleared at least 4.06 million USDT across 365 wallets, plus another 65 wallets across eight chains including Ethereum and BNB Chain for over 103,000 dollars.
+
+Researchers note wallet apps like Tru…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/king_steph10051/status/2118899187568050223" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 10:12</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@Ocean_Yu1<br>11,497 粉丝</span></td><td><b>事件：多个闲置 OKX 钱包小额余额被陆续转走</b><br>用户称多个闲置的OKX钱包中剩余的几U（USDT）陆续被转走，疑似私钥泄露或钱包漏洞，可能涉及TRON上的USDT。</td><td><div class="tweet">OK钱包是不是出问题了？
+
+这两天连续收到钱包余额被转走的提醒。
+
+之前撸空投留下的好几个钱包，里面就剩几U，已经一年多没碰过了。
+
+结果最近不知道怎么回事，余额陆续被转走，直接被人扫荡。
+
+最离谱的是，这些钱包我都快忘了它们的存在了，居然还有人惦记着里面那几美元。
+
+到底是 OKX 钱包存在安全漏洞，还是以前撸空投时不小心泄露了私钥？
+
+有没有人遇到同样的情况？</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Ocean_Yu1/status/2118889342987018312" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 09:39</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@fsvedcrcve18025<br>124 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>币安被盗事件后陆续暂停并恢复包括TRON在内的多个网络提现,涉及TRON链上资产,需关注。</td><td><div class="tweet">今天看到个新闻挺有感触的，币安陆续暂停并恢复各网络提现：BTC、ETH、BSC、XRP、Base、DOGE、Optimism、Arbitrum、TRON、Solana。说实话我第一反应是查自己的币还在不在。国家级黑客偷这么多，你们觉得最终会怎么收场 @RiverdotInc</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/fsvedcrcve18025/status/2118881085522124881" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 09:37</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@TRACELESSAI<br>2,156 粉丝</span></td><td><b>事件：Tether 单日冻结 TRON 上33个地址约2700万美元USDT</b><br>TRON网络上33个地址被Tether集中列入USDT黑名单,合计约2700万美元,可能关联非法资金链条,值得关注。</td><td><div class="tweet">10月28日，TRON网络一次性出现33个地址被Tether列入USDT黑名单，冻结预警时合计持有约2700万美元USDT，单笔最大约780万美元。Tether至今未解释集中处理原因。
+33个地址与一天并存，不像随机风控触发。发行方主动冻结通常意味着链上资金流向已被判定与非法活动关联，且线索足够集中才会在同一时间窗口批量落刀。单笔780万美元的量级说明被锁定的不是散户钱包，而是资金归集或中转环节。
+这更像针对同一资金链条的定点清除，而非孤立事件。有观点认为发行方冻结只是被动配合执法、对价格无实质影响，我不认同。2700万美元虽不足以撼动USDT整体流通盘，但密集冻结释放的信号是：TRON上部分通道的合规风险正在被重新定价。与这些地址有过直接交互的对手方将面临同样审查压力，链上资金向更隐蔽路径迁移会加快。Tether的沉默本身也是信息——执法协作尚未公开的阶段，冻结往往先于通报。
+真正值得盯的不是这33个地址，而是后续是否出现第二批。
+
+$USDT #Tether冻结 #TRON #合规风险</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/TRACELESSAI/status/2118880531417116874" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 08:31</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@SciTech_popcorn<br>5,907 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安遭黑客入侵，影响约63亿美元，17个热钱包的未授权提现中包括TRON链上的热钱包，攻击被归因于朝鲜TraderTraitor组织。</td><td><div class="tweet">اختراق ضخم يضرب «بينانس» بأثر يتجاوز 6 مليارات دولار
+
+كشفت منصة «بينانس» لتداول العملات المشفرة عن تعرضها لاختراق أمني معقد بلغ أثره الإجمالي نحو 6.3 مليار دولار، إثر اختراق حاسوب محمول يعود إلى مهندس عمليات مكّن المهاجمين من الوصول إلى حاوية خدمة داخلية وتمرير معاملات سحب غير مصرح بها، مؤكدة في الوقت نفسه عدم العثور على أي دليل يثبت تسرب المفاتيح الخاصة بالمحافظ.
+
+وأعلنت المنصة تجميد أصول تقارب قيمتها ثلاثة مليارات دولار على الشبكات بالتعاون مع جهات في منظومة البلوك تشين، وتعهدت بتغطية الخسائر من صندوق الأصول الآمنة للمستخدمين وأموال الشركة الخاصة. وطالت العمليات 17 محفظة ساخنة عبر شبكات متعد…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/SciTech_popcorn/status/2118863803819630730" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 08:16</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@StacieK46307<br>40 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安热钱包遭黑客攻击，被盗资金约16亿美元USDT。被盗资产涉及USDT，需要核实是否波及TRON上的USDT。</td><td><div class="tweet">黑客这次给整个加密圈上了一堂极其昂贵的安全课。调查显示，攻击者在币安窃取资金时，仅仅花了大概15美元的网络手续费，就一次性卷走了25亿美元，占整个被盗资金的四成。
+
+这帮黑客先是通过假招聘骗工程师下载恶意代码，黑进专门处理提现的热钱包Binance 14。最离谱的是手法，他们盯上了以太坊为了图方便搞的EIP-7702授权升级。本来这功能是为了让软件代办转账、免去每笔单独确认，结果黑客花15美元拿到授权，写了个脚本，3分半钟内单笔交易把16万多枚以太币和16亿美元的USDT全打包搬空。
+
+按安全机构的说法，正常防守方被黑时都是拼命拖慢攻击者的速度，但这套授权直接刻在以太坊链上。币安就算紧急暂停提现、关掉热钱包服务，链上权限也撤销不掉，后续又被刮走了十几亿美元。虽然币安自己兜底了全部损失，但原本用来简化操作的便利功能，转头就成了瞬间搬空几十亿金库的特大后门，这种防守死角确实让人背后发凉。</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/StacieK46307/status/2118860123284394211" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 05:30</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@tuyashendui123<br>19 粉丝</span></td><td><b>事件：推特账号兜售“无痕盗U、不扫码不授权”工具并招代理</b><br>有人在推广“无痕盗U、不扫码不授权”的盗币工具并招代理，目标是USDT持有者，属于针对TRON用户的诈骗或盗币工具推广。</td><td><div class="tweet">无痕盗u不扫码不授权可测试招代理 https://t.co/2H4277bxEw</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/tuyashendui123/status/2118818254005383385" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 05:28</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@feIixschaefer<br>17 粉丝</span></td><td><b>事件：两名商人起诉 Tether 无令状冻结4240万美元USDT</b><br>推文称10月29日币安遭63亿美元黑客攻击，被盗资金中有15.67亿USDT被Tether冻结。被盗资产涉及USDT，可能和TRON上的USDT有关，需要核实。</td><td><div class="tweet">Tether&#x27;s terms let it freeze any address at its sole discretion. So who does it actually freeze?
+
+What the issuers say:
+
+→ Tether: law enforcement requests, sanctions lists, funds tied to hacks and fraud
+→ Circle: legal process and sanctions. Its CEO says no freeze without a formal legal basis.
+
+What the data shows:
+
+BlockSec counted 4,574 blacklisted USDT addresses in the last 12 months (one case can span many wallets). Bitquery&#x27;s 10-year review found no public reason for 77% of frozen dollars. Only about 9% were tied to US sanctions.
+
+In 2026 alone, the cases with a known reason:
+
+→ Jan 11: …
+
+引用 @Jeremybtc: Imagine waking up to $42 MILLION of your USDT is just frozen
+
+All without a court order or warrant, just an alleged request from Homeland Security
+
+That&#x27;s what two businessmen are now suing Tether over
+
+They claim Tether froze 10 wallets holding $42.4 MILLION in October, while the actual seizure warrant didn&#x27;t arrive until nearly 4 months later
+
+And this is where things get really crazy
+
+Tether doesn&#x27;t just have the ability to freeze USDT, its smart contract can blacklist an address and even destroy the tokens sitting inside it
+
+The lawsuit now comes down to a pretty insane questio</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/feIixschaefer/status/2118817768103710993" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 05:17</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@waanounou<br>23 粉丝</span></td><td><b>事件：用户称134,000 TRX 被币安扣留多年</b><br>用户声称其134,000 TRX被Binance扣留/“偷走”,客服多年未处理,属单一用户的模糊资金损失投诉。</td><td><div class="tweet">@CoinDesk @VitalikButerin @binance I’m glad that happened to them. They stole for me 134,000 trx i’ve been trying to talk to them, they never answer me. Support sucks. Give me the runaround. five years now. I’m glad that it happened to them, and I hope they do it again, cause Karmen is a bitch.</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/waanounou/status/2118815055852810358" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 05:14</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@rst_cloud<br>914 粉丝</span></td><td><b>事件：AI驱动的 ARTEX 攻击平台针对加密服务窃取USDT</b><br>威胁报告称AI驱动的ARTEX攻击平台针对292个加密服务域名窃取USDT并篡改收款地址,IOC中涉及TRON钱包,值得核查相关地址。</td><td><div class="tweet">#threatreport #LowCompleteness
+Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns | 05-11-2026
+Source: https://t.co/txELZ1VAVp
+Key details below ↓
+
+💀Threats:
+Artex_tool, Supply_chain_technique, Cyberstrikeai_tool, Cairn_tool, Pentagi_tool, Residential_proxy_technique, 
+🎯Victims: Code signing services, Cryptocurrency services, Gambling platforms, Gaming account marketplaces
+
+🏭Industry: Entertainment
+
+🌐Geo: Thailand, American, Chinese, China, Hong kong, Usa
+
+📚TTPs:
+⚔️Tactics: 1
+🛠️Technics: 0
+
+🤖LLM extracted TTPs:`
+T1059, T1078, T1078.004, T1090.002, T1190, T1195.002, T1213, T1552, T1552.001…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/rst_cloud/status/2118814285245669613" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 04:44</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@_SlyFox_Crypto_<br>118 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称TRON网络上有365个钱包共被盗约406万美元USDT，归因于iPhone系统版本过旧，并提及Trust Wallet，需要核实事件范围及是否波及TronLink用户。</td><td><div class="tweet">$4.06M in crypto stolen from iPhone wallet. 
+
+The TRON network alone recorded $4.06M in stolen USDT across 365 wallets.
+
+The threat is the iPhone’s outdated software, not the wallet apps themselves.
+#Crypto #iOS #TrustWallet #TRON #CyberSecurity https://t.co/dqsbqE3fow</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/_SlyFox_Crypto_/status/2118806773238751362" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 04:15</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@CryptoQuantum<br>230 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文称Bitquery追踪到365个TRON钱包共被盗约406万美元USDT，其中一起与iPhone相关，需核实被盗原因和攻击手法。</td><td><div class="tweet">🟠 Bitquery traced US$4.06M in USDT stolen from 365 TRON wallets.
+
+One theft matched an iPhone report. For the rest, on-chain can&#x27;t prove phone or exploit.
+
+Risk stays high when a crypto wallet&#x27;s keys sit on a phone. Tangem 3-card from NZ$137:
+https://t.co/SqR5pif82E https://t.co/yHRZm19bYx</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/CryptoQuantum/status/2118799508414812510" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 03:32</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@LiverpoolMTB<br>6,067 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>同一作者附上Bitquery关于365个TRON钱包被盗事件的调查链接，可与上一条一并查看。</td><td><div class="tweet">worth reading the full investigation from Bitquery 👇
+
+https://t.co/NRDKsueWxV
+
+ffs, update your iPhone if you haven&#x27;t already</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/LiverpoolMTB/status/2118788536187154435" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 03:31</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@LiverpoolMTB<br>6,067 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>Bitquery追踪到365个TRON钱包被盗超过400万美元，疑似经由被入侵的iPhone、恶意网站和泄露的助记词。</td><td><div class="tweet">we spent years telling people not to sign dodgy transactions
+
+now the drainer might not even need to ask 😂
+
+Bitquery just traced over $4m stolen from 365 TRON wallets, with more victims across 8 other chains
+
+the suspected attack route? compromised iPhones, malicious websites and stolen seed phrases
+
+no dodgy wallet approval required
+
+keep your iOS updated and your seed phrase off your phone
+
+your wallet security is only as good as the device it&#x27;s sitting on</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/LiverpoolMTB/status/2118788352656736586" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 03:26</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@khushii_w<br>2,348 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称币安遭黑客攻击后，Tether在两个TRON钱包中冻结了3.787亿USDT，被盗资金经过TRON。</td><td><div class="tweet">Per TRM Labs, Tether froze 378.7M USDT across two Tron wallets after the Binance hack - a good reminder that a freeze policy has to cover every chain an asset lives on.
+
+引用 @0xPredicate: A week ago, North Korean group TraderTraitor stole $6.3B from Binance across ten chains.
+
+Predicate monitored the exploit in real-time. Several customers chose to freeze addresses connected to the exploiter&#x27;s wallet address as a precaution, and none of our customers were affected.
+
+Here’s what the Binance hack tells us about incident response, and why the industry needs shared standards.
+↓</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/khushii_w/status/2118787240830591063" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 02:56</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@gotronsh<br>5 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称上周Binance遭黑客攻击后Tether和Circle冻结超23.6亿美元,并说明了TRON上USDT合约的黑名单冻结机制,可能涉及TRON上的USDT,值得核实。</td><td><div class="tweet">After last week&#x27;s Binance hack, Tether and Circle froze over $2.36B (Cointelegraph). On TRON, USDT freezes live in Tether&#x27;s contract: addBlackList blocks transfers; destroyBlackFunds can burn holdings.
+
+getBlackListStatus(address) is a free read — check before you send.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/gotronsh/status/2118779472010682640" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 02:39</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">钓鱼/诈骗</span></td><td><span class="nowrap">@Byel_0x<br>34 粉丝</span></td><td><b>事件：Vari Points OTC 托管多签被签名人卷走约51万USDC</b><br>第三方OTC Vargan卷走约51.1万USDC，部分资金经NEAR Intents换成TRON上的USDT（如22,162.55 USDT），涉及TRON上的洗钱地址，需追踪。</td><td><div class="tweet">Vargan is a scammer. Variational points OTC: the $511K exit.
+
+On November 6, 2026, Vargan rugged. 511,118.32 USDC left the public multisig: 0xAbaBCAc9F5BedE18E7D0E55FA6289623d87C9369
+
+The @Vargan0x profile was unavailable when checked. A screenshot also showed that the Telegram group had become inaccessible: https://t.co/PSpBpWsV0y
+
+The warnings had been public for months. Here’s how the desk’s prices and recommendations spread.
+
+18 JANUARY - The public Safe was created as a 2-of-3 multisig. Initial owners: 0x9CE05d640a66F9F63b2aC33Ded758Fa5faF9197c 0xfad83D5b20Ae8cDC9A13Dd564a1249377a37835a 0…
+
+引用 @Byel_0x: https://t.co/busbMeklCa</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/Byel_0x/status/2118775416198418692" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 02:04</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Neome_com<br>2,783 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>新闻汇总中有一条标题称，一个零点击iPhone漏洞从365个TRON钱包盗走约400万美元USDT，需要核实是否涉及TronLink等钱包。</td><td><div class="tweet">CRYPTO BREAKING NEWS: Only the latest. No repeats 💙
+
+• Stock Market Today: Nasdaq Rebounds 1.7% as Nvidia Jumps 5.6% After Historic AI Selloff
+• Bitcoin ETF outflows hit $430 million as price sinks toward $75,000
+• Ripple CEO Brad Garlinghouse sold 357 million XRP, SEC records show
+• Binance hack triggers smaller DeFi run than $292M Kelp exploit: Sentora
+• Firefly Aerospace (FLY) Stock: Surge 23% on $1.3 Billion AST SpaceMobile Rocket Engine Deal
+• Steal Bitcoin, Lose Your Own BTC? Developer Floats Three Defenses Against Quantum Attacks
+• AI Agents Are Writing More Code. Why Is a Company That …</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Neome_com/status/2118766526895669737" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 01:54</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@zamanifundz001<br>136 粉丝</span></td><td><b>事件：Roqqu 用户从 Trust Wallet 充值940 TRX未到账</b><br>用户称向Roqqu钱包转入的300美元未到账，资金被转到其他地址，并称在Tronscan上看到了转账记录，涉及TRON链上的资金。</td><td><div class="tweet">@roqqupay scammed me $300.
+
+Till now they are telling me stories and fucking moved my money to another wallet without crediting me… I sent money to my Roqqu wallet, they refused to credit me and still yet moved the money… saw all on Tronscan and I have proofs. https://t.co/EfyJIShBSS</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/zamanifundz001/status/2118763940641751082" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 01:37</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@zamanifundz001<br>136 粉丝</span></td><td><b>事件：Roqqu 用户从 Trust Wallet 充值940 TRX未到账</b><br>同一用户重复投诉：向Roqqu充值940 TRX后一直未到账，并指责其诈骗，可能只是充值纠纷。</td><td><div class="tweet">To the Public….
+@roqqupay scammed me off trx 940 which is $300… I sent money from my trust wallet to my Roqqu wallet on the 4th of November… and till now I’m yet to get credited… mind you, I’ve reached out several times and nothing is been done. Here are my proofs https://t.co/D9KQI1umvf</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/zamanifundz001/status/2118759749575385461" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 01:33</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@zamanifundz001<br>136 粉丝</span></td><td><b>事件：Roqqu 用户从 Trust Wallet 充值940 TRX未到账</b><br>同一用户重复投诉：向Roqqu充值940 TRX后一直未到账，并指责其诈骗，可能只是充值纠纷。</td><td><div class="tweet">To the Public….!
+
+@roqqupay scammed me off trx 940 which is $300… I sent money from my trust wallet to my Roqqu wallet on the 4th of November… and till now I’m yet to get credited… mind you, I’ve reached out several times and nothing is been done. Here are my proofs https://t.co/PkmUihtnzY</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/zamanifundz001/status/2118758728518225937" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 01:33</span></td><td><span class="nowrap">严重</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@Cointurknews<br>8,509 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>新闻称一个iPhone零点击漏洞从365个TRON钱包盗走约400万美元USDT，属于涉及TRON用户的大规模盗币事件，需要尽快核实。</td><td><div class="tweet">Zero-click iPhone exploit drains $4 million in USDT from 365 TRON wallets 
+https://t.co/CrkiNhA6zL</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/Cointurknews/status/2118758707077005561" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 01:30</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@zamanifundz001<br>136 粉丝</span></td><td><b>事件：Roqqu 用户从 Trust Wallet 充值940 TRX未到账</b><br>用户称从Trust Wallet向Roqqu充值940 TRX(约300美元)后一直未到账，指责Roqqu诈骗，可能只是充值纠纷，但值得看一眼。</td><td><div class="tweet">@roqqupay 
+
+To the Public….
+@roqqupay scammed me off trx 940 which is $300… I sent money from my trust wallet to my Roqqu wallet on the 4th of November… and till now I’m yet to get credited… mind you, I’ve reached out several times and nothing is been done. Here are my proofs https://t.co/Nd93VwAoa9</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/zamanifundz001/status/2118757889133404410" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 01:14</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@RomanChainOps<br>38 粉丝</span></td><td><b>事件：Mercado Bitcoin 钱包疑遭黑客盗取约4000万美元</b><br>交易所Mercado Bitcoin的热钱包签名密钥和归集系统被攻破，损失约4850万美元，其中TRON链上也有数百万美元被盗，Tether冻结了攻击者持有的USDT。</td><td><div class="tweet">POINT OF FAILURE - MERCADO BITCOIN $48.5M MULTI-CHAIN DRAIN: SWEEPER HIJACKING &amp; THE 4-HOUR CONTAINMENT LAG
+
+Late on November 1 into November 2, Latin America&#x27;s premier cryptocurrency exchange @MercadoBitcoin suffered a devastating hot infrastructure compromise. Attackers breached operational signing keys and automated sweeper systems across 10+ blockchains. While the exchange officially acknowledged a $38,000,000 incident, on-chain telemetry (Chainalysis, Arkham, Bitquery, Hypernative) tracks total outflows at $48,500,000: $29.4M across Ethereum/EVM layers, ~$8.0M in Bitcoin, with multi-milli…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/RomanChainOps/status/2118753835439227170" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 00:40</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@aml_crypto<br>688 粉丝</span></td><td><b>事件：某 TRON 地址9月6日被盗约100万USDT</b><br>AML Crypto 披露 TRON 链上盗窃交易,2026年9月6日被盗 1,000,500 USDT 及 1,300 TRX,并附交易哈希。</td><td><div class="tweet">2/8 Theft transactions, TRON, 6 September 2026:
+
+1,000,500 USDT 20:38:27 UTC 68f66d2ac4f64a2f91d406e6a503bb7a5e68dd5adf9fe5d2dc329538b6467e3c 1,300 TRX 20:39:54 UTC 03ff53338a822f791236c06771a27413f441711ca2f70f19d3ba8609c3bd9587</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/aml_crypto/status/2118745245987074180" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-07 00:07</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@zhizhye<br>206 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文提及某次黑客事件被盗资金主要为ETH和TRX,涉及TRON资产,但未说明具体事件,值得核实。</td><td><div class="tweet">@wizardofsoho Delusional a bit? It was mainly $eth and $TRX... 
+There was no mention of $xmr of any significant amounts you likely mistaken some other smaller hack</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/zhizhye/status/2118736936168726560" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-06 23:40</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@blocklist24x7<br>1,399 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>推文公布了上述TRON钱包盗窃事件中的归集地址，以及经由JustLend转移资金的地址，需追踪调查。</td><td><div class="tweet">Collectors (TRON):
+TNJPXRWEptdSzbC1pYGp8suyTao4qddJe6
+TEDjNzXWsTrRcHmRnGPPqGRmqCmrA1vvGZ
+TXgDHFfNia3PmJKM5u5U35ePDku7TUV6Xo
+TEdbrs5teWWyzAtP639fRAX2yKNPCSMqJe
+
+JustLend route:
+TWUPpTF63yevhZ55eoN6CbDodZzgp856n4
+TZ7soEw5nn5mvC9k5pNszB74261Hjotfbf
+
+https://t.co/EERavjrAJ4</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/blocklist24x7/status/2118730277807956402" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-06 23:39</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@blocklist24x7<br>1,399 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>iPhone DarkSword类助记词窃取攻击导致365个TRON钱包被盗至少406万USDT，推文公布了攻击者在TRON上的手续费钱包地址。</td><td><div class="tweet">iPhone DarkSword / Safari seed-theft drains (Oct 5–Nov 4, 2026)
+≥$4.06M USDT from 365 TRON wallets; ≥$103K more on 8 other chains (Bitquery)
+
+Fee wallet (TRON):
+TUYFAa8hHjeEW6bPqBJ4v3RjQR2uKM1Svk</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/blocklist24x7/status/2118730116041982360" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-06 23:38</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@blocklist24x7<br>1,399 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>据Bitquery追踪，一个月内365个TRON钱包被盗走至少406万USDT，疑似通过Safari恶意页面窃取iPhone助记词（DarkSword类工具包）。</td><td><div class="tweet">One tap in Safari. Then the whole wallet is gone.
+
+Bitquery traced ≥$4.06M USDT emptied from 365 TRON wallets in a month, plus 8 other chains. The trail points to iPhone seed theft via booby-trapped pages (DarkSword-style kits), not app flaws.
+
+Addresses in the next reply.</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/blocklist24x7/status/2118729778140176586" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-06 23:15</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@defi_genx<br>2,076 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文提到10月31日TRX因黑客抛售担忧下跌7%,暗示存在与TRX相关的黑客事件,值得核查。</td><td><div class="tweet">1/
+TRON is the QUIET GIANT of crypto.
+
+$0.318 | #8 | $30.2B
+
+It settles MORE USDT than Ethereum now.
+
+And nobody&#x27;s pricing it like it matters. 🧵
+
+2/
+What TRON actually does:
+
+→ The highway for USDT — $92.25B stablecoins on-chain
+→ $2.18 TRILLION moved in Q3 alone
+→ 76.5M stablecoin holders
+→ 17.8M monthly active addresses
+
+This isn&#x27;t a meme chain. It&#x27;s PAYMENT RAILS.
+
+3/
+The flip nobody&#x27;s talking about:
+
+Q3 2026 — TRON PASSED Ethereum as the #1 USDT network.
+
+49.5% of USDT across tracked chains lives on TRON.
+$90.75B vs ETH&#x27;s $87.73B.
+
+When the world&#x27;s dollars move on-chain, they move on TRON.…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/defi_genx/status/2118723895490420786" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-06 23:14</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@cRGISjK9MH8M12H<br>80 粉丝</span></td><td><b>事件：某 Gate 用户被盗170万U</b><br>用户指称Gate平台有用户被盗100多万U(USDT)且未赔付,可能涉及TRON上的USDT被盗事件,需核实。</td><td><div class="tweet">@Jesse_GateLive 好意思不？年化低的狗都不看的！还沾沾自喜，真晦气！恶心的玩意。先把用户被盗的100多万u还了吧</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/cRGISjK9MH8M12H/status/2118723742407053634" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-06 23:04</span></td><td><span class="nowrap">中</span></td><td><span class="nowrap">攻击/黑客事件</span></td><td><span class="nowrap">@SergioTheNomad<br>1,065 粉丝</span></td><td><b>事件：币安热钱包 Binance 14 疑遭盗取约25亿美元</b><br>推文称10月Binance漏洞攻击者利用TRON作为资金出逃通道并已抛售99%的TRX,涉及TRON链上的被盗资金流转,需核实。</td><td><div class="tweet">TRON procesó $19.4 mil millones en transferencias USDT en un solo día, el 4 de noviembre.
+
+Mientras tanto, el hacker de Binance que había acumulado TRX tras el exploit de octubre ha liquidado el 99% de su posición. El atacante usó TRON como ruta de salida por sus fees marginales y finalidad inmediata, y ahora el rastro on-chain muestra que prácticamente no queda capital ilícito en la red.
+
+Esta es la doble cara de una infraestructura eficiente: atrae tanto pagos legítimos de alto volumen como flujos que buscan evadir congelamientos. La neutralidad de la red es una característica, no un bug.
+
+L…</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/SergioTheNomad/status/2118721064624873846" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-06 22:51</span></td><td><span class="nowrap">低</span></td><td><span class="nowrap">其他风险</span></td><td><span class="nowrap">@SanderE60925728<br>419 粉丝</span></td><td><b>事件：WIN NFT HORSE 项目被用户指为骗局</b><br>用户称因WIN NFT HORSE/WINNFTHERO项目亏钱,并以#SCAM #TRON标注指控为骗局,信息模糊,值得简单核查。</td><td><div class="tweet">You lose weight, and we lose money because of you. Life is unfair. @WINNFTHORSE @winnfthero #SCAM #TRON
+
+引用 @justinsuntron: 体重已经降了十斤 😊</div></td><td><span class="nowrap">已处理</span></td><td><span class="nowrap"><a href="https://x.com/SanderE60925728/status/2118717878744576118" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-06 22:36</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@efani<br>9,308 粉丝<br>认证机构</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>报道365个TRON钱包共被盗406万USDT，受害者称点击Safari广告后其iPhone上三个钱包被清空，疑为DarkSword类iOS漏洞利用工具所致。</td><td><div class="tweet">‼️ ONE TAP ON AN AD COULD COST YOU YOUR ENTIRE CRYPTO SAVINGS.
+
+One iPhone victim says that’s how their wallet theft started. Investigators following the money uncovered $4.06 MILLION drained from 365 crypto wallets.
+
+The victim reported opening a video in Safari, tapping an ad and being redirected to another page. Three wallet apps on the phone were subsequently emptied.
+
+Investigators traced at least $4.06 million in USDT taken from 365 TRON wallets between October 5 and November 4. The funds flowed through 43 collector addresses linked to one wallet funding transaction fees.
+
+DarkSword or a…</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/efani/status/2118714249350692988" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr><tr><td><span class="nowrap">11-06 22:31</span></td><td><span class="nowrap">高</span></td><td><span class="nowrap">资金被盗</span></td><td><span class="nowrap">@DeAnonymize<br>139 粉丝</span></td><td><b>事件：DarkSword/Coruna 工具包利用 iOS 漏洞窃取钱包助记词</b><br>Bitquery追踪到10月5日至11月4日间365个TRON钱包被盗至少406万USDT，资金流向43个归集地址，疑与iPhone Safari广告漏洞利用有关。</td><td><div class="tweet">One Safari ad emptied three wallet apps on the same iPhone.
+
+Bitquery traced at least $4.06M USDT from 365 TRON wallets (Oct 5–Nov 4) to 43 collectors tied to one fee wallet. One drain matches a published iPhone case to the second; the chain can&#x27;t prove every device.
+
+Update iOS now. Never store seed phrases in Photos or Notes.
+https://t.co/qmcRTDwSSY</div></td><td><span class="nowrap">同一事件，不推送</span></td><td><span class="nowrap"><a href="https://x.com/DeAnonymize/status/2118712961225138356" target="_blank" rel="noopener noreferrer">原文</a></span></td></tr></table></body></html>
